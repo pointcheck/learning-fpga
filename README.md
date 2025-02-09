@@ -3,6 +3,7 @@
 ### План работ
 
 - [План освоения тулов для синтеза цифровых схем на основе Yosys](https://github.com/pointcheck/learning-fgpa/blob/main/Learning-Plan.md)
+- [План по созданию КА для управления тележкой от ИК пульта ДУ](https://github.com/pointcheck/learning-fgpa/blob/main/IR_RC_Cart.md)
 - [План работ по расширению аппаратной и программной части синтезируемой СнК "Карно"](https://github.com/pointcheck/learning-fgpa/blob/main/Extending_KarnixSoC.md)
 
 ### Полезные ссылки
