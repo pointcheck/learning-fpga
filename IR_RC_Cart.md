@@ -31,6 +31,18 @@
 
 ![Алгоритм работы RC-серво](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Servomotor_Timing_Diagram.svg/330px-Servomotor_Timing_Diagram.svg.png)
 
+### Прием и декодирование ИК (IR) сигнала
+
+Существуюет несколько сопособов кодирования сигнала для пультов ДУ.
+
+1. Sony SIRC Protocol
+
+В аппаратуре производства Sony используется SIRC протокол, в котором логические "0" и "1" заколлированные разной длительностью импулься, что предстваляет собой ШИМ-кодирование.
+
+![Sony SIRC Protocol](https://labprojectsbd.com/wp-content/uploads/2021/03/c2-768x300.png)
+
+Описание протокола: https://faculty-web.msoe.edu/johnsontimoj/Common/FILES/sony_sirc_protocol.pdf
+
 ## Ссылки
 
 1. Статья на Хабре "[IR remote control, а без микроконтроллеров можно? Да не вопрос](https://habr.com/ru/companies/timeweb/articles/784500/)"
