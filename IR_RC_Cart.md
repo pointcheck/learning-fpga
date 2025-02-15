@@ -48,9 +48,9 @@
 
 Используется PDM-кодирование. Длина посылки - 32 бита.
 
-![NEC IR Protocol](https://www.sbprojects.net/knowledge/ir/necexttrain.png)
+![NEC IR Protocol](https://exploreembedded.com/wiki/images/a/ac/NecIrRemote_0.png)
 
-Описание протокола: https://sibotic.wordpress.com/wp-content/uploads/2013/12/adoh-necinfraredtransmissionprotocol-281113-1713-47344.pdf
+Описание протокола: https://exploreembedded.com/wiki/NEC_IR_Remote_Control_Interface_with_8051
 
 
 ## Ссылки
