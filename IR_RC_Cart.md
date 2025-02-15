@@ -31,6 +31,8 @@
 
 ![Алгоритм работы RC-серво](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Servomotor_Timing_Diagram.svg/330px-Servomotor_Timing_Diagram.svg.png)
 
+Статья на Wikipedia: https://en.wikipedia.org/wiki/Servo_control
+
 ### Прием и декодирование ИК (IR) сигнала
 
 Существуюет несколько сопособов кодирования сигнала для пультов ДУ.
