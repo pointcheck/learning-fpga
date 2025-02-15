@@ -37,7 +37,7 @@
 
 1. Sony SIRC Protocol
 
-В аппаратуре производства Sony используется SIRC протокол, в котором логические "0" и "1" заколлированные разной длительностью импулься, что предстваляет собой ШИМ-кодирование.
+В аппаратуре производства Sony используется SIRC протокол, в котором логические "0" и "1" закодированны разной длительностью импульса, что предстваляет собой PDM-кодирование.
 
 ![Sony SIRC Protocol](https://labprojectsbd.com/wp-content/uploads/2021/03/c2-768x300.png)
 
@@ -46,11 +46,11 @@
 
 2. NEC IR Protocol
 
-Также как и в SIRC используется ШИМ-кодирование. Длина посылки - 32 бита.
+Используется PDM-кодирование. Длина посылки - 32 бита.
 
 ![NEC IR Protocol](https://www.sbprojects.net/knowledge/ir/necexttrain.png)
 
-Описание протокола: https://www.sbprojects.net/knowledge/ir/nec.php
+Описание протокола: https://sibotic.wordpress.com/wp-content/uploads/2013/12/adoh-necinfraredtransmissionprotocol-281113-1713-47344.pdf
 
 
 ## Ссылки
