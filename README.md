@@ -9,6 +9,7 @@
 ### Репозитории
 
 [Простейший проект для синтеза под плату "Карно"](https://github.com/pointcheck/KarnixSimpleProject)
+[Blink - классика для MIK32 AMUR пр-ва зеленоградского АО "Микрон"](https://github.com/Fabmicro-LLC/MIK32_Blink)
 
 ### Полезные ссылки
 
