@@ -6,6 +6,10 @@
 - [План по созданию КА для управления тележкой от ИК пульта ДУ](https://github.com/pointcheck/learning-fgpa/blob/main/IR_RC_Cart.md)
 - [План работ по расширению аппаратной и программной части синтезируемой СнК "Карно"](https://github.com/pointcheck/learning-fgpa/blob/main/Extending_KarnixSoC.md)
 
+### Репозитории
+
+[Простейший проект для синтеза под плату "Карно"](https://github.com/pointcheck/KarnixSimpleProject)
+
 ### Полезные ссылки
 
 - Константин Владимиров. ["Практика работы в Unix Shell"](https://www.youtube.com/watch?v=KLv-5jWlKjM). Видео на Youtube.
