@@ -21,7 +21,7 @@
 2. Установить инструментарий: [YosysHQ](https://github.com/YosysHQ/oss-cad-suite-build/releases/), [OpenFPGALoader](https://github.com/trabucayre/openFPGALoader).
 3. Установить make: `sudo apt install make`.
 4. Клонировать репозиторий в любую рабочую директорию:  
-`git clone --branch module_motor --single-branch https://github.com/Aquatic72/learning-fgpa.git`.
+`git clone --branch motor_drv --single-branch https://github.com/Aquatic72/learning-fgpa.git`.
 5. Перейти в директорию MotorDRV: `cd learning-fpga/MotorDRV`. 
 6. Подключить плату "Карно" к компьютеру через USB. 
 7. Выполнить синтез "битстрима": `make`.
