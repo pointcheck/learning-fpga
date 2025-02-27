@@ -1,6 +1,6 @@
 module top (
 	input logic clk25,		// Declaring inputs and outputs according to the configuration file (karnix_cabga256.lpf)
-	input logic [2:0] key,
+	input logic [3:0] key,
 	output logic [1:0] led
 );
 	
