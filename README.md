@@ -19,9 +19,10 @@
 - Юрий Панчул. [Репозиторий basics-graphics-music](https://github.com/yuri-panchul/basics-graphics-music) с лабораторными работами для изучения HDL языка Verilog.
 - Пользователь @KoolASIC. [Адаптация платы Colorlight 5A-75B для примеров «Школы синтеза цифровых схем»](https://habr.com/ru/articles/849592/). Статья на Хабре.
 
-### Мои статьи на тему разработки цифровых схем
+### Мои статьи на тему разработки цифровых схем и программированию микроконтоллеров
 
 - [Программирование микросхем ПЛИС с помощью свободного программного инструментария (Yosys)](https://www.fabmicro.ru/pub/articles/Programming%20FPGAs%20using%20yosys.pdf)
 - [Разработка цифровой аппаратуры нетрадиционным методом: Yosys, SpinalHDL, VexRiscv (ч.1)](https://habr.com/ru/articles/801191/)
 - [Разработка цифровой аппаратуры нетрадиционным методом: Yosys, SpinalHDL, VexRiscv (ч.2)](https://habr.com/ru/articles/802127/)
 - [Разработка цифровой аппаратуры нетрадиционным методом: CGA видеоадаптер на SpinalHDL](https://habr.com/ru/articles/855718/)
+- [Тестирование встроенного АЦП (ADC) на MIK32 AMUR (К1948ВК018)](https://habr.com/ru/articles/836796/)
