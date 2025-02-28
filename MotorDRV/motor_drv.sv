@@ -12,7 +12,7 @@ module motor_drv
 	output logic pwm_outB
 );
 
-	localparam integer CLK_DIV = clk_hz / (256 *  pwm_hz);			// Calculating max number for clock divider (clock_counter)
+	localparam integer CLK_DIV = clk_hz / (256 *  pwm_hz);		// Calculating max number for clock divider (clock_counter)
 	logic [$clog2(CLK_DIV)-1:0] clock_counter = 0;			// Calculating bit width for clock divider (clock_counter) to get 64 kHz frequency after dividing
 	logic [7:0] pwm_counter = 0;
 
