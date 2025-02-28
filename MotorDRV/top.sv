@@ -3,18 +3,45 @@ module top (
 	input logic [3:0] key,
 	output logic [1:0] led
 );
-	
+
+	logic [7:0] duty_cycle = 8'd128;
+
 	motor_drv # (			// Creating an instance of motor_drv module (motor_drv.sv)
 		.clk_hz(25000000),
-		.pwm_hz(250) 
+		.pwm_hz(1) 
 	) motor_inst (
 		.clk(clk25),
-		.enable(key[0]),
-		.rst(key[1]),
+		.enable(1'd1),
+		.rst(1'd0),
 		.direction(key[2]),
-		.duty_cycle(8'd128),	// Setting duty_cycle to a fixed value (50%) for testing purposes
+		.duty_cycle(duty_cycle),
 		.pwm_outA(led[0]),
 		.pwm_outB(led[1])
 	);
+
+	logic button_pressed_inc, button_released_inc;
+        logic button_pressed_dec, button_released_dec;
+
+	debouncer debouncer_inc(
+		.clk(clk25),
+		.button_in(key[0]),
+		.button_pressed(button_pressed_inc),
+		.button_state(),
+		.button_released(button_released_inc)
+	);
+
+	debouncer debouncer_dec(
+		.clk(clk25),
+		.button_in(key[1]),
+		.button_pressed(button_pressed_dec),
+		.button_state(),
+		.button_released(button_released_dec)
+	);
+
+	always_ff @(posedge clk25) begin
+		if (button_pressed_inc & duty_cycle < 8'd247) duty_cycle <= duty_cycle + 8'd8;
+		if (button_pressed_dec & duty_cycle > 8'd8) duty_cycle <= duty_cycle - 8'd8;
+		if (key[3]) duty_cycle <= 8'd128;
+	end
 
 endmodule
