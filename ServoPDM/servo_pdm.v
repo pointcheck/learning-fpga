@@ -11,7 +11,7 @@ module servo_pdm
         output reg        pdm   					// produced PDM signal
 );
 
-	integer divider = clk_hz/pdm_hz;				// Calculating clock divider to get 312,5 KHz from 25 MHz
+	integer pdm_div = clk_hz/pdm_hz;				// Calculating clock divider to get 312,5 KHz from 25 MHz
 	reg [$clog2(pdm_div)-1:0] div_counter;				// Calculating bit depth for clock divider
 	
 	integer cycle_clocks = pdm_hz/cyc_hz;				// Calculating clock divider to get 50 Hz from 312,5 KHz
