@@ -17,6 +17,9 @@ module servo_pdm
 	integer cycle_clocks = pdm_hz/cyc_hz;				// Calculating clock divider to get 50 Hz from 312,5 KHz
 	reg [$clog2(cycle_clocks)-1:0] pdm_counter;			// Calculating bit depth for clock divider
 	
+	reg pdm;
+	assign pdm = 1;
+	
 	always @(posedge rst or posedge clk) begin
 		if (rst) begin
 			pdm_counter <= 0;
@@ -26,6 +29,9 @@ module servo_pdm
 			if (div_counter == divider - 1) begin	
 				div_counter <= 0;			// Counter is reset after getting to max number (80 - 1 = 79)
 				pdm_counter <= pdm_counter + 1;		// Counting @ 312,5 KHz
+				if (pdm_counter > 344) begin
+					assign pdm = (duty > pdm_counter - 344);		// Roughly 344 clocks @ 312,5 KHz (343,75 clocks) needed to reach 1,1 ms, then comparison can start
+				end
 				if (pdm_counter > cycle_clocks) begin
 					pdm_counter <= 0;		// Resetting pdm_counter every 6250 clocks to get 50 Hz 
 				end
@@ -33,10 +39,5 @@ module servo_pdm
 		end
 	end
 			
-	wire pdm;
-	assign pdm = 1;
-	if (pdm_counter > 344) begin
-		assign pdm = (duty > pdm_counter - 344);		// Roughly 344 clocks @ 312,5 KHz (343,75 clocks) needed to reach 1,1 ms, then comparison can start
-	end
-
+	
 endmodule
