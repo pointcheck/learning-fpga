@@ -1,5 +1,5 @@
-NAME = motor_drv
-VERILOG += top.sv motor_drv.v
+NAME = servo_pdm
+VERILOG += top.sv servo_pdm.v
 INC = ./
 LPF = karnix_cabga256.lpf
 DEVICE = 25k
