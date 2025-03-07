@@ -1,23 +1,35 @@
 module top (
 	input logic clk25,					// Declaring inputs and outputs according to the configuration file (karnix_cabga256.lpf)
 	input logic [3:0] key,
-	output logic [1:0] led
+	output logic [1:0] led,
+	output logic [2:0] gpio
 );
 
 	logic [7:0] duty_cycle = 8'd128;
+	logic pwm_outA, pwm_outB;
+	logic direction;
+
+	assign direction = key[2];	
 
 	motor_drv # (						// Creating an instance of motor_drv module (motor_drv.sv)
 		.clk_hz(25000000),
-		.pwm_hz(1) 
+		.pwm_hz(250) 
 	) motor_inst (
 		.clk(clk25),
 		.enable(1'd1),
 		.rst(1'd0),
-		.direction(key[2]),
+		.direction(direction),
 		.duty_cycle(duty_cycle),
-		.pwm_outA(led[0]),
-		.pwm_outB(led[1])
+		.pwm_outA(pwm_outA),
+		.pwm_outB(pwm_outB)
 	);
+
+        assign gpio[0] = pwm_outA;
+	assign gpio[1] = pwm_outB;
+	assign gpio[2] = direction;
+
+	assign led[0] = pwm_outA;
+	assign led[1] = pwm_outB;
 
 	logic button_pressed_inc, button_released_inc;
         logic button_pressed_dec, button_released_dec;
