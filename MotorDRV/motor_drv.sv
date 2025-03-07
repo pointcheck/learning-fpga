@@ -24,11 +24,7 @@ module motor_drv
 			clock_counter <= clock_counter + 1;
 			if (clock_counter == CLK_DIV - 1) begin		// Resetting clock_counter after it gets to the max number (CLK_DIV - 1)
 				clock_counter <= 0;
-<<<<<<< HEAD
-				pwm_counter <= pwm_counter + 1;		// Adding +1 to the pwm_counter to reach 250 Hz frequency for PWM signal (64 kHz for pwm_counter)
-=======
 				pwm_counter <= pwm_counter + 8'd1;		// Adding +1 to the pwm_counter to reach 250 Hz frequency for PWM signal (64 kHz for pwm_counter)
->>>>>>> cbf5d03 (Fixed motor_drv.sv)
 			end
 		end
 	end
