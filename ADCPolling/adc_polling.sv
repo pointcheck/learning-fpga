@@ -34,12 +34,16 @@ module adc_polling # (
 	// Transferring the address to DIN on the rising edge of SCLK
 	always @(posedge sclk) begin
 		if (~cs && c_counter < 16) begin
-			din_bit <= din[c_counter];		// Choosing particular bit to transfer to DIN (MSB first)
+			if (c_counter < 8)
+				din_bit <= din[7 - c_counter];  
+			else 
+				din_bit <= 1'b0;
 			c_counter <= c_counter + 1;
 		end else begin
 			c_counter <= 0;
 		end
 	end
+
 
 	// Reading the result on the falling edge 
 	always @(negedge sclk) begin
