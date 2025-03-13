@@ -4,7 +4,7 @@ module top (				// Declaring inputs and outputs according to the configuration f
 	output wire led
 );
 	
-	motor_drv # (			// Creating an instance of servo_pdm module (servo_pdm.sv)
+	servo_pdm # (			// Creating an instance of servo_pdm module (servo_pdm.sv)
 		.clk_hz(25000000),	 
 		.cyc_hz(50),
 		.pdm_hz(312500) 
