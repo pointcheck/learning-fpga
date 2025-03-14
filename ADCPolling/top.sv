@@ -1,9 +1,9 @@
 module top (
 	input  logic clk25,
 	input  logic key[0],
-	input  logic spi0_miso,
-	output logic spi0_sclk,
-	output logic spi0_mosi,
+	input  logic spiADC_miso,
+	output logic spiADC_sclk,
+	output logic spiADC_mosi,
 	output logic [3:0] led
 );
 
@@ -18,9 +18,9 @@ module top (
 		.clk(clk25),
 		.cs(~cs),
 		.add(3'b000),
-		.dout_bit(spi0_miso),
-		.sclk(spi0_sclk),
-		.din_bit(spi0_mosi),
+		.dout_bit(spiADC_miso),
+		.sclk(spiADC_sclk),
+		.din_bit(spiADC_mosi),
 		.d_signal(d_signal)
 	);
 
