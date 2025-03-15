@@ -19,7 +19,7 @@ module control
 	logic [$clog2(MAX_DIV)-1:0] frdiv;
 
 	logic sclk;
-	always @(posedge clk) begin
+	always_ff @(posedge clk) begin
 		if (frdiv == MAX_DIV - 'd1 begin
 			sclk <= ~sclk;
 			frdiv <= 0;
@@ -30,7 +30,7 @@ module control
 
 	logic enable = 0;
 	
-	always @(posedge sclk) begin
+	always_ff @(posedge sclk) begin
 		
 		// Getting signal from ir_decoder through VALID-READY
 		if (ir_ready) begin
