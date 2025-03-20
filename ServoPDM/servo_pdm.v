@@ -22,7 +22,8 @@ module servo_pdm
 	
 	assign pdm = pdm_done;
 	assign pdm_width = (duty << 6) + 27500;						// Calculating clocks number to count to needed PDM width (+ 1,1ms at the start)
-
+	// assign pdm_width = (duty << 6) + (duty << 4) + 27500;	// To test	
+	
 	always @(posedge rst or posedge clk) begin					// Second counter makes 20ms pause after PDM signal
 		if (rst) begin
 			div_counter <= '0;
