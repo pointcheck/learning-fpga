@@ -14,7 +14,7 @@ module top (
 	logic [31:0] ir_command;
 
 	logic ir_check_reg;
-	always_ff @(posedge clk) begin
+	always_ff @(posedge clk25) begin
 		ir_check_reg <= (ir_command[7:0] == ~ir_command[15:8] && ir_command[23:16] == ir_command[31:24]);
 	end
 	assign led[0] = ir_check_reg;
@@ -49,21 +49,6 @@ module top (
 		.pwm_outA(gpio[1]),
 		.pwm_outB(gpio[2])
 	);
-
-
-
-	servo_pdm
-	# (
-		.clk_hz(25000000),
-		.cyc_hz(50)
-	) servo_inst (
-		.rst(key[0]),
-		.clk(clk25),
-		.en(1'd1),
-		.duty(servo_dc),
-		.pdm(gpio[3])
-	);
-
 	
 
 	ir_decoder2 decoder_inst (

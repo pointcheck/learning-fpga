@@ -14,7 +14,7 @@ module top (
 	logic [31:0] ir_command;
 
 	logic ir_check_reg;
-	always_ff @(posedge clk) begin
+	always_ff @(posedge clk25) begin
 		ir_check_reg <= (ir_command[7:0] == ~ir_command[15:8] && ir_command[23:16] == ir_command[31:24]);
 	end
 	assign led[0] = ir_check_reg;
@@ -52,7 +52,7 @@ module top (
 
 
 
-	servo_pdm
+	servo_pdm2
 	# (
 		.clk_hz(25000000),
 		.cyc_hz(50)

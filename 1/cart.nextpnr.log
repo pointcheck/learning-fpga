@@ -1,0 +1,501 @@
+Info: constraining clock net 'clk25' to 25.00 MHz
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:       444/24288     1%
+Info:         logic LUTs:    226/24288     0%
+Info:         carry LUTs:    218/24288     0%
+Info:           RAM LUTs:      0/ 3036     0%
+Info:          RAMW LUTs:      0/ 6072     0%
+
+Info:      Total DFFs:       107/24288     0%
+
+Info: Packing IOs..
+Info: pin 'gpio[3]$tr_io' constrained to Bel 'X0/Y26/PIOD'.
+Info: $gpio[2]$iobuf_i: gpio_LUT4_Z.Z
+Info: pin 'gpio[2]$tr_io' constrained to Bel 'X0/Y26/PIOC'.
+Info: $gpio[1]$iobuf_i: gpio_LUT4_Z_1.Z
+Info: pin 'gpio[1]$tr_io' constrained to Bel 'X0/Y26/PIOB'.
+Info: pin 'gpio[0]$tr_io' constrained to Bel 'X0/Y26/PIOA'.
+Info: pin 'led$tr_io' constrained to Bel 'X65/Y0/PIOA'.
+Info: pin 'key$tr_io' constrained to Bel 'X60/Y0/PIOA'.
+Info: pin 'clk25$tr_io' constrained to Bel 'X38/Y0/PIOA'.
+Info: Packing constants..
+Info: Packing carries...
+Info: Packing LUTs...
+Info: Packing LUT5-7s...
+Info: Packing FFs...
+Info:     102 FFs paired with LUTs.
+Info: Generating derived timing constraints...
+Info: Promoting globals...
+Info:     promoting clock net clk25$TRELLIS_IO_IN to global network
+Info:     promoting clock net control_inst.sclk to global network
+Info: Checksum: 0x43e0df48
+
+Info: Device utilisation:
+Info: 	          TRELLIS_IO:       7/    197     3%
+Info: 	                DCCA:       2/     56     3%
+Info: 	              DP16KD:       0/     56     0%
+Info: 	          MULT18X18D:       0/     28     0%
+Info: 	              ALU54B:       0/     14     0%
+Info: 	             EHXPLLL:       0/      2     0%
+Info: 	             EXTREFB:       0/      1     0%
+Info: 	                DCUA:       0/      1     0%
+Info: 	           PCSCLKDIV:       0/      2     0%
+Info: 	             IOLOGIC:       0/    128     0%
+Info: 	            SIOLOGIC:       0/     69     0%
+Info: 	                 GSR:       0/      1     0%
+Info: 	               JTAGG:       0/      1     0%
+Info: 	                OSCG:       0/      1     0%
+Info: 	               SEDGA:       0/      1     0%
+Info: 	                 DTR:       0/      1     0%
+Info: 	             USRMCLK:       0/      1     0%
+Info: 	             CLKDIVF:       0/      4     0%
+Info: 	           ECLKSYNCB:       0/     10     0%
+Info: 	             DLLDELD:       0/      8     0%
+Info: 	              DDRDLL:       0/      4     0%
+Info: 	             DQSBUFM:       0/      8     0%
+Info: 	     TRELLIS_ECLKBUF:       0/      8     0%
+Info: 	        ECLKBRIDGECS:       0/      2     0%
+Info: 	                DCSC:       0/      2     0%
+Info: 	          TRELLIS_FF:     107/  24288     0%
+Info: 	        TRELLIS_COMB:     510/  24288     2%
+Info: 	        TRELLIS_RAMW:       0/   3036     0%
+
+Info: Placed 7 cells based on constraints.
+Info: Creating initial analytic placement for 197 cells, random placement wirelen = 15207.
+Info:     at initial placer iter 0, wirelen = 477
+Info:     at initial placer iter 1, wirelen = 380
+Info:     at initial placer iter 2, wirelen = 352
+Info:     at initial placer iter 3, wirelen = 381
+Info: Running main analytical placer, max placement attempts per cell = 48984.
+Info:     at iteration #1, type ALL: wirelen solved = 328, spread = 1618, legal = 1681; time = 0.02s
+Info:     at iteration #2, type ALL: wirelen solved = 348, spread = 1379, legal = 1442; time = 0.01s
+Info:     at iteration #3, type ALL: wirelen solved = 394, spread = 1414, legal = 1473; time = 0.01s
+Info:     at iteration #4, type ALL: wirelen solved = 418, spread = 1229, legal = 1340; time = 0.01s
+Info:     at iteration #5, type ALL: wirelen solved = 447, spread = 1241, legal = 1321; time = 0.01s
+Info:     at iteration #6, type ALL: wirelen solved = 478, spread = 1430, legal = 1431; time = 0.01s
+Info:     at iteration #7, type ALL: wirelen solved = 511, spread = 1249, legal = 1311; time = 0.01s
+Info:     at iteration #8, type ALL: wirelen solved = 466, spread = 1221, legal = 1267; time = 0.01s
+Info:     at iteration #9, type ALL: wirelen solved = 511, spread = 1099, legal = 1171; time = 0.01s
+Info:     at iteration #10, type ALL: wirelen solved = 552, spread = 1239, legal = 1281; time = 0.01s
+Info:     at iteration #11, type ALL: wirelen solved = 557, spread = 1140, legal = 1222; time = 0.01s
+Info:     at iteration #12, type ALL: wirelen solved = 592, spread = 1151, legal = 1229; time = 0.01s
+Info:     at iteration #13, type ALL: wirelen solved = 593, spread = 1104, legal = 1163; time = 0.01s
+Info:     at iteration #14, type ALL: wirelen solved = 568, spread = 1105, legal = 1189; time = 0.01s
+Info:     at iteration #15, type ALL: wirelen solved = 598, spread = 1150, legal = 1209; time = 0.01s
+Info:     at iteration #16, type ALL: wirelen solved = 638, spread = 1054, legal = 1207; time = 0.01s
+Info:     at iteration #17, type ALL: wirelen solved = 610, spread = 1089, legal = 1208; time = 0.01s
+Info:     at iteration #18, type ALL: wirelen solved = 622, spread = 1091, legal = 1167; time = 0.01s
+Info: HeAP Placer Time: 0.26s
+Info:   of which solving equations: 0.16s
+Info:   of which spreading cells: 0.02s
+Info:   of which strict legalisation: 0.01s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 197, wirelen = 1163
+Info:   at iteration #5: temp = 0.000000, timing cost = 142, wirelen = 1028
+Info:   at iteration #5: temp = 0.000000, timing cost = 129, wirelen = 1038 
+Info: SA placement time 0.16s
+
+Info: Max frequency for clock   '$glbnet$control_inst.sclk': 187.76 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock '$glbnet$clk25$TRELLIS_IO_IN': 121.17 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                             -> posedge $glbnet$clk25$TRELLIS_IO_IN: 7.75 ns
+Info: Max delay posedge $glbnet$clk25$TRELLIS_IO_IN -> <async>                            : 8.02 ns
+Info: Max delay posedge $glbnet$clk25$TRELLIS_IO_IN -> posedge $glbnet$control_inst.sclk  : 6.69 ns
+Info: Max delay posedge $glbnet$control_inst.sclk   -> <async>                            : 8.34 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 31747,  34289) |*****************************+
+Info: [ 34289,  36831) |************************************************************ 
+Info: [ 36831,  39373) |*****************************+
+Info: [ 39373,  41915) | 
+Info: [ 41915,  44457) | 
+Info: [ 44457,  46999) | 
+Info: [ 46999,  49541) | 
+Info: [ 49541,  52083) | 
+Info: [ 52083,  54625) | 
+Info: [ 54625,  57167) | 
+Info: [ 57167,  59709) | 
+Info: [ 59709,  62251) | 
+Info: [ 62251,  64793) | 
+Info: [ 64793,  67335) | 
+Info: [ 67335,  69877) | 
+Info: [ 69877,  72419) | 
+Info: [ 72419,  74961) | 
+Info: [ 74961,  77503) | 
+Info: [ 77503,  80045) |**********+
+Info: [ 80045,  82587) |**+
+Info: Checksum: 0x367ec7b2
+Info: Routing globals...
+Info:     routing clock net $glbnet$control_inst.sclk using global 0
+Info:     routing clock net $glbnet$clk25$TRELLIS_IO_IN using global 1
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 1494 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |      330        624 |  330   624 |       853|       0.21       0.21|
+Info:       2000 |      486       1340 |  156   716 |        17|       0.13       0.34|
+Info:       2016 |      486       1355 |    0    15 |         0|       0.01       0.36|
+Info: Routing complete.
+Info: Router1 time 0.36s
+Info: Checksum: 0xad3f3fb6
+
+Info: Critical path report for clock '$glbnet$control_inst.sclk' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source control_inst.motor_dc_TRELLIS_FF_Q_4.Q
+Info:    routing  1.14  1.66 Net motor_dc[3] (20,4) -> (21,3)
+Info:                          Sink control_inst.enable_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.A
+Info:                          Defined in:
+Info:                               motor_drv.sv:10.20-10.30
+Info:      logic  0.45  2.11 Source control_inst.enable_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  2.11 Net control_inst.enable_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_FCI_INT (21,3) -> (21,3)
+Info:                          Sink control_inst.enable_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  2.11 Source control_inst.enable_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  2.11 Net control_inst.enable_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT_CIN (21,3) -> (21,3)
+Info:                          Sink control_inst.enable_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               control.sv:69.23-69.38
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.18 Source control_inst.enable_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  2.18 Net control_inst.enable_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT$CCU2_FCI_INT (21,3) -> (21,3)
+Info:                          Sink control_inst.enable_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  2.18 Source control_inst.enable_LUT4_C_Z_LUT4_Z_C_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  2.18 Net $nextpnr_CCU2C_25$CIN (21,3) -> (21,3)
+Info:                          Sink $nextpnr_CCU2C_25$CCU2_COMB0.FCI
+Info:      logic  0.44  2.62 Source $nextpnr_CCU2C_25$CCU2_COMB0.F
+Info:    routing  0.68  3.30 Net control_inst.enable_LUT4_C_Z_LUT4_Z_C (21,3) -> (20,3)
+Info:                          Sink control_inst.enable_LUT4_C_Z_LUT4_Z.C
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.24  3.54 Source control_inst.enable_LUT4_C_Z_LUT4_Z.F
+Info:    routing  0.65  4.19 Net control_inst.enable_LUT4_C_Z[1] (20,3) -> (21,4)
+Info:                          Sink control_inst.motor_dc_TRELLIS_FF_Q_7_CE_LUT4_Z.A
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.24  4.43 Source control_inst.motor_dc_TRELLIS_FF_Q_7_CE_LUT4_Z.F
+Info:    routing  0.72  5.15 Net control_inst.motor_dc_TRELLIS_FF_Q_7_CE (21,4) -> (20,5)
+Info:                          Sink control_inst.motor_dc_TRELLIS_FF_Q_7.CE
+Info:      setup  0.00  5.15 Source control_inst.motor_dc_TRELLIS_FF_Q_7.CE
+Info: 1.96 ns logic, 3.20 ns routing
+
+Info: Critical path report for clock '$glbnet$clk25$TRELLIS_IO_IN' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_Z_C_TRELLIS_FF_Q_2.Q
+Info:    routing  1.48  2.01 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_Z_A[2] (12,7) -> (13,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN$CCU2_COMB0.A
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.45  2.45 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN$CCU2_COMB0.FCO
+Info:    routing  0.00  2.45 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN$CCU2_FCI_INT (13,2) -> (13,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN$CCU2_COMB1.FCI
+Info:      logic  0.00  2.45 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN$CCU2_COMB1.FCO
+Info:    routing  0.00  2.45 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT (13,2) -> (13,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               ir_decoder2.v:68.23-68.32
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.53 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCO
+Info:    routing  0.00  2.53 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_FCI_INT (13,2) -> (13,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCI
+Info:      logic  0.00  2.53 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCO
+Info:    routing  0.00  2.53 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT (13,2) -> (14,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               ir_decoder2.v:68.23-68.32
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.60 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCO
+Info:    routing  0.00  2.60 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_FCI_INT (14,2) -> (14,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCI
+Info:      logic  0.00  2.60 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCO
+Info:    routing  0.00  2.60 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT (14,2) -> (14,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               ir_decoder2.v:68.23-68.32
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.67 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCO
+Info:    routing  0.00  2.67 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_FCI_INT (14,2) -> (14,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCI
+Info:      logic  0.00  2.67 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCO
+Info:    routing  0.00  2.67 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT (14,2) -> (14,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               ir_decoder2.v:68.23-68.32
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.74 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCO
+Info:    routing  0.00  2.74 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_FCI_INT (14,2) -> (14,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCI
+Info:      logic  0.00  2.74 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCO
+Info:    routing  0.00  2.74 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT (14,2) -> (14,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               ir_decoder2.v:68.23-68.32
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.81 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCO
+Info:    routing  0.00  2.81 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_FCI_INT (14,2) -> (14,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCI
+Info:      logic  0.00  2.81 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCO
+Info:    routing  0.00  2.81 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT (14,2) -> (15,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               ir_decoder2.v:68.23-68.32
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.88 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCO
+Info:    routing  0.00  2.88 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_FCI_INT (15,2) -> (15,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCI
+Info:      logic  0.00  2.88 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCO
+Info:    routing  0.00  2.88 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT (15,2) -> (15,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               ir_decoder2.v:68.23-68.32
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.95 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCO
+Info:    routing  0.00  2.95 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_FCI_INT (15,2) -> (15,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCI
+Info:      logic  0.00  2.95 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCO
+Info:    routing  0.00  2.95 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT (15,2) -> (15,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               ir_decoder2.v:68.23-68.32
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  3.02 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCO
+Info:    routing  0.00  3.02 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_FCI_INT (15,2) -> (15,2)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCI
+Info:      logic  0.00  3.02 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCO
+Info:    routing  0.00  3.02 Net $nextpnr_CCU2C_1$CIN (15,2) -> (15,2)
+Info:                          Sink $nextpnr_CCU2C_1$CCU2_COMB0.FCI
+Info:      logic  0.44  3.46 Source $nextpnr_CCU2C_1$CCU2_COMB0.F
+Info:    routing  1.00  4.47 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT (15,2) -> (17,5)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_2_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_LUT4_Z_1.C
+Info:                          Defined in:
+Info:                               ir_decoder2.v:68.23-68.32
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.24  4.71 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_2_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_LUT4_Z_1.F
+Info:    routing  0.71  5.41 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_2_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT[5] (17,5) -> (17,4)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_B_A_CCU2C_S0_S1_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.26  5.67 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_B_A_CCU2C_S0_S1_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.00  5.67 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_B_A_CCU2C_S0_S1_L6MUX21_Z_D1 (17,4) -> (17,4)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_B_A_CCU2C_S0_S1_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.70-157.72
+Info:      logic  0.24  5.91 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_B_A_CCU2C_S0_S1_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  1.06  6.97 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_B_1_A[3] (17,4) -> (18,8)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_Z_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.26  7.22 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_Z_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.46  7.68 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_Z[6] (18,8) -> (18,8)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_B_A_CCU2C_S0_COUT_CCU2C_CIN_S0_TRELLIS_FF_Q.M
+Info:      setup  0.00  7.68 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_B_A_CCU2C_S0_COUT_CCU2C_CIN_S0_TRELLIS_FF_Q.M
+Info: 2.97 ns logic, 4.71 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk25$TRELLIS_IO_IN':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source gpio[0]$tr_io.O
+Info:    routing  1.97  1.97 Net gpio[0]$TRELLIS_IO_IN (0,26) -> (10,8)
+Info:                          Sink decoder_inst.strobe_front_LUT4_Z.D
+Info:                          Defined in:
+Info:                               top.sv:4.21-4.25
+Info:      logic  0.24  2.21 Source decoder_inst.strobe_front_LUT4_Z.F
+Info:    routing  1.34  3.55 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_A_D_LUT4_Z_D_LUT4_Z_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_CCU2C_A0_2_S1[0] (10,8) -> (19,5)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_D_2.C
+Info:                          Defined in:
+Info:                               ir_decoder2.v:19.14-19.26
+Info:      logic  0.24  3.78 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_D_2.F
+Info:    routing  0.89  4.67 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_D_2_Z[0] (19,5) -> (19,7)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_B_A_CCU2C_S0_S1_LUT4_D.C
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.24  4.90 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_B_A_CCU2C_S0_S1_LUT4_D.F
+Info:    routing  0.65  5.55 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_Z_D_LUT4_Z_A_LUT4_A_1_Z_LUT4_B_A_CCU2C_S0_S1_LUT4_D_Z (19,7) -> (20,7)
+Info:                          Sink ir_check_reg_TRELLIS_FF_Q_DI_LUT4_Z_A_LUT4_Z_1_C_LUT4_Z_C_TRELLIS_FF_Q.CE
+Info:      setup  0.00  5.55 Source ir_check_reg_TRELLIS_FF_Q_DI_LUT4_Z_A_LUT4_Z_1_C_LUT4_Z_C_TRELLIS_FF_Q.CE
+Info: 0.71 ns logic, 4.84 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk25$TRELLIS_IO_IN' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source gpio_LUT4_Z_D_CCU2C_COUT_A0_CCU2C_B0_S0_LUT4_Z_D_TRELLIS_FF_Q.Q
+Info:    routing  1.13  1.66 Net gpio_LUT4_Z_D_CCU2C_COUT_A0_CCU2C_B0_S0_LUT4_Z_D (17,2) -> (18,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.A
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.45  2.10 Source gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  2.10 Net gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_FCI_INT (18,3) -> (18,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  2.10 Source gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  2.10 Net gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN (18,3) -> (18,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               motor_drv.sv:34.16-34.40
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.17 Source gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  2.17 Net gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_FCI_INT (18,3) -> (18,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  2.17 Source gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  2.17 Net gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN (18,3) -> (18,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               motor_drv.sv:34.16-34.40
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.25 Source gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  2.25 Net gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_FCI_INT (18,3) -> (18,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  2.25 Source gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  2.25 Net gpio_LUT4_Z_D_CCU2C_COUT_CIN (18,3) -> (19,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               motor_drv.sv:34.16-34.40
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.32 Source gpio_LUT4_Z_D_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  2.32 Net gpio_LUT4_Z_D_CCU2C_COUT$CCU2_FCI_INT (19,3) -> (19,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  2.32 Source gpio_LUT4_Z_D_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  2.32 Net $nextpnr_CCU2C_7$CIN (19,3) -> (19,3)
+Info:                          Sink $nextpnr_CCU2C_7$CCU2_COMB0.FCI
+Info:      logic  0.44  2.76 Source $nextpnr_CCU2C_7$CCU2_COMB0.F
+Info:    routing  1.71  4.47 Net gpio_LUT4_Z_D (19,3) -> (3,3)
+Info:                          Sink gpio_LUT4_Z_1.D
+Info:                          Defined in:
+Info:                               motor_drv.sv:34.16-34.40
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.24  4.71 Source gpio_LUT4_Z_1.F
+Info:    routing  2.23  6.93 Net $gpio[1]$iobuf_i (3,3) -> (0,26)
+Info:                          Sink gpio[1]$tr_io.I
+Info: 1.86 ns logic, 5.07 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk25$TRELLIS_IO_IN' -> 'posedge $glbnet$control_inst.sclk':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_D_Z_LUT4_Z_1_D_TRELLIS_FF_Q.Q
+Info:    routing  0.93  1.45 Net ir_check_reg_TRELLIS_FF_Q_DI_LUT4_Z_A_LUT4_Z_D_LUT4_Z_A_LUT4_A_C[1] (21,6) -> (21,5)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_D_Z_LUT4_Z_1_C_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.24  1.69 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_D_Z_LUT4_Z_1_C_LUT4_Z.F
+Info:    routing  0.88  2.57 Net ir_check_reg_TRELLIS_FF_Q_DI_LUT4_Z_A_LUT4_Z_1_C[0] (21,5) -> (22,5)
+Info:                          Sink control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_D_Z_LUT4_Z_1.C
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.24  2.81 Source control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_D_Z_LUT4_Z_1.F
+Info:    routing  0.94  3.74 Net control_inst.direction_TRELLIS_FF_Q_CE_LUT4_Z_B_LUT4_D_Z[1] (22,5) -> (20,4)
+Info:                          Sink control_inst.enable_LUT4_C_Z_LUT4_Z_1.B
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.24  3.98 Source control_inst.enable_LUT4_C_Z_LUT4_Z_1.F
+Info:    routing  1.12  5.10 Net control_inst.enable_LUT4_C_Z[3] (20,4) -> (20,3)
+Info:                          Sink control_inst.motor_dc_TRELLIS_FF_Q_CE_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.24  5.34 Source control_inst.motor_dc_TRELLIS_FF_Q_CE_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.F
+Info:    routing  0.00  5.34 Net control_inst.motor_dc_TRELLIS_FF_Q_CE_L6MUX21_Z_D0_PFUMX_Z_ALUT (20,3) -> (20,3)
+Info:                          Sink control_inst.motor_dc_TRELLIS_FF_Q_CE_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:141.22-141.24
+Info:      logic  0.17  5.50 Source control_inst.motor_dc_TRELLIS_FF_Q_CE_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.00  5.50 Net control_inst.motor_dc_TRELLIS_FF_Q_CE_L6MUX21_Z_D0 (20,3) -> (20,3)
+Info:                          Sink control_inst.motor_dc_TRELLIS_FF_Q_CE_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:141.34-141.36
+Info:      logic  0.24  5.74 Source control_inst.motor_dc_TRELLIS_FF_Q_CE_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.24  5.98 Net control_inst.motor_dc_TRELLIS_FF_Q_CE (20,3) -> (20,4)
+Info:                          Sink control_inst.motor_dc_TRELLIS_FF_Q_4.CE
+Info:      setup  0.00  5.98 Source control_inst.motor_dc_TRELLIS_FF_Q_4.CE
+Info: 1.87 ns logic, 4.11 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$control_inst.sclk' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source control_inst.motor_dc_TRELLIS_FF_Q_5.Q
+Info:    routing  1.60  2.12 Net motor_dc[2] (20,4) -> (18,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.B
+Info:                          Defined in:
+Info:                               motor_drv.sv:10.20-10.30
+Info:      logic  0.45  2.57 Source gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  2.57 Net gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_FCI_INT (18,3) -> (18,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  2.57 Source gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  2.57 Net gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT_CIN (18,3) -> (18,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               motor_drv.sv:34.16-34.40
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.64 Source gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  2.64 Net gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_FCI_INT (18,3) -> (18,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  2.64 Source gpio_LUT4_Z_D_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  2.64 Net gpio_LUT4_Z_D_CCU2C_COUT_CIN (18,3) -> (19,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               motor_drv.sv:34.16-34.40
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.71 Source gpio_LUT4_Z_D_CCU2C_COUT$CCU2_COMB0.FCO
+Info:    routing  0.00  2.71 Net gpio_LUT4_Z_D_CCU2C_COUT$CCU2_FCI_INT (19,3) -> (19,3)
+Info:                          Sink gpio_LUT4_Z_D_CCU2C_COUT$CCU2_COMB1.FCI
+Info:      logic  0.00  2.71 Source gpio_LUT4_Z_D_CCU2C_COUT$CCU2_COMB1.FCO
+Info:    routing  0.00  2.71 Net $nextpnr_CCU2C_7$CIN (19,3) -> (19,3)
+Info:                          Sink $nextpnr_CCU2C_7$CCU2_COMB0.FCI
+Info:      logic  0.44  3.15 Source $nextpnr_CCU2C_7$CCU2_COMB0.F
+Info:    routing  1.71  4.87 Net gpio_LUT4_Z_D (19,3) -> (3,3)
+Info:                          Sink gpio_LUT4_Z_1.D
+Info:                          Defined in:
+Info:                               motor_drv.sv:34.16-34.40
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.24  5.10 Source gpio_LUT4_Z_1.F
+Info:    routing  2.23  7.33 Net $gpio[1]$iobuf_i (3,3) -> (0,26)
+Info:                          Sink gpio[1]$tr_io.I
+Info: 1.79 ns logic, 5.54 ns routing
+
+Info: Max frequency for clock   '$glbnet$control_inst.sclk': 194.02 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock '$glbnet$clk25$TRELLIS_IO_IN': 130.12 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                             -> posedge $glbnet$clk25$TRELLIS_IO_IN: 5.55 ns
+Info: Max delay posedge $glbnet$clk25$TRELLIS_IO_IN -> <async>                            : 6.93 ns
+Info: Max delay posedge $glbnet$clk25$TRELLIS_IO_IN -> posedge $glbnet$control_inst.sclk  : 5.98 ns
+Info: Max delay posedge $glbnet$control_inst.sclk   -> <async>                            : 7.33 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 32314,  34789) |*************************+
+Info: [ 34789,  37264) |************************************************************ 
+Info: [ 37264,  39739) |****************+
+Info: [ 39739,  42214) | 
+Info: [ 42214,  44689) | 
+Info: [ 44689,  47164) | 
+Info: [ 47164,  49639) | 
+Info: [ 49639,  52114) | 
+Info: [ 52114,  54589) | 
+Info: [ 54589,  57064) | 
+Info: [ 57064,  59539) | 
+Info: [ 59539,  62014) | 
+Info: [ 62014,  64489) | 
+Info: [ 64489,  66964) | 
+Info: [ 66964,  69439) | 
+Info: [ 69439,  71914) | 
+Info: [ 71914,  74389) | 
+Info: [ 74389,  76864) | 
+Info: [ 76864,  79339) |*****+
+Info: [ 79339,  81814) |*****+
+
+Info: Program finished normally.

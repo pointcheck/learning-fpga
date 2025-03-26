@@ -22,7 +22,6 @@ module motor_drv
 		if (rst) begin
 			clock_counter  <= 'd0;
 			pwm_counter <= 8'd0;
-			pwm <= 1'd0;
 		end else if (enable) begin
 			clock_counter <= clock_counter + 1;
 			if (clock_counter == CLK_DIV - 1) begin		// Resetting clock_counter after it gets to the max number (CLK_DIV - 1)

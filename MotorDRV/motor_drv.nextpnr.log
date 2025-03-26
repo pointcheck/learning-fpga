@@ -1,0 +1,252 @@
+Info: constraining clock net 'clk25' to 25.00 MHz
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:        37/24288     0%
+Info:         logic LUTs:     21/24288     0%
+Info:         carry LUTs:     16/24288     0%
+Info:           RAM LUTs:      0/ 3036     0%
+Info:          RAMW LUTs:      0/ 6072     0%
+
+Info:      Total DFFs:        17/24288     0%
+
+Info: Packing IOs..
+Info: pin 'led[1]$tr_io' constrained to Bel 'X65/Y0/PIOB'.
+Info: pin 'led[0]$tr_io' constrained to Bel 'X65/Y0/PIOA'.
+Info: pin 'key[2]$tr_io' constrained to Bel 'X62/Y0/PIOA'.
+Info: pin 'key[1]$tr_io' constrained to Bel 'X60/Y0/PIOB'.
+Info: pin 'key[0]$tr_io' constrained to Bel 'X60/Y0/PIOA'.
+Info: pin 'clk25$tr_io' constrained to Bel 'X38/Y0/PIOA'.
+Info: Packing constants..
+Info: Packing carries...
+Info: Packing LUTs...
+Info: Packing LUT5-7s...
+Info: Packing FFs...
+Info:     14 FFs paired with LUTs.
+Info: Generating derived timing constraints...
+Info: Promoting globals...
+Info:     promoting clock net clk25$TRELLIS_IO_IN to global network
+Info: Checksum: 0xcd1de9b3
+
+Info: Device utilisation:
+Info: 	          TRELLIS_IO:       6/    197     3%
+Info: 	                DCCA:       1/     56     1%
+Info: 	              DP16KD:       0/     56     0%
+Info: 	          MULT18X18D:       0/     28     0%
+Info: 	              ALU54B:       0/     14     0%
+Info: 	             EHXPLLL:       0/      2     0%
+Info: 	             EXTREFB:       0/      1     0%
+Info: 	                DCUA:       0/      1     0%
+Info: 	           PCSCLKDIV:       0/      2     0%
+Info: 	             IOLOGIC:       0/    128     0%
+Info: 	            SIOLOGIC:       0/     69     0%
+Info: 	                 GSR:       0/      1     0%
+Info: 	               JTAGG:       0/      1     0%
+Info: 	                OSCG:       0/      1     0%
+Info: 	               SEDGA:       0/      1     0%
+Info: 	                 DTR:       0/      1     0%
+Info: 	             USRMCLK:       0/      1     0%
+Info: 	             CLKDIVF:       0/      4     0%
+Info: 	           ECLKSYNCB:       0/     10     0%
+Info: 	             DLLDELD:       0/      8     0%
+Info: 	              DDRDLL:       0/      4     0%
+Info: 	             DQSBUFM:       0/      8     0%
+Info: 	     TRELLIS_ECLKBUF:       0/      8     0%
+Info: 	        ECLKBRIDGECS:       0/      2     0%
+Info: 	                DCSC:       0/      2     0%
+Info: 	          TRELLIS_FF:      17/  24288     0%
+Info: 	        TRELLIS_COMB:      47/  24288     0%
+Info: 	        TRELLIS_RAMW:       0/   3036     0%
+
+Info: Placed 6 cells based on constraints.
+Info: Creating initial analytic placement for 18 cells, random placement wirelen = 1579.
+Info:     at initial placer iter 0, wirelen = 29
+Info:     at initial placer iter 1, wirelen = 26
+Info:     at initial placer iter 2, wirelen = 26
+Info:     at initial placer iter 3, wirelen = 25
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type ALL: wirelen solved = 22, spread = 135, legal = 143; time = 0.01s
+Info:     at iteration #2, type ALL: wirelen solved = 23, spread = 141, legal = 134; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 31, spread = 113, legal = 113; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 29, spread = 120, legal = 120; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 35, spread = 87, legal = 87; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 33, spread = 85, legal = 85; time = 0.00s
+Info:     at iteration #7, type ALL: wirelen solved = 30, spread = 92, legal = 92; time = 0.00s
+Info:     at iteration #8, type ALL: wirelen solved = 33, spread = 94, legal = 94; time = 0.00s
+Info:     at iteration #9, type ALL: wirelen solved = 33, spread = 94, legal = 94; time = 0.00s
+Info:     at iteration #10, type ALL: wirelen solved = 33, spread = 91, legal = 91; time = 0.00s
+Info:     at iteration #11, type ALL: wirelen solved = 35, spread = 95, legal = 95; time = 0.00s
+Info: HeAP Placer Time: 0.04s
+Info:   of which solving equations: 0.01s
+Info:   of which spreading cells: 0.01s
+Info:   of which strict legalisation: 0.00s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 8, wirelen = 85
+Info:   at iteration #5: temp = 0.000000, timing cost = 8, wirelen = 73
+Info:   at iteration #10: temp = 0.000000, timing cost = 7, wirelen = 68
+Info:   at iteration #10: temp = 0.000000, timing cost = 7, wirelen = 68 
+Info: SA placement time 0.01s
+
+Info: Max frequency for clock '$glbnet$clk25$TRELLIS_IO_IN': 217.53 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                             -> <async>                            : 2.32 ns
+Info: Max delay <async>                             -> posedge $glbnet$clk25$TRELLIS_IO_IN: 2.32 ns
+Info: Max delay posedge $glbnet$clk25$TRELLIS_IO_IN -> <async>                            : 2.36 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 35403,  35595) |** 
+Info: [ 35595,  35787) | 
+Info: [ 35787,  35979) | 
+Info: [ 35979,  36171) |* 
+Info: [ 36171,  36363) | 
+Info: [ 36363,  36555) |** 
+Info: [ 36555,  36747) |***** 
+Info: [ 36747,  36939) |* 
+Info: [ 36939,  37131) |* 
+Info: [ 37131,  37323) | 
+Info: [ 37323,  37515) | 
+Info: [ 37515,  37707) | 
+Info: [ 37707,  37899) |******* 
+Info: [ 37899,  38091) |**** 
+Info: [ 38091,  38283) | 
+Info: [ 38283,  38475) | 
+Info: [ 38475,  38667) | 
+Info: [ 38667,  38859) | 
+Info: [ 38859,  39051) | 
+Info: [ 39051,  39243) |** 
+Info: Checksum: 0x84f24148
+Info: Routing globals...
+Info:     routing clock net $glbnet$clk25$TRELLIS_IO_IN using global 0
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 156 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:        183 |       26        139 |   26   139 |         0|       0.03       0.03|
+Info: Routing complete.
+Info: Router1 time 0.03s
+Info: Checksum: 0x147ac309
+
+Info: Critical path report for clock '$glbnet$clk25$TRELLIS_IO_IN' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source clk25_TRELLIS_FF_CLK_6.Q
+Info:    routing  1.12  1.65 Net clk25_TRELLIS_FF_CLK_6_Q[2] (59,3) -> (59,2)
+Info:                          Sink clk25_TRELLIS_FF_CLK_Q_CCU2C_S0$CCU2_COMB0.B
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.45  2.10 Source clk25_TRELLIS_FF_CLK_Q_CCU2C_S0$CCU2_COMB0.FCO
+Info:    routing  0.00  2.10 Net clk25_TRELLIS_FF_CLK_Q_CCU2C_S0$CCU2_FCI_INT (59,2) -> (59,2)
+Info:                          Sink clk25_TRELLIS_FF_CLK_Q_CCU2C_S0$CCU2_COMB1.FCI
+Info:      logic  0.00  2.10 Source clk25_TRELLIS_FF_CLK_Q_CCU2C_S0$CCU2_COMB1.FCO
+Info:    routing  0.00  2.10 Net clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_COUT (59,2) -> (59,2)
+Info:                          Sink clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_CCU2C_S0$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               motor_drv.sv:24.21-24.38
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.07  2.17 Source clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_CCU2C_S0$CCU2_COMB0.FCO
+Info:    routing  0.00  2.17 Net clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_CCU2C_S0$CCU2_FCI_INT (59,2) -> (59,2)
+Info:                          Sink clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_CCU2C_S0$CCU2_COMB1.FCI
+Info:      logic  0.00  2.17 Source clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_CCU2C_S0$CCU2_COMB1.FCO
+Info:    routing  0.00  2.17 Net clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_CCU2C_S0_COUT (59,2) -> (60,2)
+Info:                          Sink clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_CCU2C_S0_COUT_CCU2C_CIN$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               motor_drv.sv:24.21-24.38
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:      logic  0.44  2.61 Source clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_CCU2C_S0_COUT_CCU2C_CIN$CCU2_COMB0.F
+Info:    routing  0.65  3.27 Net clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1[6] (60,2) -> (61,3)
+Info:                          Sink clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.A
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.24  3.50 Source clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.F
+Info:    routing  0.00  3.50 Net clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_L6MUX21_Z_D0_PFUMX_Z_ALUT (61,3) -> (61,3)
+Info:                          Sink clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:141.22-141.24
+Info:      logic  0.17  3.67 Source clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.00  3.67 Net clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_L6MUX21_Z_D0 (61,3) -> (61,3)
+Info:                          Sink clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:141.34-141.36
+Info:      logic  0.24  3.90 Source clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.46  4.37 Net clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1[8] (61,3) -> (61,3)
+Info:                          Sink clk25_TRELLIS_FF_CLK.M
+Info:      setup  0.00  4.37 Source clk25_TRELLIS_FF_CLK.M
+Info: 2.13 ns logic, 2.24 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> '<async>':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source key[2]$tr_io.O
+Info:    routing  1.38  1.38 Net key[2]$TRELLIS_IO_IN (62,0) -> (64,2)
+Info:                          Sink motor_inst.pwm_outB_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.24  1.62 Source motor_inst.pwm_outB_LUT4_Z.F
+Info:    routing  0.96  2.58 Net led[1]$TRELLIS_IO_OUT (64,2) -> (65,0)
+Info:                          Sink led[1]$tr_io.I
+Info:                          Defined in:
+Info:                               motor_drv.sv:12.15-12.23
+Info: 0.24 ns logic, 2.35 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk25$TRELLIS_IO_IN':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source key[0]$tr_io.O
+Info:    routing  1.64  1.64 Net clk25_TRELLIS_FF_CLK_Q_CCU2C_S0_S1_LUT4_Z_1_D[0] (60,0) -> (61,3)
+Info:                          Sink motor_inst.pwm_outA_LUT4_Z_C_TRELLIS_FF_Q_CE_LUT4_Z.A
+Info:                          Defined in:
+Info:                               motor_drv.sv:7.14-7.20
+Info:      logic  0.24  1.88 Source motor_inst.pwm_outA_LUT4_Z_C_TRELLIS_FF_Q_CE_LUT4_Z.F
+Info:    routing  0.78  2.66 Net motor_inst.pwm_outA_LUT4_Z_C_TRELLIS_FF_Q_CE (61,3) -> (63,2)
+Info:                          Sink motor_inst.pwm_outA_LUT4_Z_C_TRELLIS_FF_Q.CE
+Info:      setup  0.00  2.66 Source motor_inst.pwm_outA_LUT4_Z_C_TRELLIS_FF_Q.CE
+Info: 0.24 ns logic, 2.42 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk25$TRELLIS_IO_IN' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source motor_inst.pwm_outA_LUT4_Z_C_TRELLIS_FF_Q.Q
+Info:    routing  0.87  1.39 Net motor_inst.pwm_outA_LUT4_Z_C[0] (63,2) -> (64,2)
+Info:                          Sink motor_inst.pwm_outA_LUT4_Z.C
+Info:                          Defined in:
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:      logic  0.24  1.63 Source motor_inst.pwm_outA_LUT4_Z.F
+Info:    routing  0.86  2.48 Net led[0]$TRELLIS_IO_OUT (64,2) -> (65,0)
+Info:                          Sink led[0]$tr_io.I
+Info:                          Defined in:
+Info:                               motor_drv.sv:11.15-11.23
+Info: 0.76 ns logic, 1.72 ns routing
+
+Info: Max frequency for clock '$glbnet$clk25$TRELLIS_IO_IN': 228.94 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                             -> <async>                            : 2.58 ns
+Info: Max delay <async>                             -> posedge $glbnet$clk25$TRELLIS_IO_IN: 2.66 ns
+Info: Max delay posedge $glbnet$clk25$TRELLIS_IO_IN -> <async>                            : 2.48 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [ 35632,  35795) |* 
+Info: [ 35795,  35958) |* 
+Info: [ 35958,  36121) |* 
+Info: [ 36121,  36284) | 
+Info: [ 36284,  36447) |* 
+Info: [ 36447,  36610) |** 
+Info: [ 36610,  36773) |****** 
+Info: [ 36773,  36936) | 
+Info: [ 36936,  37099) | 
+Info: [ 37099,  37262) |* 
+Info: [ 37262,  37425) |*** 
+Info: [ 37425,  37588) |***** 
+Info: [ 37588,  37751) |** 
+Info: [ 37751,  37914) | 
+Info: [ 37914,  38077) | 
+Info: [ 38077,  38240) | 
+Info: [ 38240,  38403) | 
+Info: [ 38403,  38566) | 
+Info: [ 38566,  38729) | 
+Info: [ 38729,  38892) |** 
+
+Info: Program finished normally.
