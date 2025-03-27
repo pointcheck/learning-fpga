@@ -1,4 +1,4 @@
-module servo_pdm2
+module servo_pdm
 # (
         parameter  clk_hz   = 25000000, // Global clock
         parameter  cyc_hz   = 50        // Frequency of produced PDM signal
@@ -7,7 +7,7 @@ module servo_pdm2
         input  wire       clk,  // Global Clock
         input  wire       en,   // Enable signal
         input  wire [7:0] duty, // Input Duty cycle value
-        output wire       pdm   // Produced PDM signal
+        output reg	  pdm_done   // Produced PDM signal
 );
 
 	wire [15:0] pdm_width; // Calculating clocks number to count to needed PDM width
@@ -20,7 +20,6 @@ module servo_pdm2
 	
 	reg pdm_done;
 	
-	assign pdm = pdm_done;
 	assign pdm_width = (duty << 6) + 27500; // Calculating clocks number to count to needed PDM width
 	
 	always @(posedge rst or posedge clk) begin // Second counter makes 20ms pause after PDM signal

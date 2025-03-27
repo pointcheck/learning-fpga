@@ -52,7 +52,7 @@ module top (
 
 
 
-	servo_pdm2
+	servo_pdm
 	# (
 		.clk_hz(25000000),
 		.cyc_hz(50)
@@ -61,7 +61,7 @@ module top (
 		.clk(clk25),
 		.en(1'd1),
 		.duty(servo_dc),
-		.pdm(gpio[3])
+		.pdm_done(gpio[3])
 	);
 
 	

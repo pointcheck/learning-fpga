@@ -8,7 +8,7 @@
 
 -- Running command `verilog_defaults -add -I./' --
 
--- Running command `read_verilog -sv top.sv control.sv motor_drv.sv servo_pdm2.sv' --
+-- Running command `read_verilog -sv top.sv control.sv motor_drv.sv' --
 
 1. Executing Verilog-2005 frontend: top.sv
 Parsing SystemVerilog input from `top.sv' to AST representation.
@@ -25,16 +25,16 @@ Parsing SystemVerilog input from `motor_drv.sv' to AST representation.
 Generating RTLIL representation for module `\motor_drv'.
 Successfully finished Verilog frontend.
 
-4. Executing Verilog-2005 frontend: servo_pdm2.sv
-Parsing SystemVerilog input from `servo_pdm2.sv' to AST representation.
-Generating RTLIL representation for module `\servo_pdm2'.
-Successfully finished Verilog frontend.
+-- Running command `read_verilog ir_decoder2.v servo_pdm.v' --
 
--- Running command `read_verilog ir_decoder2.v' --
-
-5. Executing Verilog-2005 frontend: ir_decoder2.v
+4. Executing Verilog-2005 frontend: ir_decoder2.v
 Parsing Verilog input from `ir_decoder2.v' to AST representation.
 Generating RTLIL representation for module `\ir_decoder2'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: servo_pdm.v
+Parsing Verilog input from `servo_pdm.v' to AST representation.
+Generating RTLIL representation for module `\servo_pdm'.
 Successfully finished Verilog frontend.
 
 -- Running command `synth_ecp5 -json cart.json -top top' --
@@ -139,16 +139,16 @@ Successfully finished Verilog frontend.
 6.3.1. Analyzing design hierarchy..
 Top module:  \top
 Used module:     \ir_decoder2
-Used module:     \servo_pdm2
+Used module:     \servo_pdm
 Used module:     \motor_drv
 Used module:     \control
 Parameter \clk_hz = 25000000
 Parameter \cyc_hz = 50
 
-6.3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\servo_pdm2'.
+6.3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\servo_pdm'.
 Parameter \clk_hz = 25000000
 Parameter \cyc_hz = 50
-Generating RTLIL representation for module `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2'.
+Generating RTLIL representation for module `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm'.
 Parameter \clk_hz = 25000000
 Parameter \pwm_hz = 250
 
@@ -167,17 +167,17 @@ Generating RTLIL representation for module `$paramod$dadf92117a5cb6ec6253a85ed86
 6.3.5. Analyzing design hierarchy..
 Top module:  \top
 Used module:     \ir_decoder2
-Used module:     $paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2
+Used module:     $paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm
 Used module:     $paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv
 Used module:     $paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control
 
 6.3.6. Analyzing design hierarchy..
 Top module:  \top
 Used module:     \ir_decoder2
-Used module:     $paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2
+Used module:     $paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm
 Used module:     $paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv
 Used module:     $paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control
-Removing unused module `\servo_pdm2'.
+Removing unused module `\servo_pdm'.
 Removing unused module `\motor_drv'.
 Removing unused module `\control'.
 Removed 3 unused modules.
@@ -192,10 +192,10 @@ Cleaned up 1 empty switch.
 Marked 1 switch rules as full_case in process $proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:350$282 in module TRELLIS_FF.
 Marked 1 switch rules as full_case in process $proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$234 in module DPR16X4C.
 Marked 1 switch rules as full_case in process $proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$176 in module TRELLIS_DPR16X4.
-Marked 6 switch rules as full_case in process $proc$ir_decoder2.v:36$43 in module ir_decoder2.
 Marked 1 switch rules as full_case in process $proc$control.sv:21$300 in module $paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.
+Marked 6 switch rules as full_case in process $proc$ir_decoder2.v:36$36 in module ir_decoder2.
 Marked 1 switch rules as full_case in process $proc$motor_drv.sv:21$291 in module $paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.
-Marked 3 switch rules as full_case in process $proc$servo_pdm2.sv:26$286 in module $paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2.
+Marked 3 switch rules as full_case in process $proc$servo_pdm.v:25$286 in module $paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm.
 Removed a total of 0 dead cases.
 
 6.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -211,9 +211,9 @@ Found init rule in `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$p
   Set init value: \sclk = 1'0
 
 6.4.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \rst in `\ir_decoder2.$proc$ir_decoder2.v:36$43'.
+Found async reset \rst in `\ir_decoder2.$proc$ir_decoder2.v:36$36'.
 Found async reset \rst in `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$motor_drv.sv:21$291'.
-Found async reset \rst in `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2.$proc$servo_pdm2.sv:26$286'.
+Found async reset \rst in `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm.$proc$servo_pdm.v:25$286'.
 
 6.4.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
@@ -234,17 +234,6 @@ Creating decoders for process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applicatio
      2/3: $1$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$174_DATA[3:0]$181
      3/3: $1$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$174_ADDR[3:0]$180
 Creating decoders for process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:213$175'.
-Creating decoders for process `\ir_decoder2.$proc$ir_decoder2.v:36$43'.
-     1/10: $6\cmd[31:0]
-     2/10: $5\cmd[31:0]
-     3/10: $4\cmd[31:0]
-     4/10: $3\cmd[31:0]
-     5/10: $2\cmd[31:0]
-     6/10: $1\cmd[31:0]
-     7/10: $0\dem[5:0]
-     8/10: $0\bit_count[7:0]
-     9/10: $0\t1[20:0]
-    10/10: $0\ir_input_last[0:0]
 Creating decoders for process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:30$316'.
 Creating decoders for process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:20$315'.
 Creating decoders for process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:32$304'.
@@ -255,13 +244,24 @@ Creating decoders for process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067
 Creating decoders for process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:21$300'.
      1/2: $0\frdiv[15:0]
      2/2: $0\sclk[0:0]
+Creating decoders for process `\ir_decoder2.$proc$ir_decoder2.v:36$36'.
+     1/10: $6\cmd[31:0]
+     2/10: $5\cmd[31:0]
+     3/10: $4\cmd[31:0]
+     4/10: $3\cmd[31:0]
+     5/10: $2\cmd[31:0]
+     6/10: $1\cmd[31:0]
+     7/10: $0\dem[5:0]
+     8/10: $0\bit_count[7:0]
+     9/10: $0\t1[20:0]
+    10/10: $0\ir_input_last[0:0]
 Creating decoders for process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$motor_drv.sv:21$291'.
      1/2: $0\pwm_counter[7:0]
      2/2: $0\clock_counter[8:0]
-Creating decoders for process `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2.$proc$servo_pdm2.sv:26$286'.
-     1/3: $0\pdm_done[0:0]
-     2/3: $0\div_counter[18:0]
-     3/3: $0\pdmw_counter[15:0]
+Creating decoders for process `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm.$proc$servo_pdm.v:25$286'.
+     1/3: $0\div_counter[18:0]
+     2/3: $0\pdmw_counter[15:0]
+     3/3: $0\pdm_done[0:0]
 Creating decoders for process `\top.$proc$top.sv:17$1'.
 
 6.4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
@@ -349,39 +349,39 @@ Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Appli
   created $dff cell `$procdff$503' with positive edge clock.
 Creating register for signal `\TRELLIS_DPR16X4.\muxwre' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:213$175'.
   created direct connection (no actual register cell created).
-Creating register for signal `\ir_decoder2.\ir_input_last' using process `\ir_decoder2.$proc$ir_decoder2.v:36$43'.
-  created $adff cell `$procdff$506' with positive edge clock and positive level reset.
-Creating register for signal `\ir_decoder2.\t1' using process `\ir_decoder2.$proc$ir_decoder2.v:36$43'.
-  created $adff cell `$procdff$509' with positive edge clock and positive level reset.
-Creating register for signal `\ir_decoder2.\bit_count' using process `\ir_decoder2.$proc$ir_decoder2.v:36$43'.
-  created $adff cell `$procdff$512' with positive edge clock and positive level reset.
-Creating register for signal `\ir_decoder2.\dem [5:0]' using process `\ir_decoder2.$proc$ir_decoder2.v:36$43'.
-  created $adff cell `$procdff$515' with positive edge clock and positive level reset.
-Creating register for signal `\ir_decoder2.\cmd' using process `\ir_decoder2.$proc$ir_decoder2.v:36$43'.
-  created $adff cell `$procdff$518' with positive edge clock and positive level reset.
 Creating register for signal `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.\motor_dc' using process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:32$304'.
-  created $dff cell `$procdff$519' with positive edge clock.
+  created $dff cell `$procdff$504' with positive edge clock.
 Creating register for signal `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.\servo_dc' using process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:32$304'.
-  created $dff cell `$procdff$520' with positive edge clock.
+  created $dff cell `$procdff$505' with positive edge clock.
 Creating register for signal `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.\direction' using process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:32$304'.
-  created $dff cell `$procdff$521' with positive edge clock.
+  created $dff cell `$procdff$506' with positive edge clock.
 Creating register for signal `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.\ctl_valid' using process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:32$304'.
-  created $dff cell `$procdff$522' with positive edge clock.
+  created $dff cell `$procdff$507' with positive edge clock.
 Creating register for signal `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.\enable' using process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:32$304'.
-  created $dff cell `$procdff$523' with positive edge clock.
+  created $dff cell `$procdff$508' with positive edge clock.
 Creating register for signal `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.\frdiv' using process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:21$300'.
-  created $dff cell `$procdff$524' with positive edge clock.
+  created $dff cell `$procdff$509' with positive edge clock.
 Creating register for signal `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.\sclk' using process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:21$300'.
-  created $dff cell `$procdff$525' with positive edge clock.
+  created $dff cell `$procdff$510' with positive edge clock.
+Creating register for signal `\ir_decoder2.\ir_input_last' using process `\ir_decoder2.$proc$ir_decoder2.v:36$36'.
+  created $adff cell `$procdff$513' with positive edge clock and positive level reset.
+Creating register for signal `\ir_decoder2.\t1' using process `\ir_decoder2.$proc$ir_decoder2.v:36$36'.
+  created $adff cell `$procdff$516' with positive edge clock and positive level reset.
+Creating register for signal `\ir_decoder2.\bit_count' using process `\ir_decoder2.$proc$ir_decoder2.v:36$36'.
+  created $adff cell `$procdff$519' with positive edge clock and positive level reset.
+Creating register for signal `\ir_decoder2.\dem [5:0]' using process `\ir_decoder2.$proc$ir_decoder2.v:36$36'.
+  created $adff cell `$procdff$522' with positive edge clock and positive level reset.
+Creating register for signal `\ir_decoder2.\cmd' using process `\ir_decoder2.$proc$ir_decoder2.v:36$36'.
+  created $adff cell `$procdff$525' with positive edge clock and positive level reset.
 Creating register for signal `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.\clock_counter' using process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$motor_drv.sv:21$291'.
   created $adff cell `$procdff$528' with positive edge clock and positive level reset.
 Creating register for signal `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.\pwm_counter' using process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$motor_drv.sv:21$291'.
   created $adff cell `$procdff$531' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2.\pdmw_counter' using process `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2.$proc$servo_pdm2.sv:26$286'.
+Creating register for signal `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm.\pdm_done' using process `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm.$proc$servo_pdm.v:25$286'.
   created $adff cell `$procdff$534' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2.\div_counter' using process `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2.$proc$servo_pdm2.sv:26$286'.
+Creating register for signal `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm.\pdmw_counter' using process `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm.$proc$servo_pdm.v:25$286'.
   created $adff cell `$procdff$537' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2.\pdm_done' using process `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2.$proc$servo_pdm2.sv:26$286'.
+Creating register for signal `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm.\div_counter' using process `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm.$proc$servo_pdm.v:25$286'.
   created $adff cell `$procdff$540' with positive edge clock and positive level reset.
 Creating register for signal `\top.\ir_check_reg' using process `\top.$proc$top.sv:17$1'.
   created $dff cell `$procdff$541' with positive edge clock.
@@ -397,37 +397,37 @@ Found and cleaned up 1 empty switch in `\DPR16X4C.$proc$/home/aquatic72/Applicat
 Removing empty process `TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$200'.
 Found and cleaned up 1 empty switch in `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$176'.
 Removing empty process `TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:213$175'.
-Found and cleaned up 7 empty switches in `\ir_decoder2.$proc$ir_decoder2.v:36$43'.
-Removing empty process `ir_decoder2.$proc$ir_decoder2.v:36$43'.
 Removing empty process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:30$316'.
 Removing empty process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:20$315'.
 Found and cleaned up 9 empty switches in `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:32$304'.
 Removing empty process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:32$304'.
 Found and cleaned up 1 empty switch in `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:21$300'.
 Removing empty process `$paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.$proc$control.sv:21$300'.
+Found and cleaned up 7 empty switches in `\ir_decoder2.$proc$ir_decoder2.v:36$36'.
+Removing empty process `ir_decoder2.$proc$ir_decoder2.v:36$36'.
 Found and cleaned up 2 empty switches in `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$motor_drv.sv:21$291'.
 Removing empty process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$motor_drv.sv:21$291'.
-Found and cleaned up 4 empty switches in `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2.$proc$servo_pdm2.sv:26$286'.
-Removing empty process `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2.$proc$servo_pdm2.sv:26$286'.
+Found and cleaned up 4 empty switches in `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm.$proc$servo_pdm.v:25$286'.
+Removing empty process `$paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm.$proc$servo_pdm.v:25$286'.
 Removing empty process `top.$proc$top.sv:17$1'.
 Cleaned up 27 empty switches.
 
 6.4.12. Executing OPT_EXPR pass (perform const folding).
-Optimizing module ir_decoder2.
-<suppressed ~16 debug messages>
 Optimizing module $paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.
 <suppressed ~1 debug messages>
+Optimizing module ir_decoder2.
+<suppressed ~16 debug messages>
 Optimizing module $paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.
 <suppressed ~2 debug messages>
-Optimizing module $paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2.
+Optimizing module $paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm.
 <suppressed ~4 debug messages>
 Optimizing module top.
 
 6.5. Executing FLATTEN pass (flatten design).
-Deleting now unused module ir_decoder2.
 Deleting now unused module $paramod$dadf92117a5cb6ec6253a85ed864e3cfa47c2067\control.
+Deleting now unused module ir_decoder2.
 Deleting now unused module $paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.
-Deleting now unused module $paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm2.
+Deleting now unused module $paramod$cc5cfa50089fcf584c032a5c3f3768aa1a1f6e95\servo_pdm.
 <suppressed ~4 debug messages>
 
 6.6. Executing TRIBUF pass.
@@ -461,18 +461,18 @@ Removed a total of 1 cells.
 Running muxtree optimizer on module \top..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
-      Replacing known input bits on port B of cell $flatten\servo_inst.$procmux$473: \gpio [3] -> 1'1
-      Replacing known input bits on port A of cell $flatten\servo_inst.$procmux$469: \gpio [3] -> 1'0
+      Replacing known input bits on port B of cell $flatten\servo_inst.$procmux$491: \gpio [3] -> 1'1
+      Replacing known input bits on port A of cell $flatten\servo_inst.$procmux$487: \gpio [3] -> 1'0
   Analyzing evaluation results.
-    dead port 1/2 on $mux $flatten\decoder_inst.$procmux$345.
-    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$348.
-    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$350.
-    dead port 1/2 on $mux $flatten\decoder_inst.$procmux$357.
-    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$360.
-    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$362.
-    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$369.
-    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$371.
-    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$377.
+    dead port 1/2 on $mux $flatten\decoder_inst.$procmux$396.
+    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$399.
+    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$401.
+    dead port 1/2 on $mux $flatten\decoder_inst.$procmux$408.
+    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$411.
+    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$413.
+    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$420.
+    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$422.
+    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$428.
 Removed 9 multiplexer ports.
 <suppressed ~18 debug messages>
 
@@ -485,7 +485,7 @@ Finding identical cells in module `\top'.
 Removed a total of 0 cells.
 
 6.11.6. Executing OPT_DFF pass (perform DFF optimizations).
-Setting constant 1-bit at position 0 on $flatten\control_inst.$procdff$522 ($dff) from module top.
+Setting constant 1-bit at position 0 on $flatten\control_inst.$procdff$507 ($dff) from module top.
 
 6.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
@@ -597,18 +597,18 @@ Finding identical cells in module `\top'.
 Removed a total of 0 cells.
 
 6.13.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $flatten\servo_inst.$procdff$537 ($adff) from module top (D = $flatten\servo_inst.$0\div_counter[18:0], Q = \servo_inst.div_counter).
-Adding EN signal on $flatten\servo_inst.$procdff$534 ($adff) from module top (D = $flatten\servo_inst.$0\pdmw_counter[15:0], Q = \servo_inst.pdmw_counter).
+Adding EN signal on $flatten\servo_inst.$procdff$540 ($adff) from module top (D = $flatten\servo_inst.$0\div_counter[18:0], Q = \servo_inst.div_counter).
+Adding EN signal on $flatten\servo_inst.$procdff$537 ($adff) from module top (D = $flatten\servo_inst.$0\pdmw_counter[15:0], Q = \servo_inst.pdmw_counter).
 Adding EN signal on $flatten\motor_inst.$procdff$531 ($adff) from module top (D = $flatten\motor_inst.$add$motor_drv.sv:29$294_Y, Q = \motor_inst.pwm_counter).
-Adding EN signal on $flatten\decoder_inst.$procdff$518 ($adff) from module top (D = $flatten\decoder_inst.$6\cmd[31:0] [31:1], Q = \decoder_inst.cmd [31:1]).
-Adding EN signal on $flatten\decoder_inst.$procdff$518 ($adff) from module top (D = $flatten\decoder_inst.$6\cmd[31:0] [0], Q = \decoder_inst.cmd [0]).
-Adding EN signal on $flatten\decoder_inst.$procdff$512 ($adff) from module top (D = $flatten\decoder_inst.$procmux$394_Y, Q = \decoder_inst.bit_count).
-Adding EN signal on $flatten\control_inst.$procdff$525 ($dff) from module top (D = $flatten\control_inst.$not$control.sv:23$302_Y, Q = \control_inst.sclk).
-Adding SRST signal on $flatten\control_inst.$procdff$524 ($dff) from module top (D = $flatten\control_inst.$add$control.sv:26$303_Y [15:0], Q = \control_inst.frdiv, rval = 16'0000000000000000).
-Adding EN signal on $flatten\control_inst.$procdff$523 ($dff) from module top (D = $flatten\control_inst.$procmux$410_Y, Q = \control_inst.enable).
-Adding EN signal on $flatten\control_inst.$procdff$521 ($dff) from module top (D = $flatten\control_inst.$procmux$421_Y, Q = \control_inst.direction).
-Adding EN signal on $flatten\control_inst.$procdff$520 ($dff) from module top (D = $flatten\control_inst.$procmux$428_Y, Q = \control_inst.servo_dc).
-Adding EN signal on $flatten\control_inst.$procdff$519 ($dff) from module top (D = $flatten\control_inst.$procmux$443_Y, Q = \control_inst.motor_dc).
+Adding EN signal on $flatten\decoder_inst.$procdff$525 ($adff) from module top (D = $flatten\decoder_inst.$6\cmd[31:0] [31:1], Q = \decoder_inst.cmd [31:1]).
+Adding EN signal on $flatten\decoder_inst.$procdff$525 ($adff) from module top (D = $flatten\decoder_inst.$6\cmd[31:0] [0], Q = \decoder_inst.cmd [0]).
+Adding EN signal on $flatten\decoder_inst.$procdff$519 ($adff) from module top (D = $flatten\decoder_inst.$procmux$445_Y, Q = \decoder_inst.bit_count).
+Adding EN signal on $flatten\control_inst.$procdff$510 ($dff) from module top (D = $flatten\control_inst.$not$control.sv:23$302_Y, Q = \control_inst.sclk).
+Adding SRST signal on $flatten\control_inst.$procdff$509 ($dff) from module top (D = $flatten\control_inst.$add$control.sv:26$303_Y [15:0], Q = \control_inst.frdiv, rval = 16'0000000000000000).
+Adding EN signal on $flatten\control_inst.$procdff$508 ($dff) from module top (D = $flatten\control_inst.$procmux$340_Y, Q = \control_inst.enable).
+Adding EN signal on $flatten\control_inst.$procdff$506 ($dff) from module top (D = $flatten\control_inst.$procmux$351_Y, Q = \control_inst.direction).
+Adding EN signal on $flatten\control_inst.$procdff$505 ($dff) from module top (D = $flatten\control_inst.$procmux$358_Y, Q = \control_inst.servo_dc).
+Adding EN signal on $flatten\control_inst.$procdff$504 ($dff) from module top (D = $flatten\control_inst.$procmux$373_Y, Q = \control_inst.motor_dc).
 
 6.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
@@ -690,33 +690,33 @@ Removed top 31 bits (of 32) from mux cell top.$flatten\motor_inst.$ternary$motor
 Removed top 7 bits (of 8) from port B of cell top.$flatten\motor_inst.$add$motor_drv.sv:29$294 ($add).
 Removed top 31 bits (of 32) from port B of cell top.$flatten\motor_inst.$add$motor_drv.sv:26$292 ($add).
 Removed top 23 bits (of 32) from port Y of cell top.$flatten\motor_inst.$add$motor_drv.sv:26$292 ($add).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\servo_inst.$add$servo_pdm2.sv:40$289 ($add).
-Removed top 13 bits (of 32) from port Y of cell top.$flatten\servo_inst.$add$servo_pdm2.sv:40$289 ($add).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\servo_inst.$add$servo_pdm2.sv:34$288 ($add).
-Removed top 16 bits (of 32) from port Y of cell top.$flatten\servo_inst.$add$servo_pdm2.sv:34$288 ($add).
-Removed top 18 bits (of 32) from port A of cell top.$flatten\servo_inst.$add$servo_pdm2.sv:24$285 ($add).
-Removed top 17 bits (of 32) from port B of cell top.$flatten\servo_inst.$add$servo_pdm2.sv:24$285 ($add).
-Removed top 16 bits (of 32) from port Y of cell top.$flatten\servo_inst.$add$servo_pdm2.sv:24$285 ($add).
+Removed top 31 bits (of 32) from port B of cell top.$flatten\servo_inst.$add$servo_pdm.v:39$289 ($add).
+Removed top 13 bits (of 32) from port Y of cell top.$flatten\servo_inst.$add$servo_pdm.v:39$289 ($add).
+Removed top 31 bits (of 32) from port B of cell top.$flatten\servo_inst.$add$servo_pdm.v:33$288 ($add).
+Removed top 16 bits (of 32) from port Y of cell top.$flatten\servo_inst.$add$servo_pdm.v:33$288 ($add).
+Removed top 18 bits (of 32) from port A of cell top.$flatten\servo_inst.$add$servo_pdm.v:23$285 ($add).
+Removed top 17 bits (of 32) from port B of cell top.$flatten\servo_inst.$add$servo_pdm.v:23$285 ($add).
+Removed top 16 bits (of 32) from port Y of cell top.$flatten\servo_inst.$add$servo_pdm.v:23$285 ($add).
 Removed top 1 bits (of 2) from port B of cell top.$auto$opt_dff.cc:195:make_patterns_logic$597 ($ne).
 Removed top 1 bits (of 2) from port B of cell top.$auto$opt_dff.cc:195:make_patterns_logic$595 ($ne).
 Removed top 1 bits (of 2) from port B of cell top.$auto$opt_dff.cc:195:make_patterns_logic$588 ($ne).
 Removed top 1 bits (of 2) from port B of cell top.$auto$opt_dff.cc:195:make_patterns_logic$586 ($ne).
 Removed top 1 bits (of 2) from port B of cell top.$auto$opt_dff.cc:195:make_patterns_logic$553 ($ne).
-Removed top 22 bits (of 32) from port B of cell top.$flatten\decoder_inst.$lt$ir_decoder2.v:73$56 ($lt).
-Removed top 22 bits (of 32) from port B of cell top.$flatten\decoder_inst.$gt$ir_decoder2.v:73$55 ($gt).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\decoder_inst.$add$ir_decoder2.v:70$54 ($add).
-Removed top 24 bits (of 32) from port Y of cell top.$flatten\decoder_inst.$add$ir_decoder2.v:70$54 ($add).
-Removed top 23 bits (of 32) from port B of cell top.$flatten\decoder_inst.$gt$ir_decoder2.v:68$52 ($gt).
-Removed top 23 bits (of 32) from port B of cell top.$flatten\decoder_inst.$lt$ir_decoder2.v:68$51 ($lt).
-Removed top 20 bits (of 32) from port B of cell top.$flatten\decoder_inst.$lt$ir_decoder2.v:61$48 ($lt).
-Removed top 21 bits (of 32) from port B of cell top.$flatten\decoder_inst.$gt$ir_decoder2.v:61$47 ($gt).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\decoder_inst.$add$ir_decoder2.v:52$45 ($add).
-Removed top 11 bits (of 32) from port Y of cell top.$flatten\decoder_inst.$add$ir_decoder2.v:52$45 ($add).
-Removed top 3 bits (of 8) from port B of cell top.$flatten\decoder_inst.$eq$ir_decoder2.v:29$40 ($eq).
+Removed top 22 bits (of 32) from port B of cell top.$flatten\decoder_inst.$lt$ir_decoder2.v:73$49 ($lt).
+Removed top 22 bits (of 32) from port B of cell top.$flatten\decoder_inst.$gt$ir_decoder2.v:73$48 ($gt).
+Removed top 31 bits (of 32) from port B of cell top.$flatten\decoder_inst.$add$ir_decoder2.v:70$47 ($add).
+Removed top 24 bits (of 32) from port Y of cell top.$flatten\decoder_inst.$add$ir_decoder2.v:70$47 ($add).
+Removed top 23 bits (of 32) from port B of cell top.$flatten\decoder_inst.$gt$ir_decoder2.v:68$45 ($gt).
+Removed top 23 bits (of 32) from port B of cell top.$flatten\decoder_inst.$lt$ir_decoder2.v:68$44 ($lt).
+Removed top 20 bits (of 32) from port B of cell top.$flatten\decoder_inst.$lt$ir_decoder2.v:61$41 ($lt).
+Removed top 21 bits (of 32) from port B of cell top.$flatten\decoder_inst.$gt$ir_decoder2.v:61$40 ($gt).
+Removed top 31 bits (of 32) from port B of cell top.$flatten\decoder_inst.$add$ir_decoder2.v:52$38 ($add).
+Removed top 11 bits (of 32) from port Y of cell top.$flatten\decoder_inst.$add$ir_decoder2.v:52$38 ($add).
+Removed top 3 bits (of 8) from port B of cell top.$flatten\decoder_inst.$eq$ir_decoder2.v:29$33 ($eq).
 Removed top 16 bits (of 32) from wire top.$flatten\control_inst.$add$control.sv:26$303_Y.
-Removed top 11 bits (of 32) from wire top.$flatten\decoder_inst.$add$ir_decoder2.v:52$45_Y.
+Removed top 11 bits (of 32) from wire top.$flatten\decoder_inst.$add$ir_decoder2.v:52$38_Y.
 Removed top 23 bits (of 32) from wire top.$flatten\motor_inst.$add$motor_drv.sv:26$292_Y.
-Removed top 16 bits (of 32) from wire top.$flatten\servo_inst.$add$servo_pdm2.sv:34$288_Y.
+Removed top 16 bits (of 32) from wire top.$flatten\servo_inst.$add$servo_pdm.v:33$288_Y.
 
 6.15. Executing PEEPOPT pass (run peephole optimizers).
 
@@ -764,50 +764,50 @@ No more expansions possible.
 
 6.22. Executing ALUMACC pass (create $alu and $macc cells).
 Extracting $alu and $macc cells in module top:
-  creating $macc model for $flatten\decoder_inst.$mul$ir_decoder2.v:33$42 ($mul).
+  creating $macc model for $flatten\decoder_inst.$mul$ir_decoder2.v:33$35 ($mul).
   creating $macc model for $flatten\control_inst.$add$control.sv:26$303 ($add).
   creating $macc model for $flatten\control_inst.$add$control.sv:62$309 ($add).
   creating $macc model for $flatten\control_inst.$add$control.sv:66$312 ($add).
   creating $macc model for $flatten\control_inst.$sub$control.sv:58$307 ($sub).
   creating $macc model for $flatten\control_inst.$sub$control.sv:70$314 ($sub).
-  creating $macc model for $flatten\decoder_inst.$add$ir_decoder2.v:52$45 ($add).
-  creating $macc model for $flatten\decoder_inst.$add$ir_decoder2.v:70$54 ($add).
+  creating $macc model for $flatten\decoder_inst.$add$ir_decoder2.v:52$38 ($add).
+  creating $macc model for $flatten\decoder_inst.$add$ir_decoder2.v:70$47 ($add).
   creating $macc model for $flatten\motor_inst.$add$motor_drv.sv:26$292 ($add).
   creating $macc model for $flatten\motor_inst.$add$motor_drv.sv:29$294 ($add).
-  creating $macc model for $flatten\servo_inst.$add$servo_pdm2.sv:24$285 ($add).
-  creating $macc model for $flatten\servo_inst.$add$servo_pdm2.sv:34$288 ($add).
-  creating $macc model for $flatten\servo_inst.$add$servo_pdm2.sv:40$289 ($add).
-  creating $alu model for $macc $flatten\servo_inst.$add$servo_pdm2.sv:40$289.
-  creating $alu model for $macc $flatten\servo_inst.$add$servo_pdm2.sv:34$288.
-  creating $alu model for $macc $flatten\servo_inst.$add$servo_pdm2.sv:24$285.
+  creating $macc model for $flatten\servo_inst.$add$servo_pdm.v:23$285 ($add).
+  creating $macc model for $flatten\servo_inst.$add$servo_pdm.v:33$288 ($add).
+  creating $macc model for $flatten\servo_inst.$add$servo_pdm.v:39$289 ($add).
+  creating $alu model for $macc $flatten\servo_inst.$add$servo_pdm.v:39$289.
+  creating $alu model for $macc $flatten\servo_inst.$add$servo_pdm.v:33$288.
+  creating $alu model for $macc $flatten\servo_inst.$add$servo_pdm.v:23$285.
   creating $alu model for $macc $flatten\motor_inst.$add$motor_drv.sv:29$294.
   creating $alu model for $macc $flatten\motor_inst.$add$motor_drv.sv:26$292.
-  creating $alu model for $macc $flatten\decoder_inst.$add$ir_decoder2.v:70$54.
-  creating $alu model for $macc $flatten\decoder_inst.$add$ir_decoder2.v:52$45.
+  creating $alu model for $macc $flatten\decoder_inst.$add$ir_decoder2.v:70$47.
+  creating $alu model for $macc $flatten\decoder_inst.$add$ir_decoder2.v:52$38.
   creating $alu model for $macc $flatten\control_inst.$sub$control.sv:70$314.
   creating $alu model for $macc $flatten\control_inst.$sub$control.sv:58$307.
   creating $alu model for $macc $flatten\control_inst.$add$control.sv:66$312.
   creating $alu model for $macc $flatten\control_inst.$add$control.sv:62$309.
   creating $alu model for $macc $flatten\control_inst.$add$control.sv:26$303.
-  creating $macc cell for $flatten\decoder_inst.$mul$ir_decoder2.v:33$42: $auto$alumacc.cc:365:replace_macc$606
+  creating $macc cell for $flatten\decoder_inst.$mul$ir_decoder2.v:33$35: $auto$alumacc.cc:365:replace_macc$606
   creating $alu model for $flatten\control_inst.$gt$control.sv:57$306 ($gt): merged with $flatten\control_inst.$sub$control.sv:58$307.
   creating $alu model for $flatten\control_inst.$gt$control.sv:69$313 ($gt): new $alu
   creating $alu model for $flatten\control_inst.$lt$control.sv:61$308 ($lt): new $alu
   creating $alu model for $flatten\control_inst.$lt$control.sv:65$310 ($lt): new $alu
-  creating $alu model for $flatten\decoder_inst.$gt$ir_decoder2.v:61$47 ($gt): new $alu
-  creating $alu model for $flatten\decoder_inst.$gt$ir_decoder2.v:68$52 ($gt): new $alu
-  creating $alu model for $flatten\decoder_inst.$gt$ir_decoder2.v:73$55 ($gt): new $alu
-  creating $alu model for $flatten\decoder_inst.$lt$ir_decoder2.v:61$48 ($lt): new $alu
-  creating $alu model for $flatten\decoder_inst.$lt$ir_decoder2.v:68$51 ($lt): new $alu
-  creating $alu model for $flatten\decoder_inst.$lt$ir_decoder2.v:73$56 ($lt): new $alu
+  creating $alu model for $flatten\decoder_inst.$gt$ir_decoder2.v:61$40 ($gt): new $alu
+  creating $alu model for $flatten\decoder_inst.$gt$ir_decoder2.v:68$45 ($gt): new $alu
+  creating $alu model for $flatten\decoder_inst.$gt$ir_decoder2.v:73$48 ($gt): new $alu
+  creating $alu model for $flatten\decoder_inst.$lt$ir_decoder2.v:61$41 ($lt): new $alu
+  creating $alu model for $flatten\decoder_inst.$lt$ir_decoder2.v:68$44 ($lt): new $alu
+  creating $alu model for $flatten\decoder_inst.$lt$ir_decoder2.v:73$49 ($lt): new $alu
   creating $alu model for $flatten\motor_inst.$lt$motor_drv.sv:34$295 ($lt): new $alu
   creating $alu cell for $flatten\motor_inst.$lt$motor_drv.sv:34$295: $auto$alumacc.cc:495:replace_alu$617
-  creating $alu cell for $flatten\decoder_inst.$lt$ir_decoder2.v:73$56: $auto$alumacc.cc:495:replace_alu$622
-  creating $alu cell for $flatten\decoder_inst.$lt$ir_decoder2.v:68$51: $auto$alumacc.cc:495:replace_alu$627
-  creating $alu cell for $flatten\decoder_inst.$lt$ir_decoder2.v:61$48: $auto$alumacc.cc:495:replace_alu$632
-  creating $alu cell for $flatten\decoder_inst.$gt$ir_decoder2.v:73$55: $auto$alumacc.cc:495:replace_alu$637
-  creating $alu cell for $flatten\decoder_inst.$gt$ir_decoder2.v:68$52: $auto$alumacc.cc:495:replace_alu$648
-  creating $alu cell for $flatten\decoder_inst.$gt$ir_decoder2.v:61$47: $auto$alumacc.cc:495:replace_alu$659
+  creating $alu cell for $flatten\decoder_inst.$lt$ir_decoder2.v:73$49: $auto$alumacc.cc:495:replace_alu$622
+  creating $alu cell for $flatten\decoder_inst.$lt$ir_decoder2.v:68$44: $auto$alumacc.cc:495:replace_alu$627
+  creating $alu cell for $flatten\decoder_inst.$lt$ir_decoder2.v:61$41: $auto$alumacc.cc:495:replace_alu$632
+  creating $alu cell for $flatten\decoder_inst.$gt$ir_decoder2.v:73$48: $auto$alumacc.cc:495:replace_alu$637
+  creating $alu cell for $flatten\decoder_inst.$gt$ir_decoder2.v:68$45: $auto$alumacc.cc:495:replace_alu$648
+  creating $alu cell for $flatten\decoder_inst.$gt$ir_decoder2.v:61$40: $auto$alumacc.cc:495:replace_alu$659
   creating $alu cell for $flatten\control_inst.$lt$control.sv:65$310: $auto$alumacc.cc:495:replace_alu$670
   creating $alu cell for $flatten\control_inst.$lt$control.sv:61$308: $auto$alumacc.cc:495:replace_alu$675
   creating $alu cell for $flatten\control_inst.$gt$control.sv:69$313: $auto$alumacc.cc:495:replace_alu$680
@@ -816,13 +816,13 @@ Extracting $alu and $macc cells in module top:
   creating $alu cell for $flatten\control_inst.$add$control.sv:66$312: $auto$alumacc.cc:495:replace_alu$697
   creating $alu cell for $flatten\control_inst.$sub$control.sv:58$307, $flatten\control_inst.$gt$control.sv:57$306: $auto$alumacc.cc:495:replace_alu$700
   creating $alu cell for $flatten\control_inst.$sub$control.sv:70$314: $auto$alumacc.cc:495:replace_alu$711
-  creating $alu cell for $flatten\decoder_inst.$add$ir_decoder2.v:52$45: $auto$alumacc.cc:495:replace_alu$714
-  creating $alu cell for $flatten\decoder_inst.$add$ir_decoder2.v:70$54: $auto$alumacc.cc:495:replace_alu$717
+  creating $alu cell for $flatten\decoder_inst.$add$ir_decoder2.v:52$38: $auto$alumacc.cc:495:replace_alu$714
+  creating $alu cell for $flatten\decoder_inst.$add$ir_decoder2.v:70$47: $auto$alumacc.cc:495:replace_alu$717
   creating $alu cell for $flatten\motor_inst.$add$motor_drv.sv:26$292: $auto$alumacc.cc:495:replace_alu$720
   creating $alu cell for $flatten\motor_inst.$add$motor_drv.sv:29$294: $auto$alumacc.cc:495:replace_alu$723
-  creating $alu cell for $flatten\servo_inst.$add$servo_pdm2.sv:24$285: $auto$alumacc.cc:495:replace_alu$726
-  creating $alu cell for $flatten\servo_inst.$add$servo_pdm2.sv:34$288: $auto$alumacc.cc:495:replace_alu$729
-  creating $alu cell for $flatten\servo_inst.$add$servo_pdm2.sv:40$289: $auto$alumacc.cc:495:replace_alu$732
+  creating $alu cell for $flatten\servo_inst.$add$servo_pdm.v:23$285: $auto$alumacc.cc:495:replace_alu$726
+  creating $alu cell for $flatten\servo_inst.$add$servo_pdm.v:33$288: $auto$alumacc.cc:495:replace_alu$729
+  creating $alu cell for $flatten\servo_inst.$add$servo_pdm.v:39$289: $auto$alumacc.cc:495:replace_alu$732
   created 22 $alu and 1 $macc cells.
 
 6.23. Executing OPT pass (performing simple optimizations).
@@ -950,8 +950,8 @@ Finding identical cells in module `\top'.
 Removed a total of 2 cells.
 
 6.28.3. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $auto$ff.cc:266:slice$591 ($dffe) from module top (D = $flatten\control_inst.$procmux$443_Y [2:0], Q = \control_inst.motor_dc [2:0]).
-Adding EN signal on $auto$ff.cc:266:slice$582 ($dffe) from module top (D = $flatten\control_inst.$procmux$428_Y [2:0], Q = \control_inst.servo_dc [2:0]).
+Adding EN signal on $auto$ff.cc:266:slice$591 ($dffe) from module top (D = $flatten\control_inst.$procmux$373_Y [2:0], Q = \control_inst.motor_dc [2:0]).
+Adding EN signal on $auto$ff.cc:266:slice$582 ($dffe) from module top (D = $flatten\control_inst.$procmux$358_Y [2:0], Q = \control_inst.servo_dc [2:0]).
 
 6.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \top..
@@ -998,10 +998,10 @@ Removed 0 multiplexer ports.
   Optimizing cells in module \top.
     New input vector for $reduce_and cell $auto$opt_dff.cc:220:make_patterns_logic$895: { $auto$opt_dff.cc:194:make_patterns_logic$890 $auto$opt_dff.cc:194:make_patterns_logic$583 $auto$opt_dff.cc:194:make_patterns_logic$585 $auto$opt_dff.cc:194:make_patterns_logic$587 \control_inst.ir_ready \control_inst.enable $auto$opt_dff.cc:194:make_patterns_logic$892 }
     New input vector for $reduce_and cell $auto$opt_dff.cc:220:make_patterns_logic$887: { $auto$opt_dff.cc:194:make_patterns_logic$592 $auto$opt_dff.cc:194:make_patterns_logic$594 $auto$opt_dff.cc:194:make_patterns_logic$596 \control_inst.ir_ready \control_inst.enable $auto$opt_dff.cc:194:make_patterns_logic$884 }
-    Consolidated identical input bits for $pmux cell $flatten\control_inst.$procmux$428:
-      Old ports: A={ $flatten\control_inst.$procmux$433_Y [7:3] 3'x }, B={ $flatten\control_inst.$add$control.sv:62$309_Y [7:3] 11'xxx01111111 }, Y=$flatten\control_inst.$procmux$428_Y
-      New ports: A={ $flatten\control_inst.$procmux$433_Y [7:3] 1'x }, B={ $flatten\control_inst.$add$control.sv:62$309_Y [7:3] 7'x011111 }, Y={ $flatten\control_inst.$procmux$428_Y [7:3] $flatten\control_inst.$procmux$428_Y [0] }
-      New connections: $flatten\control_inst.$procmux$428_Y [2:1] = { $flatten\control_inst.$procmux$428_Y [0] $flatten\control_inst.$procmux$428_Y [0] }
+    Consolidated identical input bits for $pmux cell $flatten\control_inst.$procmux$358:
+      Old ports: A={ $flatten\control_inst.$procmux$363_Y [7:3] 3'x }, B={ $flatten\control_inst.$add$control.sv:62$309_Y [7:3] 11'xxx01111111 }, Y=$flatten\control_inst.$procmux$358_Y
+      New ports: A={ $flatten\control_inst.$procmux$363_Y [7:3] 1'x }, B={ $flatten\control_inst.$add$control.sv:62$309_Y [7:3] 7'x011111 }, Y={ $flatten\control_inst.$procmux$358_Y [7:3] $flatten\control_inst.$procmux$358_Y [0] }
+      New connections: $flatten\control_inst.$procmux$358_Y [2:1] = { $flatten\control_inst.$procmux$358_Y [0] $flatten\control_inst.$procmux$358_Y [0] }
   Optimizing cells in module \top.
 Performed a total of 3 changes.
 
@@ -1107,7 +1107,7 @@ Using template $paramod$c3cd1564c35d873179656addd6052d7ea8b6d991\_80_ecp5_alu fo
 Using template $paramod$20b1d0597707d55efcb9664e40f63985956d7680\_80_ecp5_alu for cells of type $alu.
 Using extmapper simplemap for cells of type $ne.
 Using extmapper maccmap for cells of type $macc_v2.
-  add $techmap605$flatten\decoder_inst.$mul$ir_decoder2.v:33$42.A * \gpio [0] (1x1 bits, unsigned)
+  add $techmap605$flatten\decoder_inst.$mul$ir_decoder2.v:33$35.A * \gpio [0] (1x1 bits, unsigned)
 Using template $paramod$26ba068b81d90b7844f694a2aa225ce0e4502019\_80_ecp5_alu for cells of type $alu.
 Using template $paramod$53700bbee849b2010ad0b60a61ccd204a10e24ca\_80_ecp5_alu for cells of type $alu.
 Using template $paramod$77511fd6a548f8ed566017c02ef4db095ab5a577\_80_ecp5_alu for cells of type $alu.
@@ -1222,9 +1222,9 @@ Generating RTLIL representation for module `\OLVDS'.
 Successfully finished Verilog frontend.
 
 6.35.2. Continuing TECHMAP pass.
-Using template \$_SDFF_PP0_ for cells of type $_SDFF_PP0_.
 Using template $paramod\$_DFFE_PN_\_TECHMAP_WIREINIT_Q_=1'0 for cells of type $_DFFE_PN_.
 Using template $paramod\$_DFFE_PP_\_TECHMAP_WIREINIT_Q_=1'x for cells of type $_DFFE_PP_.
+Using template \$_SDFF_PP0_ for cells of type $_SDFF_PP0_.
 Using template $paramod\$_DFF_P_\_TECHMAP_WIREINIT_Q_=1'x for cells of type $_DFF_P_.
 Using template $paramod\$_DFFE_PP_\_TECHMAP_WIREINIT_Q_=1'0 for cells of type $_DFFE_PP_.
 Using template \$_DFF_PP0_ for cells of type $_DFF_PP0_.
@@ -1590,8 +1590,8 @@ Successfully finished Verilog frontend.
 6.42.12.2. Continuing TECHMAP pass.
 Using template $paramod$37e41664cab9052a9b41c89036e0524f666a0fee\TRELLIS_FF for cells of type $paramod$37e41664cab9052a9b41c89036e0524f666a0fee\TRELLIS_FF.
 Using template $paramod$68581f66a8fa831820fa7633bd24ba569ae9d7e3\TRELLIS_FF for cells of type $paramod$68581f66a8fa831820fa7633bd24ba569ae9d7e3\TRELLIS_FF.
-Using template $paramod$fc0db0418c65f8f3e9cd6d60036af078dabe316c\TRELLIS_FF for cells of type $paramod$fc0db0418c65f8f3e9cd6d60036af078dabe316c\TRELLIS_FF.
 Using template $paramod$af6cfab7b64a03625b4e26db341709ec2a848ad1\TRELLIS_FF for cells of type $paramod$af6cfab7b64a03625b4e26db341709ec2a848ad1\TRELLIS_FF.
+Using template $paramod$fc0db0418c65f8f3e9cd6d60036af078dabe316c\TRELLIS_FF for cells of type $paramod$fc0db0418c65f8f3e9cd6d60036af078dabe316c\TRELLIS_FF.
 No more expansions possible.
 <suppressed ~121 debug messages>
 
@@ -1643,12 +1643,12 @@ Successfully finished Verilog frontend.
 
 6.42.17.2. Continuing TECHMAP pass.
 Using template $paramod$838872d5a4bab89607f53482b205c0fd50d8b82e\CCU2C for cells of type $paramod$838872d5a4bab89607f53482b205c0fd50d8b82e\CCU2C.
+Using extmapper simplemap for cells of type $or.
 Using extmapper simplemap for cells of type $and.
 Using extmapper simplemap for cells of type $not.
 Using extmapper simplemap for cells of type $xor.
-Using template $paramod\LUT2\INIT=4'1010 for cells of type LUT2.
 Using template $paramod\LUT4\INIT=16'1001011010101010 for cells of type LUT4.
-Using extmapper simplemap for cells of type $or.
+Using template $paramod\LUT2\INIT=4'1010 for cells of type LUT2.
 Using extmapper simplemap for cells of type $mux.
 No more expansions possible.
 <suppressed ~209 debug messages>

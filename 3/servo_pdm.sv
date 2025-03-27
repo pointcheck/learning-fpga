@@ -3,22 +3,23 @@ module servo_pdm
         parameter  clk_hz = 25000000,							// Global clock
         parameter  cyc_hz = 50,							// Frequency of produced PDM signal
 ) ( 
-        input  wire       rst,								// Global RESET signal
-        input  wire       clk,							// Global Clock
-        input  wire       en,							// Enable signal
-        input  reg [7:0]  duty,							// input Duty cycle value
-        output wire       pdm								// produced PDM signal
+        input  logic       rst,								// Global RESET signal
+        input  logic       clk,							// Global Clock
+        input  logic       en,							// Enable signal
+        input  logic [7:0]  duty,							// input Duty cycle value
+        output logic       pdm								// produced PDM signal
 );
 
-	wire [15:0] pdm_width;								// Calculating clocks number to count to needed PDM width (+ 1,1ms at the start)
-	reg [15:0] pdmw_counter;							// PDM width counter
+	logic [15:0] pdm_width;								// Calculating clocks number to count to needed PDM width (+ 1,1ms at the start)
+	logic [15:0] pdmw_counter;							// PDM width counter
 
 	localparam zero_dur = clk_hz / 1000 * 20;						// Calculating clocks number to count to 20ms @ 25MHz
 	localparam div_counter_w = $clog2(zero_dur);
 
-	reg [div_counter_w-1:0] div_counter;						// Calculating bit depth for clocks number
+	logic [div_counter_w-1:0] div_counter;						// Calculating bit depth for clocks number
 	
-	reg pdm_done;
+	logic pdm_done;
+	assign pdm_done = '1;
 	
 	assign pdm = pdm_done;
 	assign pdm_width = (duty << 6) + 27500;						// Calculating clocks number to count to needed PDM width (+ 1,1ms at the start)
