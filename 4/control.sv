@@ -89,8 +89,6 @@ module control
 					32'hC33DFE01: motor_dc <= 8'd0;						// ENTER
 					32'hDB25FE01: servo_dc <= 8'd127;					// HOME				
 
-					default: direction <= 1'd1;
-					
 					endcase
 				end
 				ack_int <= 1'd1;

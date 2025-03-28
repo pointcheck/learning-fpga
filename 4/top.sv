@@ -1,7 +1,7 @@
 module top (
 	input  logic clk25,
 	input  logic [2:0] key,
-	inout  logic [3:0] gpio,
+	inout  logic [4:0] gpio,
 	output logic [3:0] led
 );
 
@@ -17,9 +17,9 @@ module top (
 	logic [31:0] command;
 
 //	logic ir_check_reg;
-	assign led[2:0] = motor_dc[6:4];
+	assign led[3:0] = motor_dc[7:4];
 //	assign led[3:0] = 4'b1001;
-	assign led[3] = direction;
+//	assign led[0] = direction;
 //	assign led[3:1] = servo_dc[7:5];
 
 //	assign led[1:0] = command[17:16];
@@ -102,5 +102,18 @@ module top (
 		.command(command)
 						// Removed .test from ir_decoder
 	);	
+
+
+	logic uart_tx;
+	uart_sender uart_debug (
+		.clk(clk25),
+		.rst(rst),
+		.ir_ready(ir_ready),
+		.command(command),
+		.tx(uart_tx)
+	);
+
+	// Выводим TX через GPIO
+	assign gpio[4] = uart_tx;
 
 endmodule

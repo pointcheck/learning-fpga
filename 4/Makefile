@@ -1,5 +1,5 @@
 NAME = cart
-VERILOG += top.sv motor_drv.sv control.sv servo_pdm.sv ir_decoder_fix.v
+VERILOG += top.sv motor_drv.sv control.sv servo_pdm.sv ir_decoder_fix.v uart_sender.sv
 INC = ./
 LPF = karnix_cabga256.lpf
 DEVICE = 25k
