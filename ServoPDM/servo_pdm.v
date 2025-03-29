@@ -7,7 +7,7 @@ module servo_pdm
         input  wire       clk,  							// Global Clock
         input  wire       en,   							// Enable signal
         input  reg [7:0]  duty, 							// input Duty cycle value
-        output wire       pdm								// produced PDM signal
+        output wire       pdm_done								// produced PDM signal
 );
 
 	wire [15:0] pdm_width;								// Calculating clocks number to count to needed PDM width (+ 1,1ms at the start)
@@ -20,7 +20,8 @@ module servo_pdm
 	
 	reg pdm_done;
 	
-	assign pdm = pdm_done;
+	assign pdm_done = 0;
+	
 	assign pdm_width = (duty << 6) + 27500;						// Calculating clocks number to count to needed PDM width (+ 1,1ms at the start)
 	// assign pdm_width = (duty << 6) + (duty << 4) + 27500;	// To test	
 	
@@ -45,7 +46,6 @@ module servo_pdm
 					pdmw_counter <= '0;
 				end
 			end
-
 		end
 	end
 	
