@@ -20,8 +20,6 @@ module servo_pdm
 	
 	reg pdm_done;
 	
-	assign pdm_done = 0;
-	
 	assign pdm_width = (duty << 6) + 27500;						// Calculating clocks number to count to needed PDM width (+ 1,1ms at the start)
 	// assign pdm_width = (duty << 6) + (duty << 4) + 27500;	// To test	
 	
