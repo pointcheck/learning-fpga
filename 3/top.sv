@@ -1,6 +1,6 @@
 module top (
 	input  logic clk25,
-	input  logic [2:0] key,
+	input  logic [3:0] key,
 	inout  logic [3:0] gpio,
 	output logic [3:0] led
 );
@@ -16,36 +16,39 @@ module top (
 	logic ctl_valid;
 	logic [31:0] command;
 
-//	logic ir_check_reg;
-	assign led[2:0] = motor_dc[6:4];
-//	assign led[3:0] = 4'b1001;
-	assign led[3] = direction;
-//	assign led[3:1] = servo_dc[7:5];
-
-//	assign led[1:0] = command[17:16];
-//	assign led[0] = ir_ready;
-//	assign led[1] = ack;
-//	assign led[2] = enable;
-//	assign led[3] = direction;
-
-	
-/*	logic en1;
-	logic en0;
-	assign key[1] = en1;
-	assign key[2] = en0;
-	always_ff @(posedge clk25) begin
-		if (en1) command <= 32'hD12FFE01;
-		if (en0) command <= 32'hEF11FE01;
-	end
-*/
+	assign led[0] = enable;
+	assign led[1] = direction;
+	assign led[2] = motor_dc[7];
+	assign led[3] = servo_dc[7];
 
 	logic rst;
-	assign rst = key[0];
+	assign rst = key[3];
+
+/*	always_comb begin
+	
+	if (key[2:0] == 3'b000) led[3:0] = command[3:0];
+
+	else if (key[2:0] == 3'b001) led[3:0] = command[7:4];
+
+	else if (key[2:0] == 3'b010) led[3:0] = command[11:8];
+
+	else if (key[2:0] == 3'b011) led[3:0] = command[15:12];
+
+	else if (key[2:0] == 3'b100) led[3:0] = command[19:16];
+
+	else if (key[2:0] == 3'b101) led[3:0] = command[23:20];
+
+	else if (key[2:0] == 3'b110) led[3:0] = command[27:24];
+
+	else led[3:0] = command[31:28];
+	end
+*/
 
         control
         # (
                 .clk_hz(25000000),
-		.sclk_hz(256)
+		.sclk_hz(256),
+		.servo_step(16)
         ) control_inst (
 		.enable(enable),
 		.clk(clk25),
@@ -78,16 +81,15 @@ module top (
 
 
 
-	servo_pdm
+	servo_pdm_fix
 	# (
-		.clk_hz(25000000),
-		.cyc_hz(50)
+		.clk_hz(25000000)
 	) servo_inst (
 		.rst(rst),
 		.clk(clk25),
-		.en(1'd1),
+		.en(ctl_valid),
 		.duty(servo_dc),
-		.pdm(gpio[2])
+		.pdm_done(gpio[2])
 	);
 
 	
