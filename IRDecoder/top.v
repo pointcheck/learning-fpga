@@ -1,38 +1,50 @@
 module top (
 	input wire clk25,
 	inout wire [3:0] gpio,
-	output wire [3:0] led,
-	input wire [3:0] key
+	input wire [3:0] key,
+	output reg [3:0] led
 );
-
-	wire [3:0] test;
-	wire rst;
+	reg [31:0] ir_command;
+	reg ack;
 	wire ir_ready;
-	wire [31:0] ir_cmd;
+	wire rst;
 
 	assign rst = key[3];
 
-	assign led[3:0] = ir_cmd[3:0];
-	assign gpio[1:0] = test[1:0];
-	assign gpio[2] = test[2];
+	always_comb begin
+	
+		if (key[2:0] == 3'b000) led[3:0] = ir_command[3:0];
 
-	ir_decoder i_dec (
-			.clk(clk25),
-			.rst(rst),
-			.enable(1'b1),
-			.ir_input(gpio[3]),
-			.ready(ir_ready),
-	       		.command(ir_cmd),
-			.test(test));
+		else if (key[2:0] == 3'b001) led[3:0] = ir_command[7:4];
 
-	always_ff @(posedge clk25 or posedge rst)
-	begin
-		if(rst) begin
+		else if (key[2:0] == 3'b010) led[3:0] = ir_command[11:8];
 
-		end else begin
-			// To-Do
+		else if (key[2:0] == 3'b011) led[3:0] = ir_command[15:12];
 
-		end
+		else if (key[2:0] == 3'b100) led[3:0] = ir_command[19:16];
 
+		else if (key[2:0] == 3'b101) led[3:0] = ir_command[23:20];
+
+		else if (key[2:0] == 3'b110) led[3:0] = ir_command[27:24];
+
+		else led[3:0] = ir_command[31:28];
 	end
+	
+//	wire ack_out;
+//	assign ack_out = ack;
+
+	ir_decoder decoder_samsung(
+		.clk(clk25),
+		.rst(rst),
+		.ack(ack),
+		.enable('b1),
+		.ir_input(gpio[3]),
+		.ready(ir_ready),
+		.command(ir_command)       
+	);
+
+	
+
+
+	
 endmodule
