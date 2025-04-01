@@ -1,4 +1,4 @@
-NAME = dcss
+NAME = ir_decoder
 VERILOG += top.v ir_decoder.v
 INC = ./
 LPF = karnix_cabga256.lpf
