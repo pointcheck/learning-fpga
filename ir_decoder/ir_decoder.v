@@ -93,7 +93,7 @@ module ir_decoder (
 					end
 				end
 
-				//if (ack == 1) ready <= 1'd0;				// auxiliary signal to prevent commands from being repeated
+				if (ack == 1) ready <= 1'd0;				// auxiliary signal to prevent commands from being repeated
 
                         end
                 end
