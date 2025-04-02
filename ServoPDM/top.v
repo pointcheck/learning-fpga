@@ -1,7 +1,7 @@
 module top (					// Declaring inputs and outputs according to the configuration file (karnix_cabga256.lpf)
 	input wire clk25,
 	input wire [1:0] key,
-	output wire [3:0] led
+	output wire [0:0] led
 );
 	
 	servo_pdm # (				// Creating an instance of servo_pdm module (servo_pdm.v)

@@ -24,7 +24,6 @@ module ir_decoder (
 	reg [7:0] bit_count;								// count the number of bits to 31
 	reg [31:0] cmd;									// 32-bit from remote
 
-
 	always @(posedge clk or posedge rst)
 	begin
 		if(rst) begin
@@ -39,11 +38,12 @@ module ir_decoder (
 
 	assign command[31:0] = cmd[31:0];
 
-	assign strobe_front = (ir_input_last != ir_input) * ir_input; 			// clock front condition
+	assign strobe_front = (ir_input_last != ir_input) * ir_input;			// clock front condition
 
 	always @(posedge slow_clk or posedge rst)
         begin
 		if(rst) begin								// reset
+
 			ir_input_last <= 1'b1;
 		        t1 <= 'b0;
 			bit_count <= '0;
@@ -56,17 +56,19 @@ module ir_decoder (
 				
 				ir_input_last <= ir_input;
 				
-				if(strobe_front == 'b0)	 				// check clock front
+				if(strobe_front == 'b0)					// check clock front
 					t1<=t1+ 'b1;
 				else begin
 						
-					if(t1 == 21'h1fffff) begin 			// time restrictions
+					if(t1 == 21'h1fffff) begin			// time restrictions
+
 						t1 <= '0;
 						bit_count <= '0;
 						cmd <= '0;
 					end
 
 					if(t1>START_MIN  && t1<START_MAX) begin		// start signal
+
 						bit_count <= '0;
 						cmd <= '0;
 					end
@@ -74,11 +76,13 @@ module ir_decoder (
 					if(!ready) begin				// ready is set to 1 when the full command is written
 					
 						if(t1<T0_MAX && t1>T0_MIN) begin	// signal "0"
+
 							cmd = {1'b0, cmd[31:1]};
 							bit_count<=bit_count+'b1;	
 						end
 
 						if(t1>T1_MIN && t1<T1_MAX) begin	// signal "1"
+
 							cmd = {1'b1, cmd[31:1]};
 							bit_count <= bit_count + 'b1;
 						end
@@ -88,6 +92,7 @@ module ir_decoder (
 						ready <= 1;
 					end
 				end
+
 				//if (ack == 1) ready <= 1'd0;				// auxiliary signal to prevent commands from being repeated
 
                         end
