@@ -5,7 +5,6 @@ module top (
 	output reg [3:0] led
 );
 	reg [31:0] ir_command;
-	reg ack;
 	wire ir_ready;
 	wire rst;
 
@@ -29,14 +28,11 @@ module top (
 
 		else led[3:0] = ir_command[31:28];
 	end
-	
-//	wire ack_out;
-//	assign ack_out = ack;
 
 	ir_decoder decoder_samsung(
 		.clk(clk25),
 		.rst(rst),
-		.ack(ack),
+		.ack(1'd1),
 		.enable('b1),
 		.ir_input(gpio[3]),
 		.ready(ir_ready),

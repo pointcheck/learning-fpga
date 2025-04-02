@@ -49,7 +49,7 @@ endif
 fw: $(NAME).bit
 
 $(NAME).bit: $(LPF) $(VERILOG)
-	yosys -p "verilog_defaults -add -I$(subst :, -I,$(INC))" -p "read_verilog -sv $(VERILOG)" -p "synth_ecp5 -json $(NAME).json -top top" -l $(NAME).yosys.log
+	yosys -p "verilog_defaults -add -I$(subst :, -I,$(INC))" -p "read_verilog -sv $(VERILOG)" -p "synth_ecp5 -noabc9 -json $(NAME).json -top top" -l $(NAME).yosys.log
 	nextpnr-ecp5 --package $(PACKAGE) --$(DEVICE) --json $(NAME).json --textcfg $(NAME)_out.config --lpf $(LPF) --lpf-allow-unconstrained -l $(NAME).nextpnr.log 
 	ecppack --compress --freq 38.8 --input $(NAME)_out.config --bit $(NAME).bit
 	$(MAKE) check
