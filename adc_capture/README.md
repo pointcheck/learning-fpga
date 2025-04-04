@@ -1,8 +1,8 @@
 ## Моторизированная тележка управляемая по ИК от стандартного пульта ДУ
 ### Модуль цифровой схемы для опроса АЦП (adc_capture)
 
-Данный модуль посылает сигналы для опроса АЦП [ADC128S052] (https://static.chipdip.ru/lib/827/DOC031827742.pdf).
-Модуль разработан для платы ["Карно"] (https://github.com/Fabmicro-LLC/Karnix_ASB-254/blob/master/Karnix_ASB-254-v1.1/schematics/Karnix_ASB.pdf) на базе Lattice ECP5.
+Данный модуль посылает сигналы для опроса АЦП [ADC128S052](https://static.chipdip.ru/lib/827/DOC031827742.pdf).
+Модуль разработан для платы ["Карно"](https://github.com/Fabmicro-LLC/Karnix_ASB-254/blob/master/Karnix_ASB-254-v1.1/schematics/Karnix_ASB.pdf) на базе Lattice ECP5.
 
 #### Запуск на ОС Linux:
 1. Установить инструментарий: [YosysHQ](https://github.com/YosysHQ/oss-cad-suite-build/releases/), [OpenFPGALoader](https://github.com/trabucayre/openFPGALoader).
@@ -37,12 +37,12 @@
 
 Ниже представлен рисунок схемы преобразования:
 
-[Схемы] (https://i.ibb.co/vxFh3NNr/image.png)
+[Схемы](https://i.ibb.co/vxFh3NNr/image.png)
 
 #### Подключение к пинам на плате "Карно";
 Ниже представлены скриншоты с изображением адресов пинов АЦП, по которым он подключен к ПЛИС:
 
-[Управляющие пины] (https://i.ibb.co/LhsV9h4c/image.png)
+[Управляющие пины](https://i.ibb.co/LhsV9h4c/image.png)
 
 #### Тестирование модуля:
 Для отдельного тестирования модуля предусмотрен top.sv файл, связывающий сигналы с кнопками и светодиодами на плате.
@@ -56,7 +56,7 @@
 | `3'b100`          | `{1'b0, address}`                             | Отображает 3 бита адреса АЦП с дополнительным нулевым битом |
 | `default`         | `{rst, cs, adc_ack, adc_ready}`               | Отображает статусные сигналы:            |
 |                   |                                               | - `rst` (сигнал сброса)                   |
-|                   |                                               | - `cs` (сигнал выборки АЦП)              |
-|                   |                                               | - `adc_ack` (подтверждение обработки)    |
-|                   |                                               | - `adc_ready` (готовность АЦП)           |
+|                   |                                               | - `cs` (сигнал работы АЦП)              |
+|                   |                                               | - `adc_ack` (завершение обработки)    |
+|                   |                                               | - `adc_ready` (завершение преобразования) |
 
