@@ -1,6 +1,5 @@
-NAME = ir_decoder
-VERILOG += top.v
-VERILOG += ir_decoder.v
+NAME = control
+VERILOG += top.sv control.sv
 INC = ./
 LPF = karnix_cabga256.lpf
 DEVICE = 25k
@@ -50,7 +49,7 @@ endif
 fw: $(NAME).bit
 
 $(NAME).bit: $(LPF) $(VERILOG)
-	yosys -p "verilog_defaults -add -I$(subst :, -I,$(INC))" -p "read_verilog -sv $(VERILOG)" -p "synth_ecp5 -json $(NAME).json -top top" -l $(NAME).yosys.log
+	yosys -p "verilog_defaults -add -I$(subst :, -I,$(INC))" -p "read_verilog -sv $(VERILOG)" -p "synth_ecp5 -noabc9 -json $(NAME).json -top top" -l $(NAME).yosys.log
 	nextpnr-ecp5 --package $(PACKAGE) --$(DEVICE) --json $(NAME).json --textcfg $(NAME)_out.config --lpf $(LPF) --lpf-allow-unconstrained -l $(NAME).nextpnr.log 
 	ecppack --compress --freq 38.8 --input $(NAME)_out.config --bit $(NAME).bit
 	$(MAKE) check
@@ -58,7 +57,7 @@ $(NAME).bit: $(LPF) $(VERILOG)
 
 .PHONY: graph 
 graph: $(LPF) $(VERILOG)
-	yosys -p "verilog_defaults -add -I$(subst :, -I,$(INC))" -p "read_verilog -sv +/ecp5/cells_bb.v" -p "hierarchy -check -top top" -p "proc; opt; fsm; memory; opt" -p "synth_ecp5 -noabc9 -top top -json $(NAME).json" -p "show -prefix $(NAME) -notitle -colors 2 -width -format dot" $(VERILOG) | tee $(NAME).yosys.log
+	yosys -p "verilog_defaults -add -I$(subst :, -I,$(INC))" -p "read_verilog -sv +/ecp5/cells_bb.v" -p "hierarchy -check -top top" -p "proc; opt; fsm; memory; opt" -p "synth_ecp5 -noabc9 -top top -json $(NAME).json" -p "show -prefix $(NAME) -notitle -colors 2 -width -format dot" $(VERILOG) -l $(NAME).yosys.log
 	@if [ -f "`which dot`" ]; then \
 		echo "Generating PDFs with schematics..."; \
 		dot -Tpdf -O $(NAME).dot; \
@@ -67,7 +66,7 @@ graph: $(LPF) $(VERILOG)
 	fi
 	netlistsvg -o $(NAME).svg $(NAME).json
 	#@echo "Generating SVGs with routing and placement..."
-	#nextpnr-ecp5 --package $(PACKAGE) --$(DEVICE) --json $(NAME).json --textcfg $(NAME)_out.config --lpf $(LPF) --lpf-allow-unconstrained --placed-svg $(NAME)-placed.svg --routed-svg $(NAME)-routed.svg | tee $(NAME).nextpnr.log
+	#nextpnr-ecp5 --package $(PACKAGE) --$(DEVICE) --json $(NAME).json --textcfg $(NAME)_out.config --lpf $(LPF) --lpf-allow-unconstrained --placed-svg $(NAME)-placed.svg --routed-svg $(NAME)-routed.svg -l $(NAME).nextpnr.log
 	$(MAKE) check
 	@if [ -f "`which xdot`" ]; then \
 		xdot $(NAME).dot; \

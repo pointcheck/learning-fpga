@@ -1,9 +1,10 @@
 module debouncer (
-	input clk,
-	input button_in,
-	output button_pressed,
-	output button_state,
-	output button_released
+	input logic clk,
+	input logic rst,
+	input logic button_in,
+	output logic button_pressed,
+	output logic button_state,
+	output logic button_released
 );
 
 	logic button_sync_0;							// Declaring 2 regs to sync clk and button_in signals
