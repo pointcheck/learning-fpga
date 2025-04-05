@@ -1,6 +1,6 @@
 module top
 # (
-	parameter sclk2_hz = 1
+	parameter sclk2_hz = 256000
 ) (
 	input  logic clk25,
 	input  logic [3:0] key,
@@ -8,7 +8,9 @@ module top
 	output logic [3:0] led,
 	output logic adc_spi_mosi,
 	output logic adc_spi_sclk,
-	output logic adc_spi_csn
+	output logic adc_spi_csn,
+
+	output logic [3:0] gpio
 );
 
 	logic rst;
@@ -24,8 +26,8 @@ module top
 
 	adc_capture # (
 		.clk_hz(25000000),
-		.sclk_hz(5000000),
-		.cycle_pause(10)
+		.sclk_hz(500000),
+		.cycle_pause(30)
 	) adc_capture_inst (
 		.clk(clk25),
 		.rst(rst),
@@ -40,7 +42,7 @@ module top
 		.d_signal(d_signal)
 	);
 
-	localparam CLOCK_DIV = 25000000 / (2 * sclk2_hz) - 1;
+/*	localparam CLOCK_DIV = 25000000 / (2 * sclk2_hz) - 1;
 	logic [$clog2(CLOCK_DIV) - 1:0] clkdiv;
 
 	logic sclk2;
@@ -57,8 +59,8 @@ module top
 		end
 
 	end
-
-	always_ff @(posedge sclk2 or posedge rst) begin
+*/
+	always_ff @(posedge sclk or posedge rst) begin
 
 		if (rst) begin
 			adc_ack <= 1'd0;
@@ -67,6 +69,9 @@ module top
 			
 		end else if (adc_ready) begin
 			adc_ack <= 1'd1;
+//			address <= address + 3'b001;
+			address <= 3'b001;
+			
 		end else begin
 			adc_ack <= 1'd0;
 		end
@@ -77,6 +82,11 @@ module top
 	assign adc_spi_mosi = din_bit;
 	assign adc_spi_csn = cs;
 	assign dout_bit = adc_spi_miso;
+
+	assign gpio[0] = sclk;
+	assign gpio[1] = cs;
+	assign gpio[2] = din_bit;
+	assign gpio[3] = dout_bit;
 
 	assign rst = key[3];
 

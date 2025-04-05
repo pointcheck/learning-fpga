@@ -20,14 +20,20 @@ module adc_capture
 	localparam MAX_DIV = clk_hz / (2 * sclk_hz) - 1;			// Dividing clk_hz to sclk_hz
 	logic [$clog2(MAX_DIV) - 1:0] frdiv;
 
+	logic clk2;
 	always_ff @(posedge clk or posedge rst) begin
 
 		if (rst) begin
 			sclk <= 1'd0;
+			clk2 <= 1'd0;
 			frdiv <= 'd0;
 		end else begin
 			if (frdiv >= MAX_DIV) begin
-				sclk <= ~sclk;
+				clk2 <= ~clk2;
+
+				if (~cs) sclk <= ~sclk;
+
+				frdiv <= 'd0;
 			end else begin
 				frdiv <= frdiv + 'd1;
 			end
@@ -39,16 +45,18 @@ module adc_capture
 	logic [15:0] dout;						// Declaring what to get from the DOUT port: 0000 + d_signal(12-bit)
 	assign d_signal = dout[11:0];
 
-	logic [3:0] cs_reg;						// cs_reg(4-bit) is used to count length of ADC's work cycle (16 slowed clocks sclk)
+	logic [4:0] cs_reg;						// cs_reg(4-bit) is used to count length of ADC's work cycle (16 slowed clocks sclk)
 	logic [$clog2(cycle_pause) - 1:0] cs_pause;			// cs_pause is used to count length of ADC's pause between work cycles (cycle_pause slowed clocks)
 
-	always_ff @(posedge sclk or posedge rst) begin
+
+
+	always_ff @(posedge clk2 or posedge rst) begin
 
 		if (rst) begin						// Resetting all regs (not inputs except dout_bit)
 
 			adc_ready <= 1'd0;
 
-			cs_reg <= 4'd0;
+			cs_reg <= 5'd0;
 			cs_pause <= 'd0;
 			cs <= 1'd0;
 
@@ -56,38 +64,37 @@ module adc_capture
 			din <= 8'd0;
 
 			dout <= 16'd0;
-//			dout_bit <= 1'd0;
-//			d_signal <= 12'd0;
-
+						
 		end else begin
+			
+			// 000 001 00
+			din[7:0] <= {2'b00, address, 3'b000};
 
-			if (cs) begin					// Performing single work cycle (cs = 1)
-
-				din <= {3'b000, address, 2'b00};
+			if (cs == 1'd0) begin					// Performing single work cycle (cs = 1)
 
 				if (cs_reg < 8) begin
-					din_bit <= din[7 - cs_reg];	// Sending MSB to ADC DIN (000 + address + 00)
+					din_bit <= din[5'd7 - cs_reg];	// Sending MSB to ADC DIN (000 + address + 00)
 				end
 
-				dout <= {dout[15:0], dout_bit};		// Recieving MSB from ADC DOUT and shifting it to the left (0000 + d_signal) 
+				dout[15:0] <= {dout[14:0], dout_bit};		// Recieving MSB from ADC DOUT and shifting it to the left (0000 + d_signal) 
 
-				if (&cs_reg) begin			// Clearing cs after 16 slowed clocks (end of work cycle)
-					cs <= 1'd0;
-					cs_reg <= 4'd0;
+				if (cs_reg == 5'd16) begin			// Clearing cs after 16 slowed clocks (end of work cycle)
+					cs <= 1'd1;
+					cs_reg <= 5'd0;
 					adc_ready <= 1'd1;		// Setting adc_ready after finishing work cycle
 
 				end else begin
-					cs_reg <= cs_reg + 1'd1;
+					cs_reg <= cs_reg + 5'd1;
 				end
 
 			end else begin					// Performing pause before another work cycle
 
 				if (cs_pause >= cycle_pause) begin	// Setting cs after cycle_pause slowed clocks
-					cs <= 1'd1;
+					cs <= 1'd0;
 					cs_pause <= 'd0;
 
 				end else begin
-					cs_pause <= cs_pause + 1'd1;
+					cs_pause <= cs_pause + 'd1;
 				end
 
 				if (adc_ack) begin
@@ -101,3 +108,9 @@ module adc_capture
 	end
 
 endmodule
+
+// При частоте 5 Мгц период одного цикла = 3.2 мкс,
+// что соответствует 312.5 кГц
+
+// Мерим 9.6 мкс через 16 МГц = 
+// 000 address(3-bit) 00
