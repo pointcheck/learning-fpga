@@ -69,8 +69,7 @@ module top
 			
 		end else if (adc_ready) begin
 			adc_ack <= 1'd1;
-//			address <= address + 3'b001;
-			address <= 3'b001;
+			address <= 3'b011;
 			
 		end else begin
 			adc_ack <= 1'd0;
