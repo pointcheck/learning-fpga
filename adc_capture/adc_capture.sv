@@ -48,7 +48,21 @@ module adc_capture
 	logic [4:0] cs_reg;						// cs_reg(4-bit) is used to count length of ADC's work cycle (16 slowed clocks sclk)
 	logic [$clog2(cycle_pause) - 1:0] cs_pause;			// cs_pause is used to count length of ADC's pause between work cycles (cycle_pause slowed clocks)
 
+	always_ff @(negedge clk2 or posedge rst) begin
+		if(rst) begin
+			din_bit <= 1'd0;
+                        din <= 8'd0;
+		end else begin
+			// 00 address[2:0] 000
+			din[7:0] <= {2'b00, address, 3'b00};
+			if (cs == 1'd0) begin                                   // Performing single work cycle (cs = 1)
 
+				if (cs_reg < 8) begin
+					din_bit <= din[5'd7 - cs_reg];  // Sending MSB to ADC DIN (000 + address + 00)
+				end
+			end
+		end	
+	end
 
 	always_ff @(posedge clk2 or posedge rst) begin
 
@@ -60,21 +74,21 @@ module adc_capture
 			cs_pause <= 'd0;
 			cs <= 1'd0;
 
-			din_bit <= 1'd0;
-			din <= 8'd0;
+			//din_bit <= 1'd0;
+			//din <= 8'd0;
 
 			dout <= 16'd0;
 						
 		end else begin
 			
-			// 000 001 00
-			din[7:0] <= {2'b00, address, 3'b000};
+			// 00 address[2:0] 000
+		//	din[7:0] <= {1'b0, address, 4'b0};
 
 			if (cs == 1'd0) begin					// Performing single work cycle (cs = 1)
 
-				if (cs_reg < 8) begin
-					din_bit <= din[5'd7 - cs_reg];	// Sending MSB to ADC DIN (000 + address + 00)
-				end
+//				if (cs_reg < 8) begin
+//					din_bit <= din[5'd7 - cs_reg];	// Sending MSB to ADC DIN (000 + address + 00)
+//				end
 
 				dout[15:0] <= {dout[14:0], dout_bit};		// Recieving MSB from ADC DOUT and shifting it to the left (0000 + d_signal) 
 

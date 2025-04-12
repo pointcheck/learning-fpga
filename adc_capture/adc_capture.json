@@ -35,7 +35,7 @@
         }
       },
       "cells": {
-        "$specify$22": {
+        "$specify$24": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -66,7 +66,7 @@
             "SRC": [ 2 ]
           }
         },
-        "$specify$23": {
+        "$specify$25": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -97,7 +97,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$24": {
+        "$specify$26": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -128,7 +128,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$25": {
+        "$specify$27": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -159,7 +159,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$26": {
+        "$specify$28": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -274,7 +274,7 @@
         }
       },
       "cells": {
-        "$specify$27": {
+        "$specify$29": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -305,7 +305,7 @@
             "SRC": [ 2 ]
           }
         },
-        "$specify$28": {
+        "$specify$30": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -336,7 +336,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$29": {
+        "$specify$31": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -367,7 +367,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$30": {
+        "$specify$32": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -398,7 +398,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$31": {
+        "$specify$33": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -429,7 +429,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$32": {
+        "$specify$34": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -555,7 +555,7 @@
         }
       },
       "cells": {
-        "$specify$33": {
+        "$specify$35": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -586,7 +586,7 @@
             "SRC": [ 2 ]
           }
         },
-        "$specify$34": {
+        "$specify$36": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -617,7 +617,7 @@
             "SRC": [ 3 ]
           }
         },
-        "$specify$35": {
+        "$specify$37": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -648,7 +648,7 @@
             "SRC": [ 4 ]
           }
         },
-        "$specify$36": {
+        "$specify$38": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -679,7 +679,7 @@
             "SRC": [ 5 ]
           }
         },
-        "$specify$37": {
+        "$specify$39": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -710,7 +710,7 @@
             "SRC": [ 6 ]
           }
         },
-        "$specify$38": {
+        "$specify$40": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -741,7 +741,7 @@
             "SRC": [ 7 ]
           }
         },
-        "$specify$39": {
+        "$specify$41": {
           "hide_name": 1,
           "type": "$specify2",
           "parameters": {
@@ -21140,7 +21140,7 @@
     "top": {
       "attributes": {
         "top": "00000000000000000000000000000001",
-        "src": "top.sv:1.1-108.10"
+        "src": "top.sv:1.1-107.10"
       },
       "parameter_default_values": {
         "sclk2_hz": "00000000000000111110100000000000"
@@ -21281,79 +21281,7 @@
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
-            "INIT": "1110000100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:128.32-129.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ 3 ],
-            "B": [ 4 ],
-            "C": [ 5 ],
-            "D": [ 16 ],
-            "Z": [ 25 ]
-          }
-        },
-        "adc_ack_LUT4_D_Z_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "0100000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:128.32-129.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ 5 ],
-            "B": [ 3 ],
-            "C": [ 4 ],
-            "D": [ 26 ],
-            "Z": [ 27 ]
-          }
-        },
-        "adc_ack_LUT4_D_Z_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:138.19-138.63"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 28 ],
-            "BLUT": [ 29 ],
-            "C0": [ 3 ],
-            "Z": [ 30 ]
-          }
-        },
-        "adc_ack_LUT4_D_Z_PFUMX_Z_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "1111111111110011"
+            "INIT": "0000001111111111"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -21368,17 +21296,17 @@
           },
           "connections": {
             "A": [ "0" ],
-            "B": [ 31 ],
-            "C": [ 5 ],
-            "D": [ 4 ],
-            "Z": [ 28 ]
+            "B": [ 3 ],
+            "C": [ 4 ],
+            "D": [ 16 ],
+            "Z": [ 25 ]
           }
         },
-        "adc_ack_LUT4_D_Z_PFUMX_Z_BLUT_LUT4_Z": {
+        "adc_ack_LUT4_D_1": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
-            "INIT": "1111001111111111"
+            "INIT": "0111110001111111"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -21392,11 +21320,11 @@
             "Z": "output"
           },
           "connections": {
-            "A": [ "0" ],
-            "B": [ 32 ],
-            "C": [ 5 ],
-            "D": [ 4 ],
-            "Z": [ 29 ]
+            "A": [ 26 ],
+            "B": [ 3 ],
+            "C": [ 4 ],
+            "D": [ 16 ],
+            "Z": [ 27 ]
           }
         },
         "adc_ack_TRELLIS_FF_Q": {
@@ -21413,7 +21341,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.sv:63.2-79.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "top.sv:63.2-78.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -21423,7 +21351,7 @@
           },
           "connections": {
             "CLK": [ 13 ],
-            "DI": [ 33 ],
+            "DI": [ 28 ],
             "LSR": [ 6 ],
             "Q": [ 16 ]
           }
@@ -21439,7 +21367,7 @@
             "module": "$paramod$88e6312d129145fdfa4a5918d09839336084df25\\adc_capture",
             "module_dynports": "00000000000000000000000000000001",
             "module_hdlname": "adc_capture",
-            "module_src": "adc_capture.sv:1.1-110.10"
+            "module_src": "adc_capture.sv:1.1-124.10"
           },
           "port_directions": {
           },
@@ -21467,127 +21395,8 @@
             "A": [ 3 ],
             "B": [ 4 ],
             "C": [ 5 ],
-            "D": [ 33 ],
-            "Z": [ 34 ]
-          }
-        },
-        "adc_capture_inst.adc_ready_LUT4_D_Z_PFUMX_Z": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:138.19-138.63"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 35 ],
-            "BLUT": [ 36 ],
-            "C0": [ 5 ],
-            "Z": [ 37 ]
-          }
-        },
-        "adc_capture_inst.adc_ready_LUT4_D_Z_PFUMX_Z_1": {
-          "hide_name": 0,
-          "type": "PFUMX",
-          "parameters": {
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:138.19-138.63"
-          },
-          "port_directions": {
-            "ALUT": "input",
-            "BLUT": "input",
-            "C0": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "ALUT": [ 38 ],
-            "BLUT": [ 39 ],
-            "C0": [ 4 ],
-            "Z": [ 40 ]
-          }
-        },
-        "adc_capture_inst.adc_ready_LUT4_D_Z_PFUMX_Z_1_ALUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "1111010111110011"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:136.39-137.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ 41 ],
-            "B": [ 42 ],
-            "C": [ 5 ],
-            "D": [ 3 ],
-            "Z": [ 38 ]
-          }
-        },
-        "adc_capture_inst.adc_ready_LUT4_D_Z_PFUMX_Z_1_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "1111111111111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:134.39-135.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 39 ]
-          }
-        },
-        "adc_capture_inst.adc_ready_LUT4_D_Z_PFUMX_Z_BLUT_LUT4_Z": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "1111001111111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:134.39-135.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ 43 ],
-            "C": [ 4 ],
-            "D": [ 3 ],
-            "Z": [ 36 ]
+            "D": [ 28 ],
+            "Z": [ 29 ]
           }
         },
         "adc_capture_inst.adc_ready_TRELLIS_FF_Q": {
@@ -21604,7 +21413,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
           },
           "port_directions": {
             "CE": "input",
@@ -21615,10 +21424,10 @@
           },
           "connections": {
             "CE": [ 17 ],
-            "CLK": [ 44 ],
-            "DI": [ 45 ],
+            "CLK": [ 30 ],
+            "DI": [ 31 ],
             "LSR": [ 6 ],
-            "Q": [ 33 ]
+            "Q": [ 28 ]
           }
         },
         "adc_capture_inst.adc_ready_TRELLIS_FF_Q_DI_LUT4_Z": {
@@ -21643,7 +21452,138 @@
             "B": [ "0" ],
             "C": [ "0" ],
             "D": [ 14 ],
-            "Z": [ 45 ]
+            "Z": [ 31 ]
+          }
+        },
+        "adc_capture_inst.address_LUT4_D": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0001000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:128.32-129.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "C": [ 5 ],
+            "D": [ 32 ],
+            "Z": [ 33 ]
+          }
+        },
+        "adc_capture_inst.address_LUT4_D_Z_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0001000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:128.32-129.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 4 ],
+            "C": [ 3 ],
+            "D": [ 34 ],
+            "Z": [ 35 ]
+          }
+        },
+        "adc_capture_inst.address_LUT4_D_Z_LUT4_Z_1": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0001000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:128.32-129.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 3 ],
+            "C": [ 4 ],
+            "D": [ 36 ],
+            "Z": [ 37 ]
+          }
+        },
+        "adc_capture_inst.address_LUT4_D_Z_LUT4_Z_2": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0100000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:128.32-129.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 3 ],
+            "C": [ 4 ],
+            "D": [ 38 ],
+            "Z": [ 39 ]
+          }
+        },
+        "adc_capture_inst.address_TRELLIS_FF_Q": {
+          "hide_name": 0,
+          "type": "TRELLIS_FF",
+          "parameters": {
+            "CEMUX": "CE",
+            "CLKMUX": "CLK",
+            "GSR": "DISABLED",
+            "LSRMUX": "LSR",
+            "REGSET": "RESET",
+            "SRMODE": "ASYNC"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.sv:63.2-78.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
+          },
+          "port_directions": {
+            "CE": "input",
+            "CLK": "input",
+            "DI": "input",
+            "LSR": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CE": [ 28 ],
+            "CLK": [ 13 ],
+            "DI": [ "1" ],
+            "LSR": [ 6 ],
+            "Q": [ 32 ]
           }
         },
         "adc_capture_inst.clk2_TRELLIS_FF_Q": {
@@ -21670,11 +21610,11 @@
             "Q": "output"
           },
           "connections": {
-            "CE": [ 46 ],
+            "CE": [ 40 ],
             "CLK": [ 2 ],
-            "DI": [ 47 ],
+            "DI": [ 41 ],
             "LSR": [ 6 ],
-            "Q": [ 44 ]
+            "Q": [ 30 ]
           }
         },
         "adc_capture_inst.clk2_TRELLIS_FF_Q_CE_LUT4_Z": {
@@ -21697,9 +21637,9 @@
           "connections": {
             "A": [ "0" ],
             "B": [ "0" ],
-            "C": [ 48 ],
-            "D": [ 49 ],
-            "Z": [ 46 ]
+            "C": [ 42 ],
+            "D": [ 43 ],
+            "Z": [ 40 ]
           }
         },
         "adc_capture_inst.clk2_TRELLIS_FF_Q_DI_LUT4_Z": {
@@ -21723,8 +21663,8 @@
             "A": [ "0" ],
             "B": [ "0" ],
             "C": [ "0" ],
-            "D": [ 44 ],
-            "Z": [ 47 ]
+            "D": [ 30 ],
+            "Z": [ 41 ]
           }
         },
         "adc_capture_inst.cs_TRELLIS_FF_Q": {
@@ -21741,7 +21681,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:63.157-63.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -21750,8 +21690,8 @@
             "Q": "output"
           },
           "connections": {
-            "CLK": [ 44 ],
-            "DI": [ 50 ],
+            "CLK": [ 30 ],
+            "DI": [ 44 ],
             "LSR": [ 6 ],
             "Q": [ 14 ]
           }
@@ -21776,9 +21716,9 @@
           "connections": {
             "A": [ "0" ],
             "B": [ 15 ],
-            "C": [ 51 ],
+            "C": [ 45 ],
             "D": [ 14 ],
-            "Z": [ 50 ]
+            "Z": [ 44 ]
           }
         },
         "adc_capture_inst.cs_TRELLIS_FF_Q_DI_LUT4_Z_C_LUT4_Z": {
@@ -21799,11 +21739,11 @@
             "Z": "output"
           },
           "connections": {
-            "A": [ 52 ],
-            "B": [ 53 ],
-            "C": [ 54 ],
-            "D": [ 55 ],
-            "Z": [ 51 ]
+            "A": [ 46 ],
+            "B": [ 47 ],
+            "C": [ 48 ],
+            "D": [ 49 ],
+            "Z": [ 45 ]
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q": {
@@ -21820,7 +21760,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
           },
           "port_directions": {
             "CE": "input",
@@ -21831,10 +21771,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 56 ],
+            "CLK": [ 30 ],
+            "DI": [ 50 ],
             "LSR": [ 6 ],
-            "Q": [ 55 ]
+            "Q": [ 49 ]
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_1": {
@@ -21851,7 +21791,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
           },
           "port_directions": {
             "CE": "input",
@@ -21862,10 +21802,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 57 ],
+            "CLK": [ 30 ],
+            "DI": [ 51 ],
             "LSR": [ 6 ],
-            "Q": [ 54 ]
+            "Q": [ 48 ]
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_1_DI_LUT4_Z": {
@@ -21888,9 +21828,9 @@
           "connections": {
             "A": [ "0" ],
             "B": [ "0" ],
-            "C": [ 51 ],
-            "D": [ 58 ],
-            "Z": [ 57 ]
+            "C": [ 45 ],
+            "D": [ 52 ],
+            "Z": [ 51 ]
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_2": {
@@ -21907,7 +21847,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
           },
           "port_directions": {
             "CE": "input",
@@ -21918,10 +21858,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 59 ],
+            "CLK": [ 30 ],
+            "DI": [ 53 ],
             "LSR": [ 6 ],
-            "Q": [ 53 ]
+            "Q": [ 47 ]
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_2_DI_LUT4_Z": {
@@ -21944,9 +21884,9 @@
           "connections": {
             "A": [ "0" ],
             "B": [ "0" ],
-            "C": [ 51 ],
-            "D": [ 60 ],
-            "Z": [ 59 ]
+            "C": [ 45 ],
+            "D": [ 54 ],
+            "Z": [ 53 ]
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_3": {
@@ -21963,7 +21903,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
           },
           "port_directions": {
             "CE": "input",
@@ -21974,10 +21914,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 61 ],
+            "CLK": [ 30 ],
+            "DI": [ 55 ],
             "LSR": [ 6 ],
-            "Q": [ 52 ]
+            "Q": [ 46 ]
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_3_DI_LUT4_Z": {
@@ -22000,9 +21940,9 @@
           "connections": {
             "A": [ "0" ],
             "B": [ "0" ],
-            "C": [ 51 ],
-            "D": [ 62 ],
-            "Z": [ 61 ]
+            "C": [ 45 ],
+            "D": [ 56 ],
+            "Z": [ 55 ]
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_4": {
@@ -22019,7 +21959,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
           },
           "port_directions": {
             "CE": "input",
@@ -22030,10 +21970,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 63 ],
+            "CLK": [ 30 ],
+            "DI": [ 57 ],
             "LSR": [ 6 ],
-            "Q": [ 64 ]
+            "Q": [ 58 ]
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_4_DI_LUT4_Z": {
@@ -22056,9 +21996,9 @@
           "connections": {
             "A": [ "0" ],
             "B": [ "0" ],
-            "C": [ 51 ],
-            "D": [ 65 ],
-            "Z": [ 63 ]
+            "C": [ 45 ],
+            "D": [ 59 ],
+            "Z": [ 57 ]
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_DI_LUT4_Z": {
@@ -22081,9 +22021,9 @@
           "connections": {
             "A": [ "0" ],
             "B": [ "0" ],
-            "C": [ 51 ],
-            "D": [ 66 ],
-            "Z": [ 56 ]
+            "C": [ 45 ],
+            "D": [ 60 ],
+            "Z": [ 50 ]
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0": {
@@ -22097,7 +22037,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:97.18-97.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "adc_capture.sv:111.18-111.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -22116,16 +22056,16 @@
           "connections": {
             "A0": [ "0" ],
             "A1": [ "0" ],
-            "B0": [ 55 ],
+            "B0": [ 49 ],
             "B1": [ "0" ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ 67 ],
-            "COUT": [ 68 ],
+            "CIN": [ 61 ],
+            "COUT": [ 62 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 66 ],
-            "S1": [ 69 ]
+            "S0": [ 60 ],
+            "S1": [ 63 ]
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1": {
@@ -22139,7 +22079,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:97.18-97.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "adc_capture.sv:111.18-111.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -22158,16 +22098,16 @@
           "connections": {
             "A0": [ "0" ],
             "A1": [ "0" ],
-            "B0": [ 53 ],
-            "B1": [ 54 ],
+            "B0": [ 47 ],
+            "B1": [ 48 ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ 70 ],
-            "COUT": [ 67 ],
+            "CIN": [ 64 ],
+            "COUT": [ 61 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 60 ],
-            "S1": [ 58 ]
+            "S0": [ 54 ],
+            "S1": [ 52 ]
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2": {
@@ -22181,7 +22121,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:97.18-97.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "adc_capture.sv:111.18-111.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -22200,16 +22140,16 @@
           "connections": {
             "A0": [ "1" ],
             "A1": [ "0" ],
-            "B0": [ 64 ],
-            "B1": [ 52 ],
+            "B0": [ 58 ],
+            "B1": [ 46 ],
             "C0": [ "0" ],
             "C1": [ "0" ],
             "CIN": [ "0" ],
-            "COUT": [ 70 ],
+            "COUT": [ 64 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 65 ],
-            "S1": [ 62 ]
+            "S0": [ 59 ],
+            "S1": [ 56 ]
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q": {
@@ -22226,7 +22166,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -22237,8 +22177,8 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 71 ],
+            "CLK": [ 30 ],
+            "DI": [ 65 ],
             "LSR": [ 6 ],
             "Q": [ 20 ]
           }
@@ -22257,7 +22197,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -22268,8 +22208,8 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 72 ],
+            "CLK": [ 30 ],
+            "DI": [ 66 ],
             "LSR": [ 6 ],
             "Q": [ 24 ]
           }
@@ -22295,8 +22235,8 @@
             "A": [ "0" ],
             "B": [ "0" ],
             "C": [ 15 ],
-            "D": [ 73 ],
-            "Z": [ 72 ]
+            "D": [ 67 ],
+            "Z": [ 66 ]
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_2": {
@@ -22313,7 +22253,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -22324,8 +22264,8 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 74 ],
+            "CLK": [ 30 ],
+            "DI": [ 68 ],
             "LSR": [ 6 ],
             "Q": [ 23 ]
           }
@@ -22351,8 +22291,8 @@
             "A": [ "0" ],
             "B": [ "0" ],
             "C": [ 15 ],
-            "D": [ 75 ],
-            "Z": [ 74 ]
+            "D": [ 69 ],
+            "Z": [ 68 ]
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_3": {
@@ -22369,7 +22309,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -22380,8 +22320,8 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 76 ],
+            "CLK": [ 30 ],
+            "DI": [ 70 ],
             "LSR": [ 6 ],
             "Q": [ 22 ]
           }
@@ -22407,8 +22347,8 @@
             "A": [ "0" ],
             "B": [ "0" ],
             "C": [ 15 ],
-            "D": [ 77 ],
-            "Z": [ 76 ]
+            "D": [ 71 ],
+            "Z": [ 70 ]
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_4": {
@@ -22425,7 +22365,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -22436,8 +22376,8 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 78 ],
+            "CLK": [ 30 ],
+            "DI": [ 72 ],
             "LSR": [ 6 ],
             "Q": [ 21 ]
           }
@@ -22463,8 +22403,8 @@
             "A": [ "0" ],
             "B": [ "0" ],
             "C": [ 15 ],
-            "D": [ 79 ],
-            "Z": [ 78 ]
+            "D": [ 73 ],
+            "Z": [ 72 ]
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z": {
@@ -22488,8 +22428,8 @@
             "A": [ "0" ],
             "B": [ "0" ],
             "C": [ 15 ],
-            "D": [ 80 ],
-            "Z": [ 71 ]
+            "D": [ 74 ],
+            "Z": [ 65 ]
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0": {
@@ -22503,7 +22443,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:87.16-87.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "adc_capture.sv:101.16-101.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -22526,12 +22466,12 @@
             "B1": [ "0" ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ 81 ],
-            "COUT": [ 82 ],
+            "CIN": [ 75 ],
+            "COUT": [ 76 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 80 ],
-            "S1": [ 83 ]
+            "S0": [ 74 ],
+            "S1": [ 77 ]
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1": {
@@ -22545,7 +22485,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:87.16-87.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "adc_capture.sv:101.16-101.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -22568,12 +22508,12 @@
             "B1": [ 24 ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ 84 ],
-            "COUT": [ 81 ],
+            "CIN": [ 78 ],
+            "COUT": [ 75 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 75 ],
-            "S1": [ 73 ]
+            "S0": [ 69 ],
+            "S1": [ 67 ]
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2": {
@@ -22587,7 +22527,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:87.16-87.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4"
+            "src": "adc_capture.sv:101.16-101.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:74.7-80.4"
           },
           "port_directions": {
             "A0": "input",
@@ -22611,18 +22551,18 @@
             "C0": [ "0" ],
             "C1": [ "0" ],
             "CIN": [ "0" ],
-            "COUT": [ 84 ],
+            "COUT": [ 78 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 79 ],
-            "S1": [ 77 ]
+            "S0": [ 73 ],
+            "S1": [ 71 ]
           }
         },
         "adc_capture_inst.din_LUT4_D": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
-            "INIT": "0001000000000000"
+            "INIT": "0001100000000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -22639,8 +22579,8 @@
             "A": [ 21 ],
             "B": [ 22 ],
             "C": [ 23 ],
-            "D": [ 85 ],
-            "Z": [ 86 ]
+            "D": [ 79 ],
+            "Z": [ 80 ]
           }
         },
         "adc_capture_inst.din_TRELLIS_FF_Q": {
@@ -22648,7 +22588,7 @@
           "type": "TRELLIS_FF",
           "parameters": {
             "CEMUX": "1 ",
-            "CLKMUX": "CLK",
+            "CLKMUX": "INV",
             "GSR": "DISABLED",
             "LSRMUX": "LSR",
             "REGSET": "RESET",
@@ -22657,7 +22597,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:63.157-63.208"
+            "src": "adc_capture.sv:51.2-65.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:61.157-61.208"
           },
           "port_directions": {
             "CLK": "input",
@@ -22666,10 +22606,10 @@
             "Q": "output"
           },
           "connections": {
-            "CLK": [ 44 ],
-            "DI": [ 87 ],
+            "CLK": [ 30 ],
+            "DI": [ 32 ],
             "LSR": [ 6 ],
-            "Q": [ 85 ]
+            "Q": [ 79 ]
           }
         },
         "adc_capture_inst.din_bit_TRELLIS_FF_Q": {
@@ -22677,7 +22617,7 @@
           "type": "TRELLIS_FF",
           "parameters": {
             "CEMUX": "CE",
-            "CLKMUX": "CLK",
+            "CLKMUX": "INV",
             "GSR": "DISABLED",
             "LSRMUX": "LSR",
             "REGSET": "RESET",
@@ -22686,7 +22626,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
+            "src": "adc_capture.sv:51.2-65.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:71.163-71.222"
           },
           "port_directions": {
             "CE": "input",
@@ -22696,9 +22636,9 @@
             "Q": "output"
           },
           "connections": {
-            "CE": [ 88 ],
-            "CLK": [ 44 ],
-            "DI": [ 86 ],
+            "CE": [ 81 ],
+            "CLK": [ 30 ],
+            "DI": [ 80 ],
             "LSR": [ 6 ],
             "Q": [ 12 ]
           }
@@ -22725,7 +22665,7 @@
             "B": [ 20 ],
             "C": [ 14 ],
             "D": [ 24 ],
-            "Z": [ 88 ]
+            "Z": [ 81 ]
           }
         },
         "adc_capture_inst.dout_TRELLIS_FF_Q": {
@@ -22742,7 +22682,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -22753,10 +22693,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 89 ],
+            "CLK": [ 30 ],
+            "DI": [ 82 ],
             "LSR": [ 6 ],
-            "Q": [ 90 ]
+            "Q": [ 83 ]
           }
         },
         "adc_capture_inst.dout_TRELLIS_FF_Q_1": {
@@ -22773,7 +22713,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -22784,10 +22724,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
+            "CLK": [ 30 ],
             "DI": [ 26 ],
             "LSR": [ 6 ],
-            "Q": [ 89 ]
+            "Q": [ 82 ]
           }
         },
         "adc_capture_inst.dout_TRELLIS_FF_Q_10": {
@@ -22804,7 +22744,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -22815,10 +22755,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 43 ],
+            "CLK": [ 30 ],
+            "DI": [ 34 ],
             "LSR": [ 6 ],
-            "Q": [ 31 ]
+            "Q": [ 84 ]
           }
         },
         "adc_capture_inst.dout_TRELLIS_FF_Q_11": {
@@ -22835,7 +22775,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -22846,10 +22786,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
+            "CLK": [ 30 ],
             "DI": [ 7 ],
             "LSR": [ 6 ],
-            "Q": [ 43 ]
+            "Q": [ 34 ]
           }
         },
         "adc_capture_inst.dout_TRELLIS_FF_Q_2": {
@@ -22866,7 +22806,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -22877,8 +22817,8 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 41 ],
+            "CLK": [ 30 ],
+            "DI": [ 38 ],
             "LSR": [ 6 ],
             "Q": [ 26 ]
           }
@@ -22897,7 +22837,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -22908,10 +22848,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 91 ],
+            "CLK": [ 30 ],
+            "DI": [ 85 ],
             "LSR": [ 6 ],
-            "Q": [ 41 ]
+            "Q": [ 38 ]
           }
         },
         "adc_capture_inst.dout_TRELLIS_FF_Q_4": {
@@ -22928,7 +22868,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -22939,10 +22879,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 92 ],
+            "CLK": [ 30 ],
+            "DI": [ 86 ],
             "LSR": [ 6 ],
-            "Q": [ 91 ]
+            "Q": [ 85 ]
           }
         },
         "adc_capture_inst.dout_TRELLIS_FF_Q_5": {
@@ -22959,7 +22899,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -22970,10 +22910,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 32 ],
+            "CLK": [ 30 ],
+            "DI": [ 87 ],
             "LSR": [ 6 ],
-            "Q": [ 92 ]
+            "Q": [ 86 ]
           }
         },
         "adc_capture_inst.dout_TRELLIS_FF_Q_6": {
@@ -22990,7 +22930,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -23001,10 +22941,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 42 ],
+            "CLK": [ 30 ],
+            "DI": [ 36 ],
             "LSR": [ 6 ],
-            "Q": [ 32 ]
+            "Q": [ 87 ]
           }
         },
         "adc_capture_inst.dout_TRELLIS_FF_Q_7": {
@@ -23021,7 +22961,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -23032,10 +22972,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 93 ],
+            "CLK": [ 30 ],
+            "DI": [ 88 ],
             "LSR": [ 6 ],
-            "Q": [ 42 ]
+            "Q": [ 36 ]
           }
         },
         "adc_capture_inst.dout_TRELLIS_FF_Q_8": {
@@ -23052,7 +22992,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -23063,10 +23003,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 94 ],
+            "CLK": [ 30 ],
+            "DI": [ 89 ],
             "LSR": [ 6 ],
-            "Q": [ 93 ]
+            "Q": [ 88 ]
           }
         },
         "adc_capture_inst.dout_TRELLIS_FF_Q_9": {
@@ -23083,7 +23023,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:53.2-108.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
+            "src": "adc_capture.sv:67.2-122.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:78.164-78.223"
           },
           "port_directions": {
             "CE": "input",
@@ -23094,10 +23034,10 @@
           },
           "connections": {
             "CE": [ 14 ],
-            "CLK": [ 44 ],
-            "DI": [ 31 ],
+            "CLK": [ 30 ],
+            "DI": [ 84 ],
             "LSR": [ 6 ],
-            "Q": [ 94 ]
+            "Q": [ 89 ]
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q": {
@@ -23124,9 +23064,9 @@
           },
           "connections": {
             "CLK": [ 2 ],
-            "DI": [ 95 ],
+            "DI": [ 90 ],
             "LSR": [ 6 ],
-            "Q": [ 49 ]
+            "Q": [ 43 ]
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_1": {
@@ -23153,9 +23093,9 @@
           },
           "connections": {
             "CLK": [ 2 ],
-            "DI": [ 96 ],
+            "DI": [ 91 ],
             "LSR": [ 6 ],
-            "Q": [ 48 ]
+            "Q": [ 42 ]
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_1_DI_LUT4_Z": {
@@ -23178,9 +23118,9 @@
           "connections": {
             "A": [ "0" ],
             "B": [ "0" ],
-            "C": [ 46 ],
-            "D": [ 97 ],
-            "Z": [ 96 ]
+            "C": [ 40 ],
+            "D": [ 92 ],
+            "Z": [ 91 ]
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_2": {
@@ -23207,9 +23147,9 @@
           },
           "connections": {
             "CLK": [ 2 ],
-            "DI": [ 98 ],
+            "DI": [ 93 ],
             "LSR": [ 6 ],
-            "Q": [ 99 ]
+            "Q": [ 94 ]
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_2_DI_LUT4_Z": {
@@ -23232,9 +23172,9 @@
           "connections": {
             "A": [ "0" ],
             "B": [ "0" ],
-            "C": [ 46 ],
-            "D": [ 100 ],
-            "Z": [ 98 ]
+            "C": [ 40 ],
+            "D": [ 95 ],
+            "Z": [ 93 ]
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_3": {
@@ -23261,9 +23201,9 @@
           },
           "connections": {
             "CLK": [ 2 ],
-            "DI": [ 101 ],
+            "DI": [ 96 ],
             "LSR": [ 6 ],
-            "Q": [ 102 ]
+            "Q": [ 97 ]
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_3_DI_LUT4_Z": {
@@ -23286,9 +23226,9 @@
           "connections": {
             "A": [ "0" ],
             "B": [ "0" ],
-            "C": [ 46 ],
-            "D": [ 103 ],
-            "Z": [ 101 ]
+            "C": [ 40 ],
+            "D": [ 98 ],
+            "Z": [ 96 ]
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_4": {
@@ -23315,9 +23255,9 @@
           },
           "connections": {
             "CLK": [ 2 ],
-            "DI": [ 104 ],
+            "DI": [ 99 ],
             "LSR": [ 6 ],
-            "Q": [ 105 ]
+            "Q": [ 100 ]
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_4_DI_LUT4_Z": {
@@ -23340,9 +23280,9 @@
           "connections": {
             "A": [ "0" ],
             "B": [ "0" ],
-            "C": [ 46 ],
-            "D": [ 106 ],
-            "Z": [ 104 ]
+            "C": [ 40 ],
+            "D": [ 101 ],
+            "Z": [ 99 ]
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z": {
@@ -23365,9 +23305,9 @@
           "connections": {
             "A": [ "0" ],
             "B": [ "0" ],
-            "C": [ 46 ],
-            "D": [ 107 ],
-            "Z": [ 95 ]
+            "C": [ 40 ],
+            "D": [ 102 ],
+            "Z": [ 90 ]
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0": {
@@ -23400,16 +23340,16 @@
           "connections": {
             "A0": [ "0" ],
             "A1": [ "0" ],
-            "B0": [ 49 ],
+            "B0": [ 43 ],
             "B1": [ "0" ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ 108 ],
-            "COUT": [ 109 ],
+            "CIN": [ 103 ],
+            "COUT": [ 104 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 107 ],
-            "S1": [ 110 ]
+            "S0": [ 102 ],
+            "S1": [ 105 ]
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1": {
@@ -23442,16 +23382,16 @@
           "connections": {
             "A0": [ "0" ],
             "A1": [ "0" ],
-            "B0": [ 99 ],
-            "B1": [ 48 ],
+            "B0": [ 94 ],
+            "B1": [ 42 ],
             "C0": [ "0" ],
             "C1": [ "0" ],
-            "CIN": [ 111 ],
-            "COUT": [ 108 ],
+            "CIN": [ 106 ],
+            "COUT": [ 103 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 100 ],
-            "S1": [ 97 ]
+            "S0": [ 95 ],
+            "S1": [ 92 ]
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2": {
@@ -23484,16 +23424,16 @@
           "connections": {
             "A0": [ "1" ],
             "A1": [ "0" ],
-            "B0": [ 105 ],
-            "B1": [ 102 ],
+            "B0": [ 100 ],
+            "B1": [ 97 ],
             "C0": [ "0" ],
             "C1": [ "0" ],
             "CIN": [ "0" ],
-            "COUT": [ 111 ],
+            "COUT": [ 106 ],
             "D0": [ "1" ],
             "D1": [ "1" ],
-            "S0": [ 106 ],
-            "S1": [ 103 ]
+            "S0": [ 101 ],
+            "S1": [ 98 ]
           }
         },
         "adc_capture_inst.sclk_LUT4_D": {
@@ -23518,7 +23458,7 @@
             "B": [ "0" ],
             "C": [ "0" ],
             "D": [ 13 ],
-            "Z": [ 112 ]
+            "Z": [ 107 ]
           }
         },
         "adc_capture_inst.sclk_TRELLIS_FF_Q": {
@@ -23545,9 +23485,9 @@
             "Q": "output"
           },
           "connections": {
-            "CE": [ 113 ],
+            "CE": [ 108 ],
             "CLK": [ 2 ],
-            "DI": [ 112 ],
+            "DI": [ 107 ],
             "LSR": [ 6 ],
             "Q": [ 13 ]
           }
@@ -23573,64 +23513,8 @@
             "A": [ "0" ],
             "B": [ "0" ],
             "C": [ 14 ],
-            "D": [ 46 ],
-            "Z": [ 113 ]
-          }
-        },
-        "address_LUT4_B": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "1111111111110011"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:136.39-137.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ 87 ],
-            "C": [ 4 ],
-            "D": [ 3 ],
-            "Z": [ 35 ]
-          }
-        },
-        "address_TRELLIS_FF_Q": {
-          "hide_name": 0,
-          "type": "TRELLIS_FF",
-          "parameters": {
-            "CEMUX": "CE",
-            "CLKMUX": "CLK",
-            "GSR": "DISABLED",
-            "LSRMUX": "LSR",
-            "REGSET": "RESET",
-            "SRMODE": "ASYNC"
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.sv:63.2-79.5|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:73.163-73.222"
-          },
-          "port_directions": {
-            "CE": "input",
-            "CLK": "input",
-            "DI": "input",
-            "LSR": "input",
-            "Q": "output"
-          },
-          "connections": {
-            "CE": [ 33 ],
-            "CLK": [ 13 ],
-            "DI": [ "1" ],
-            "LSR": [ 6 ],
-            "Q": [ 87 ]
+            "D": [ 40 ],
+            "Z": [ 108 ]
           }
         },
         "led_LUT4_Z": {
@@ -23652,9 +23536,9 @@
           },
           "connections": {
             "A": [ "0" ],
-            "B": [ 114 ],
-            "C": [ 115 ],
-            "D": [ 116 ],
+            "B": [ 109 ],
+            "C": [ 110 ],
+            "D": [ 111 ],
             "Z": [ 11 ]
           }
         },
@@ -23678,8 +23562,8 @@
           "connections": {
             "A": [ "0" ],
             "B": [ "0" ],
-            "C": [ 117 ],
-            "D": [ 118 ],
+            "C": [ 112 ],
+            "D": [ 113 ],
             "Z": [ 10 ]
           }
         },
@@ -23699,10 +23583,10 @@
             "Z": "output"
           },
           "connections": {
-            "ALUT": [ 119 ],
-            "BLUT": [ 120 ],
+            "ALUT": [ 114 ],
+            "BLUT": [ 115 ],
             "C0": [ 3 ],
-            "Z": [ 118 ]
+            "Z": [ 113 ]
           }
         },
         "led_LUT4_Z_1_C_PFUMX_Z_1": {
@@ -23721,10 +23605,10 @@
             "Z": "output"
           },
           "connections": {
-            "ALUT": [ 121 ],
-            "BLUT": [ 122 ],
+            "ALUT": [ 116 ],
+            "BLUT": [ 117 ],
             "C0": [ 5 ],
-            "Z": [ 117 ]
+            "Z": [ 112 ]
           }
         },
         "led_LUT4_Z_1_C_PFUMX_Z_1_ALUT_LUT4_Z": {
@@ -23749,14 +23633,14 @@
             "B": [ 3 ],
             "C": [ 4 ],
             "D": [ 14 ],
-            "Z": [ 121 ]
+            "Z": [ 116 ]
           }
         },
         "led_LUT4_Z_1_C_PFUMX_Z_1_BLUT_LUT4_Z": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
-            "INIT": "1101110011011111"
+            "INIT": "0111110001111111"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -23770,18 +23654,18 @@
             "Z": "output"
           },
           "connections": {
-            "A": [ 92 ],
+            "A": [ 82 ],
             "B": [ 3 ],
             "C": [ 4 ],
             "D": [ 14 ],
-            "Z": [ 122 ]
+            "Z": [ 117 ]
           }
         },
         "led_LUT4_Z_1_C_PFUMX_Z_ALUT_LUT4_Z": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
-            "INIT": "1111010111110011"
+            "INIT": "1111111111110011"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -23795,18 +23679,18 @@
             "Z": "output"
           },
           "connections": {
-            "A": [ 89 ],
-            "B": [ 94 ],
+            "A": [ "0" ],
+            "B": [ 89 ],
             "C": [ 5 ],
             "D": [ 4 ],
-            "Z": [ 119 ]
+            "Z": [ 114 ]
           }
         },
         "led_LUT4_Z_1_C_PFUMX_Z_BLUT_LUT4_Z": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
-            "INIT": "1111111111111111"
+            "INIT": "1111001111111111"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -23821,38 +23705,13 @@
           },
           "connections": {
             "A": [ "0" ],
-            "B": [ "0" ],
-            "C": [ "0" ],
-            "D": [ "0" ],
-            "Z": [ 120 ]
+            "B": [ 86 ],
+            "C": [ 5 ],
+            "D": [ 4 ],
+            "Z": [ 115 ]
           }
         },
         "led_LUT4_Z_2": {
-          "hide_name": 0,
-          "type": "LUT4",
-          "parameters": {
-            "INIT": "1111110011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:124.33-125.56"
-          },
-          "port_directions": {
-            "A": "input",
-            "B": "input",
-            "C": "input",
-            "D": "input",
-            "Z": "output"
-          },
-          "connections": {
-            "A": [ "0" ],
-            "B": [ 25 ],
-            "C": [ 27 ],
-            "D": [ 30 ],
-            "Z": [ 9 ]
-          }
-        },
-        "led_LUT4_Z_3": {
           "hide_name": 0,
           "type": "LUT4",
           "parameters": {
@@ -23871,10 +23730,104 @@
           },
           "connections": {
             "A": [ "0" ],
-            "B": [ 34 ],
-            "C": [ 40 ],
-            "D": [ 37 ],
-            "Z": [ 8 ]
+            "B": [ 33 ],
+            "C": [ 118 ],
+            "D": [ 119 ],
+            "Z": [ 9 ]
+          }
+        },
+        "led_LUT4_Z_2_C_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:138.19-138.63"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 25 ],
+            "BLUT": [ 27 ],
+            "C0": [ 5 ],
+            "Z": [ 119 ]
+          }
+        },
+        "led_LUT4_Z_2_C_PFUMX_Z_1": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:138.19-138.63"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 120 ],
+            "BLUT": [ 121 ],
+            "C0": [ 3 ],
+            "Z": [ 118 ]
+          }
+        },
+        "led_LUT4_Z_2_C_PFUMX_Z_1_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1111111111110011"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:136.39-137.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 84 ],
+            "C": [ 5 ],
+            "D": [ 4 ],
+            "Z": [ 120 ]
+          }
+        },
+        "led_LUT4_Z_2_C_PFUMX_Z_1_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1111001111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:134.39-135.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 87 ],
+            "C": [ 5 ],
+            "D": [ 4 ],
+            "Z": [ 121 ]
           }
         },
         "led_LUT4_Z_B_LUT4_Z": {
@@ -23898,8 +23851,8 @@
             "A": [ 5 ],
             "B": [ 3 ],
             "C": [ 4 ],
-            "D": [ 90 ],
-            "Z": [ 115 ]
+            "D": [ 83 ],
+            "Z": [ 110 ]
           }
         },
         "led_LUT4_Z_B_LUT4_Z_1": {
@@ -23924,7 +23877,7 @@
             "B": [ 4 ],
             "C": [ 5 ],
             "D": [ 6 ],
-            "Z": [ 114 ]
+            "Z": [ 109 ]
           }
         },
         "led_LUT4_Z_B_PFUMX_Z": {
@@ -23943,10 +23896,10 @@
             "Z": "output"
           },
           "connections": {
-            "ALUT": [ 123 ],
-            "BLUT": [ 124 ],
+            "ALUT": [ 122 ],
+            "BLUT": [ 123 ],
             "C0": [ 3 ],
-            "Z": [ 116 ]
+            "Z": [ 111 ]
           }
         },
         "led_LUT4_Z_B_PFUMX_Z_ALUT_LUT4_Z": {
@@ -23968,10 +23921,10 @@
           },
           "connections": {
             "A": [ "0" ],
-            "B": [ 93 ],
+            "B": [ 88 ],
             "C": [ 5 ],
             "D": [ 4 ],
-            "Z": [ 123 ]
+            "Z": [ 122 ]
           }
         },
         "led_LUT4_Z_B_PFUMX_Z_BLUT_LUT4_Z": {
@@ -23993,10 +23946,82 @@
           },
           "connections": {
             "A": [ "0" ],
-            "B": [ 91 ],
+            "B": [ 85 ],
             "C": [ 5 ],
             "D": [ 4 ],
+            "Z": [ 123 ]
+          }
+        },
+        "led_PFUMX_Z": {
+          "hide_name": 0,
+          "type": "PFUMX",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:138.19-138.63"
+          },
+          "port_directions": {
+            "ALUT": "input",
+            "BLUT": "input",
+            "C0": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "ALUT": [ 124 ],
+            "BLUT": [ 125 ],
+            "C0": [ 35 ],
+            "Z": [ 8 ]
+          }
+        },
+        "led_PFUMX_Z_ALUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1111111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:136.39-137.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "C": [ "0" ],
+            "D": [ "0" ],
             "Z": [ 124 ]
+          }
+        },
+        "led_PFUMX_Z_BLUT_LUT4_Z": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1111111111111110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:134.39-135.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "C": "input",
+            "D": "input",
+            "Z": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "B": [ 33 ],
+            "C": [ 39 ],
+            "D": [ 37 ],
+            "Z": [ 125 ]
           }
         }
       },
@@ -24010,7 +24035,7 @@
         },
         "adc_ack_LUT4_C_B": {
           "hide_name": 0,
-          "bits": [ 15, 79 ],
+          "bits": [ 15, 73 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24"
@@ -24030,26 +24055,18 @@
             "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.18-133.20"
           }
         },
-        "adc_ack_LUT4_D_Z": {
+        "adc_ack_LUT4_D_1_Z": {
           "hide_name": 0,
-          "bits": [ 25, 27, 30 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24"
-          }
-        },
-        "adc_ack_LUT4_D_Z_PFUMX_Z_ALUT": {
-          "hide_name": 0,
-          "bits": [ 28 ],
-          "attributes": {
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.22-133.24"
-          }
-        },
-        "adc_ack_LUT4_D_Z_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 29 ],
+          "bits": [ 27 ],
           "attributes": {
             "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.18-133.20"
+          }
+        },
+        "adc_ack_LUT4_D_Z": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.22-133.24"
           }
         },
         "adc_capture_inst.adc_ack": {
@@ -24062,39 +24079,10 @@
         },
         "adc_capture_inst.adc_ready": {
           "hide_name": 0,
-          "bits": [ 33 ],
+          "bits": [ 28 ],
           "attributes": {
             "hdlname": "adc_capture_inst adc_ready",
             "src": "adc_capture.sv:15.15-15.24"
-          }
-        },
-        "adc_capture_inst.adc_ready_LUT4_D_Z": {
-          "hide_name": 0,
-          "bits": [ 34, 40, 37 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24"
-          }
-        },
-        "adc_capture_inst.adc_ready_LUT4_D_Z_PFUMX_Z_1_ALUT": {
-          "hide_name": 0,
-          "bits": [ 38 ],
-          "attributes": {
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.22-133.24"
-          }
-        },
-        "adc_capture_inst.adc_ready_LUT4_D_Z_PFUMX_Z_1_BLUT": {
-          "hide_name": 0,
-          "bits": [ 39 ],
-          "attributes": {
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.18-133.20"
-          }
-        },
-        "adc_capture_inst.adc_ready_LUT4_D_Z_PFUMX_Z_BLUT": {
-          "hide_name": 0,
-          "bits": [ 36 ],
-          "attributes": {
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.18-133.20"
           }
         },
         "adc_capture_inst.adc_ready_TRELLIS_FF_Q_CE": {
@@ -24105,16 +24093,24 @@
         },
         "adc_capture_inst.adc_ready_TRELLIS_FF_Q_DI": {
           "hide_name": 0,
-          "bits": [ 45 ],
+          "bits": [ 31 ],
           "attributes": {
           }
         },
         "adc_capture_inst.address": {
           "hide_name": 0,
-          "bits": [ 87, "0", "0" ],
+          "bits": [ 32, 32, "0" ],
           "attributes": {
             "hdlname": "adc_capture_inst address",
             "src": "adc_capture.sv:11.21-11.28"
+          }
+        },
+        "adc_capture_inst.address_LUT4_D_Z": {
+          "hide_name": 0,
+          "bits": [ 29, 33, 39, 37, 35 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24"
           }
         },
         "adc_capture_inst.clk": {
@@ -24127,7 +24123,7 @@
         },
         "adc_capture_inst.clk2": {
           "hide_name": 0,
-          "bits": [ 44 ],
+          "bits": [ 30 ],
           "attributes": {
             "hdlname": "adc_capture_inst clk2",
             "src": "adc_capture.sv:23.8-23.12"
@@ -24135,7 +24131,7 @@
         },
         "adc_capture_inst.clk2_TRELLIS_FF_Q_CE": {
           "hide_name": 0,
-          "bits": [ 46, 100 ],
+          "bits": [ 40, 95 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24"
@@ -24143,7 +24139,7 @@
         },
         "adc_capture_inst.clk2_TRELLIS_FF_Q_DI": {
           "hide_name": 0,
-          "bits": [ 47 ],
+          "bits": [ 41 ],
           "attributes": {
             "src": "adc_capture.sv:32.13-32.18"
           }
@@ -24158,14 +24154,14 @@
         },
         "adc_capture_inst.cs_TRELLIS_FF_Q_DI": {
           "hide_name": 0,
-          "bits": [ 50 ],
+          "bits": [ 44 ],
           "attributes": {
-            "src": "adc_capture.sv:53.2-108.5"
+            "src": "adc_capture.sv:67.2-122.5"
           }
         },
         "adc_capture_inst.cs_TRELLIS_FF_Q_DI_LUT4_Z_C": {
           "hide_name": 0,
-          "bits": [ 51, 60 ],
+          "bits": [ 45, 56 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24"
@@ -24173,7 +24169,7 @@
         },
         "adc_capture_inst.cs_pause": {
           "hide_name": 0,
-          "bits": [ 64, 52, 53, 54, 55 ],
+          "bits": [ 58, 46, 47, 48, 49 ],
           "attributes": {
             "hdlname": "adc_capture_inst cs_pause",
             "src": "adc_capture.sv:49.36-49.44"
@@ -24181,66 +24177,66 @@
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_1_DI": {
           "hide_name": 0,
-          "bits": [ 57 ],
+          "bits": [ 51 ],
           "attributes": {
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_2_DI": {
           "hide_name": 0,
-          "bits": [ 59 ],
+          "bits": [ 53 ],
           "attributes": {
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_3_DI": {
           "hide_name": 0,
-          "bits": [ 61 ],
+          "bits": [ 55 ],
           "attributes": {
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_4_DI": {
           "hide_name": 0,
-          "bits": [ 63 ],
+          "bits": [ 57 ],
           "attributes": {
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_DI": {
           "hide_name": 0,
-          "bits": [ 56 ],
+          "bits": [ 50 ],
           "attributes": {
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_DI_LUT4_Z_D": {
           "hide_name": 0,
-          "bits": [ 65, 62, 60, 58, 66 ],
+          "bits": [ 59, 56, 54, 52, 60 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:97.18-97.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:34.26-34.27"
+            "src": "adc_capture.sv:111.18-111.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:34.26-34.27"
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2_COUT": {
           "hide_name": 0,
-          "bits": [ "0", 64, 70, 125, 67, 126 ],
+          "bits": [ "0", 58, 64, 126, 61, 127 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:97.18-97.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:63.22-63.23",
+            "src": "adc_capture.sv:111.18-111.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:63.22-63.23",
             "unused_bits": "3 5"
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_COUT": {
           "hide_name": 0,
-          "bits": [ 70, 127, 67, 128, 68, 129 ],
+          "bits": [ 64, 128, 61, 129, 62, 130 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:97.18-97.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.22-65.25",
+            "src": "adc_capture.sv:111.18-111.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.22-65.25",
             "unused_bits": "1 3 4 5"
           }
         },
         "adc_capture_inst.cs_pause_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_S1": {
           "hide_name": 0,
-          "bits": [ 62, 130, 58, 131, 69, 132 ],
+          "bits": [ 56, 131, 52, 132, 63, 133 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:97.18-97.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.27-65.29",
+            "src": "adc_capture.sv:111.18-111.32|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.27-65.29",
             "unused_bits": "1 3 4 5"
           }
         },
@@ -24254,72 +24250,72 @@
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_1_DI": {
           "hide_name": 0,
-          "bits": [ 72 ],
+          "bits": [ 66 ],
           "attributes": {
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_2_DI": {
           "hide_name": 0,
-          "bits": [ 74 ],
+          "bits": [ 68 ],
           "attributes": {
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_3_DI": {
           "hide_name": 0,
-          "bits": [ 76 ],
+          "bits": [ 70 ],
           "attributes": {
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_4_DI": {
           "hide_name": 0,
-          "bits": [ 78 ],
+          "bits": [ 72 ],
           "attributes": {
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI": {
           "hide_name": 0,
-          "bits": [ 71 ],
+          "bits": [ 65 ],
           "attributes": {
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D": {
           "hide_name": 0,
-          "bits": [ 79, 77, 75, 73, 80 ],
+          "bits": [ 73, 71, 69, 67, 74 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:87.16-87.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:34.26-34.27"
+            "src": "adc_capture.sv:101.16-101.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:34.26-34.27"
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2_COUT": {
           "hide_name": 0,
-          "bits": [ "0", 21, 84, 133, 81, 134 ],
+          "bits": [ "0", 21, 78, 134, 75, 135 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:87.16-87.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:63.22-63.23",
+            "src": "adc_capture.sv:101.16-101.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:63.22-63.23",
             "unused_bits": "3 5"
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_COUT": {
           "hide_name": 0,
-          "bits": [ 84, 135, 81, 136, 82, 137 ],
+          "bits": [ 78, 136, 75, 137, 76, 138 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:87.16-87.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.22-65.25",
+            "src": "adc_capture.sv:101.16-101.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.22-65.25",
             "unused_bits": "1 3 4 5"
           }
         },
         "adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_S1": {
           "hide_name": 0,
-          "bits": [ 77, 138, 73, 139, 83, 140 ],
+          "bits": [ 71, 139, 67, 140, 77, 141 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "adc_capture.sv:87.16-87.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.27-65.29",
+            "src": "adc_capture.sv:101.16-101.29|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.27-65.29",
             "unused_bits": "1 3 4 5"
           }
         },
         "adc_capture_inst.d_signal": {
           "hide_name": 0,
-          "bits": [ 43, 31, 94, 93, 42, 32, 92, 91, 41, 26, 89, 90 ],
+          "bits": [ 34, 84, 89, 88, 36, 87, 86, 85, 38, 26, 82, 83 ],
           "attributes": {
             "hdlname": "adc_capture_inst d_signal",
             "src": "adc_capture.sv:17.22-17.30"
@@ -24327,7 +24323,7 @@
         },
         "adc_capture_inst.din": {
           "hide_name": 0,
-          "bits": [ "0", "0", "0", 85, "0", "0", "0", "0" ],
+          "bits": [ "0", "0", "0", 79, 79, "0", "0", "0" ],
           "attributes": {
             "hdlname": "adc_capture_inst din",
             "src": "adc_capture.sv:44.14-44.17"
@@ -24343,13 +24339,13 @@
         },
         "adc_capture_inst.din_bit_TRELLIS_FF_Q_CE": {
           "hide_name": 0,
-          "bits": [ 88 ],
+          "bits": [ 81 ],
           "attributes": {
           }
         },
         "adc_capture_inst.din_bit_TRELLIS_FF_Q_DI": {
           "hide_name": 0,
-          "bits": [ 86 ],
+          "bits": [ 80 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "adc_capture.sv:0.0-0.0|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/techmap.v:137.23-137.24"
@@ -24357,7 +24353,7 @@
         },
         "adc_capture_inst.dout": {
           "hide_name": 0,
-          "bits": [ 43, 31, 94, 93, 42, 32, 92, 91, 41, 26, 89, 90, "x", "x", "x", "x" ],
+          "bits": [ 34, 84, 89, 88, 36, 87, 86, 85, 38, 26, 82, 83, "x", "x", "x", "x" ],
           "attributes": {
             "hdlname": "adc_capture_inst dout",
             "src": "adc_capture.sv:45.15-45.19"
@@ -24373,7 +24369,7 @@
         },
         "adc_capture_inst.frdiv": {
           "hide_name": 0,
-          "bits": [ 105, 102, 99, 48, 49 ],
+          "bits": [ 100, 97, 94, 42, 43 ],
           "attributes": {
             "hdlname": "adc_capture_inst frdiv",
             "src": "adc_capture.sv:21.32-21.37"
@@ -24381,42 +24377,42 @@
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_1_DI": {
           "hide_name": 0,
-          "bits": [ 96 ],
+          "bits": [ 91 ],
           "attributes": {
             "src": "adc_capture.sv:24.2-42.5"
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_2_DI": {
           "hide_name": 0,
-          "bits": [ 98 ],
+          "bits": [ 93 ],
           "attributes": {
             "src": "adc_capture.sv:24.2-42.5"
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_3_DI": {
           "hide_name": 0,
-          "bits": [ 101 ],
+          "bits": [ 96 ],
           "attributes": {
             "src": "adc_capture.sv:24.2-42.5"
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_4_DI": {
           "hide_name": 0,
-          "bits": [ 104 ],
+          "bits": [ 99 ],
           "attributes": {
             "src": "adc_capture.sv:24.2-42.5"
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_DI": {
           "hide_name": 0,
-          "bits": [ 95 ],
+          "bits": [ 90 ],
           "attributes": {
             "src": "adc_capture.sv:24.2-42.5"
           }
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D": {
           "hide_name": 0,
-          "bits": [ 106, 103, 100, 97, 107 ],
+          "bits": [ 101, 98, 95, 92, 102 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "adc_capture.sv:38.14-38.25|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:34.26-34.27"
@@ -24424,7 +24420,7 @@
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2_COUT": {
           "hide_name": 0,
-          "bits": [ "0", 105, 111, 141, 108, 142 ],
+          "bits": [ "0", 100, 106, 142, 103, 143 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "adc_capture.sv:38.14-38.25|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:63.22-63.23",
@@ -24433,7 +24429,7 @@
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_COUT": {
           "hide_name": 0,
-          "bits": [ 111, 143, 108, 144, 109, 145 ],
+          "bits": [ 106, 144, 103, 145, 104, 146 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "adc_capture.sv:38.14-38.25|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.22-65.25",
@@ -24442,7 +24438,7 @@
         },
         "adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_S1": {
           "hide_name": 0,
-          "bits": [ 103, 146, 97, 147, 110, 148 ],
+          "bits": [ 98, 147, 92, 148, 105, 149 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "adc_capture.sv:38.14-38.25|/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.27-65.29",
@@ -24467,20 +24463,20 @@
         },
         "adc_capture_inst.sclk_TRELLIS_FF_Q_CE": {
           "hide_name": 0,
-          "bits": [ 113 ],
+          "bits": [ 108 ],
           "attributes": {
           }
         },
         "adc_capture_inst.sclk_TRELLIS_FF_Q_DI": {
           "hide_name": 0,
-          "bits": [ 112 ],
+          "bits": [ 107 ],
           "attributes": {
             "src": "adc_capture.sv:34.22-34.27"
           }
         },
         "adc_ready": {
           "hide_name": 0,
-          "bits": [ 33 ],
+          "bits": [ 28 ],
           "attributes": {
             "src": "top.sv:23.8-23.17"
           }
@@ -24515,15 +24511,8 @@
         },
         "address": {
           "hide_name": 0,
-          "bits": [ 87 ],
+          "bits": [ 32, 32 ],
           "attributes": {
-          }
-        },
-        "address_LUT4_B_Z": {
-          "hide_name": 0,
-          "bits": [ 35 ],
-          "attributes": {
-            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.22-133.24"
           }
         },
         "clk25": {
@@ -24542,7 +24531,7 @@
         },
         "d_signal": {
           "hide_name": 0,
-          "bits": [ 43, 31, 94, 93, 42, 32, 92, 91, 41, 26, 89, 90 ],
+          "bits": [ 34, 84, 89, 88, 36, 87, 86, 85, 38, 26, 82, 83 ],
           "attributes": {
             "src": "top.sv:25.15-25.23"
           }
@@ -24584,7 +24573,7 @@
         },
         "led_LUT4_Z_1_C": {
           "hide_name": 0,
-          "bits": [ 117, 118 ],
+          "bits": [ 112, 113 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24"
@@ -24592,35 +24581,57 @@
         },
         "led_LUT4_Z_1_C_PFUMX_Z_1_ALUT": {
           "hide_name": 0,
-          "bits": [ 121 ],
+          "bits": [ 116 ],
           "attributes": {
             "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.22-133.24"
           }
         },
         "led_LUT4_Z_1_C_PFUMX_Z_1_BLUT": {
           "hide_name": 0,
-          "bits": [ 122 ],
+          "bits": [ 117 ],
           "attributes": {
             "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.18-133.20"
           }
         },
         "led_LUT4_Z_1_C_PFUMX_Z_ALUT": {
           "hide_name": 0,
-          "bits": [ 119 ],
+          "bits": [ 114 ],
           "attributes": {
             "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.22-133.24"
           }
         },
         "led_LUT4_Z_1_C_PFUMX_Z_BLUT": {
           "hide_name": 0,
+          "bits": [ 115 ],
+          "attributes": {
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.18-133.20"
+          }
+        },
+        "led_LUT4_Z_2_C": {
+          "hide_name": 0,
+          "bits": [ 33, 118, 119 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24"
+          }
+        },
+        "led_LUT4_Z_2_C_PFUMX_Z_1_ALUT": {
+          "hide_name": 0,
           "bits": [ 120 ],
+          "attributes": {
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.22-133.24"
+          }
+        },
+        "led_LUT4_Z_2_C_PFUMX_Z_1_BLUT": {
+          "hide_name": 0,
+          "bits": [ 121 ],
           "attributes": {
             "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.18-133.20"
           }
         },
         "led_LUT4_Z_B": {
           "hide_name": 0,
-          "bits": [ 114, 115, 116 ],
+          "bits": [ 109, 110, 111 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24"
@@ -24628,14 +24639,28 @@
         },
         "led_LUT4_Z_B_PFUMX_Z_ALUT": {
           "hide_name": 0,
-          "bits": [ 123 ],
+          "bits": [ 122 ],
           "attributes": {
             "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.22-133.24"
           }
         },
         "led_LUT4_Z_B_PFUMX_Z_BLUT": {
           "hide_name": 0,
+          "bits": [ 123 ],
+          "attributes": {
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.18-133.20"
+          }
+        },
+        "led_PFUMX_Z_ALUT": {
+          "hide_name": 0,
           "bits": [ 124 ],
+          "attributes": {
+            "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.22-133.24"
+          }
+        },
+        "led_PFUMX_Z_BLUT": {
+          "hide_name": 0,
+          "bits": [ 125 ],
           "attributes": {
             "src": "/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.18-133.20"
           }

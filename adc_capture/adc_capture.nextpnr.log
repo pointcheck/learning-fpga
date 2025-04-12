@@ -1,8 +1,8 @@
 Info: constraining clock net 'clk25' to 25.00 MHz
 
 Info: Logic utilisation before packing:
-Info:     Total LUT4s:        66/24288     0%
-Info:         logic LUTs:     48/24288     0%
+Info:     Total LUT4s:        67/24288     0%
+Info:         logic LUTs:     49/24288     0%
 Info:         carry LUTs:     18/24288     0%
 Info:           RAM LUTs:      0/ 3036     0%
 Info:          RAMW LUTs:      0/ 6072     0%
@@ -37,7 +37,7 @@ Info: Generating derived timing constraints...
 Info: Promoting globals...
 Info:     promoting clock net adc_capture_inst.clk2 to global network
 Info:     promoting clock net clk25$TRELLIS_IO_IN to global network
-Info: Checksum: 0x9ddb4a1c
+Info: Checksum: 0xf0dbd132
 
 Info: Device utilisation:
 Info: 	          TRELLIS_IO:      17/    197     8%
@@ -66,151 +66,138 @@ Info: 	     TRELLIS_ECLKBUF:       0/      8     0%
 Info: 	        ECLKBRIDGECS:       0/      2     0%
 Info: 	                DCSC:       0/      2     0%
 Info: 	          TRELLIS_FF:      35/  24288     0%
-Info: 	        TRELLIS_COMB:      80/  24288     0%
+Info: 	        TRELLIS_COMB:      81/  24288     0%
 Info: 	        TRELLIS_RAMW:       0/   3036     0%
 
 Info: Placed 17 cells based on constraints.
-Info: Creating initial analytic placement for 60 cells, random placement wirelen = 4310.
-Info:     at initial placer iter 0, wirelen = 650
-Info:     at initial placer iter 1, wirelen = 505
-Info:     at initial placer iter 2, wirelen = 486
-Info:     at initial placer iter 3, wirelen = 481
+Info: Creating initial analytic placement for 61 cells, random placement wirelen = 4368.
+Info:     at initial placer iter 0, wirelen = 533
+Info:     at initial placer iter 1, wirelen = 501
+Info:     at initial placer iter 2, wirelen = 493
+Info:     at initial placer iter 3, wirelen = 490
 Info: Running main analytical placer, max placement attempts per cell = 10000.
-Info:     at iteration #1, type ALL: wirelen solved = 471, spread = 627, legal = 625; time = 0.01s
-Info:     at iteration #2, type ALL: wirelen solved = 485, spread = 557, legal = 582; time = 0.00s
+Info:     at iteration #1, type ALL: wirelen solved = 493, spread = 640, legal = 665; time = 0.01s
+Info:     at iteration #2, type ALL: wirelen solved = 507, spread = 641, legal = 663; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 513, spread = 608, legal = 632; time = 0.00s
 Info: HeAP Placer Time: 0.03s
 Info:   of which solving equations: 0.01s
 Info:   of which spreading cells: 0.00s
 Info:   of which strict legalisation: 0.00s
 
 Info: Running simulated annealing placer for refinement.
-Info:   at iteration #1: temp = 0.000000, timing cost = 21, wirelen = 582
-Info:   at iteration #5: temp = 0.000000, timing cost = 23, wirelen = 546
-Info:   at iteration #6: temp = 0.000000, timing cost = 14, wirelen = 547 
-Info: SA placement time 0.02s
+Info:   at iteration #1: temp = 0.000000, timing cost = 23, wirelen = 632
+Info:   at iteration #4: temp = 0.000000, timing cost = 19, wirelen = 589 
+Info: SA placement time 0.01s
 
-Info: Max frequency for clock   '$glbnet$clk25$TRELLIS_IO_IN': 320.31 MHz (PASS at 25.00 MHz)
-Info: Max frequency for clock '$glbnet$adc_capture_inst.clk2': 268.67 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock   '$glbnet$clk25$TRELLIS_IO_IN': 333.11 MHz (PASS at 25.00 MHz)
+Info: Max frequency for clock '$glbnet$adc_capture_inst.clk2': 227.17 MHz (PASS at 12.00 MHz)
 
 Info: Clock 'adc_spi_sclk$TRELLIS_IO_OUT' has no interior paths
 
 Info: Max delay <async>                               -> <async>                              : 7.52 ns
-Info: Max delay <async>                               -> posedge $glbnet$adc_capture_inst.clk2: 3.20 ns
-Info: Max delay <async>                               -> posedge $glbnet$clk25$TRELLIS_IO_IN  : 2.66 ns
-Info: Max delay <async>                               -> posedge adc_spi_sclk$TRELLIS_IO_OUT  : 1.70 ns
-Info: Max delay posedge $glbnet$adc_capture_inst.clk2 -> <async>                              : 8.60 ns
-Info: Max delay posedge $glbnet$adc_capture_inst.clk2 -> posedge $glbnet$clk25$TRELLIS_IO_IN  : 2.84 ns
+Info: Max delay <async>                               -> posedge $glbnet$adc_capture_inst.clk2: 3.04 ns
+Info: Max delay <async>                               -> negedge $glbnet$adc_capture_inst.clk2: 1.86 ns
+Info: Max delay <async>                               -> posedge $glbnet$clk25$TRELLIS_IO_IN  : 4.34 ns
+Info: Max delay <async>                               -> posedge adc_spi_sclk$TRELLIS_IO_OUT  : 2.02 ns
+Info: Max delay posedge $glbnet$adc_capture_inst.clk2 -> <async>                              : 8.69 ns
+Info: Max delay posedge $glbnet$adc_capture_inst.clk2 -> posedge $glbnet$clk25$TRELLIS_IO_IN  : 4.92 ns
 Info: Max delay posedge $glbnet$adc_capture_inst.clk2 -> posedge adc_spi_sclk$TRELLIS_IO_OUT  : 1.16 ns
-Info: Max delay posedge $glbnet$clk25$TRELLIS_IO_IN   -> <async>                              : 7.97 ns
+Info: Max delay negedge $glbnet$adc_capture_inst.clk2 -> <async>                              : 8.85 ns
+Info: Max delay posedge $glbnet$clk25$TRELLIS_IO_IN   -> <async>                              : 6.36 ns
 Info: Max delay posedge adc_spi_sclk$TRELLIS_IO_OUT   -> <async>                              : 3.72 ns
 Info: Max delay posedge adc_spi_sclk$TRELLIS_IO_OUT   -> posedge $glbnet$adc_capture_inst.clk2: 1.40 ns
+Info: Max delay posedge adc_spi_sclk$TRELLIS_IO_OUT   -> negedge $glbnet$adc_capture_inst.clk2: 1.16 ns
 
 Info: Slack histogram:
 Info:  legend: * represents 1 endpoint(s)
 Info:          + represents [1,1) endpoint(s)
-Info: [ 36878,  39151) |******* 
-Info: [ 39151,  41424) |** 
-Info: [ 41424,  43697) | 
-Info: [ 43697,  45970) | 
-Info: [ 45970,  48243) | 
-Info: [ 48243,  50516) | 
-Info: [ 50516,  52789) | 
-Info: [ 52789,  55062) | 
-Info: [ 55062,  57335) | 
-Info: [ 57335,  59608) | 
-Info: [ 59608,  61881) | 
-Info: [ 61881,  64154) | 
-Info: [ 64154,  66427) | 
-Info: [ 66427,  68700) | 
-Info: [ 68700,  70973) | 
-Info: [ 70973,  73246) | 
-Info: [ 73246,  75519) | 
-Info: [ 75519,  77792) | 
-Info: [ 77792,  80065) |** 
-Info: [ 80065,  82338) |********************************************** 
-Info: Checksum: 0x88f75bd4
+Info: [ 36998,  39265) |********* 
+Info: [ 39265,  41532) |** 
+Info: [ 41532,  43799) | 
+Info: [ 43799,  46066) | 
+Info: [ 46066,  48333) | 
+Info: [ 48333,  50600) | 
+Info: [ 50600,  52867) | 
+Info: [ 52867,  55134) | 
+Info: [ 55134,  57401) | 
+Info: [ 57401,  59668) | 
+Info: [ 59668,  61935) | 
+Info: [ 61935,  64202) | 
+Info: [ 64202,  66469) | 
+Info: [ 66469,  68736) | 
+Info: [ 68736,  71003) | 
+Info: [ 71003,  73270) | 
+Info: [ 73270,  75537) | 
+Info: [ 75537,  77804) | 
+Info: [ 77804,  80071) |* 
+Info: [ 80071,  82338) |********************************************** 
+Info: Checksum: 0xfbb70615
 Info: Routing globals...
 Info:     routing clock net $glbnet$clk25$TRELLIS_IO_IN using global 0
 Info:     routing clock net $glbnet$adc_capture_inst.clk2 using global 1
 
 Info: Routing..
 Info: Setting up routing queue.
-Info: Routing 283 arcs.
+Info: Routing 289 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:        349 |       65        262 |   65   262 |         0|       0.07       0.07|
+Info:        367 |       77        268 |   77   268 |         0|       0.08       0.08|
 Info: Routing complete.
-Info: Router1 time 0.07s
-Info: Checksum: 0x5fcd5f2a
+Info: Router1 time 0.08s
+Info: Checksum: 0xc1500930
 
 Info: Critical path report for clock '$glbnet$clk25$TRELLIS_IO_IN' (posedge -> posedge):
 Info:       type curr  total name
-Info:   clk-to-q  0.52  0.52 Source adc_capture_inst.frdiv_TRELLIS_FF_Q_4.Q
-Info:    routing  1.10  1.62 Net adc_capture_inst.frdiv[0] (54,2) -> (54,3)
-Info:                          Sink adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2$CCU2_COMB0.B
+Info:   clk-to-q  0.52  0.52 Source adc_capture_inst.frdiv_TRELLIS_FF_Q_3.Q
+Info:    routing  1.10  1.62 Net adc_capture_inst.frdiv[1] (32,2) -> (32,3)
+Info:                          Sink adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2$CCU2_COMB1.B
 Info:                          Defined in:
-Info:                               adc_capture.sv:38.14-38.25
-Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:63.22-63.23
-Info:      logic  0.45  2.07 Source adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2$CCU2_COMB0.FCO
-Info:    routing  0.00  2.07 Net adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2$CCU2_FCI_INT (54,3) -> (54,3)
-Info:                          Sink adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2$CCU2_COMB1.FCI
-Info:      logic  0.00  2.07 Source adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2$CCU2_COMB1.FCO
-Info:    routing  0.00  2.07 Net adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2_COUT[2] (54,3) -> (54,3)
+Info:                               adc_capture.sv:21.32-21.37
+Info:      logic  0.45  2.07 Source adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2$CCU2_COMB1.FCO
+Info:    routing  0.00  2.07 Net adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2_COUT[2] (32,3) -> (32,3)
 Info:                          Sink adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1$CCU2_COMB0.FCI
 Info:                          Defined in:
 Info:                               adc_capture.sv:38.14-38.25
 Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.22-65.25
-Info:      logic  0.44  2.51 Source adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1$CCU2_COMB0.F
-Info:    routing  0.71  3.22 Net adc_capture_inst.clk2_TRELLIS_FF_Q_CE[1] (54,3) -> (54,2)
-Info:                          Sink adc_capture_inst.frdiv_TRELLIS_FF_Q_2_DI_LUT4_Z.D
+Info:      logic  0.07  2.14 Source adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1$CCU2_COMB0.FCO
+Info:    routing  0.00  2.14 Net adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1$CCU2_FCI_INT (32,3) -> (32,3)
+Info:                          Sink adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1$CCU2_COMB1.FCI
+Info:      logic  0.00  2.14 Source adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1$CCU2_COMB1.FCO
+Info:    routing  0.00  2.14 Net adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2_COUT[4] (32,3) -> (32,3)
+Info:                          Sink adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0$CCU2_COMB0.FCI
+Info:                          Defined in:
+Info:                               adc_capture.sv:38.14-38.25
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.22-65.25
+Info:      logic  0.44  2.59 Source adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0$CCU2_COMB0.F
+Info:    routing  0.71  3.30 Net adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z_D[4] (32,3) -> (32,2)
+Info:                          Sink adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z.D
 Info:                          Defined in:
 Info:                               adc_capture.sv:38.14-38.25
 Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:34.26-34.27
-Info:      logic  0.24  3.46 Source adc_capture_inst.frdiv_TRELLIS_FF_Q_2_DI_LUT4_Z.F
-Info:    routing  0.13  3.59 Net adc_capture_inst.frdiv_TRELLIS_FF_Q_2_DI (54,2) -> (54,2)
-Info:                          Sink adc_capture_inst.frdiv_TRELLIS_FF_Q_2.DI
+Info:      logic  0.24  3.53 Source adc_capture_inst.frdiv_TRELLIS_FF_Q_DI_LUT4_Z.F
+Info:    routing  0.13  3.66 Net adc_capture_inst.frdiv_TRELLIS_FF_Q_DI (32,2) -> (32,2)
+Info:                          Sink adc_capture_inst.frdiv_TRELLIS_FF_Q.DI
 Info:                          Defined in:
 Info:                               adc_capture.sv:24.2-42.5
-Info:      setup  0.00  3.59 Source adc_capture_inst.frdiv_TRELLIS_FF_Q_2.DI
-Info: 1.65 ns logic, 1.94 ns routing
+Info:      setup  0.00  3.66 Source adc_capture_inst.frdiv_TRELLIS_FF_Q.DI
+Info: 1.72 ns logic, 1.94 ns routing
 
-Info: Critical path report for clock '$glbnet$adc_capture_inst.clk2' (posedge -> posedge):
+Info: Critical path report for clock '$glbnet$adc_capture_inst.clk2' (posedge -> negedge):
 Info:       type curr  total name
 Info:   clk-to-q  0.52  0.52 Source adc_capture_inst.cs_reg_TRELLIS_FF_Q_4.Q
-Info:    routing  1.12  1.64 Net adc_capture_inst.cs_reg[0] (63,2) -> (62,3)
-Info:                          Sink adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2$CCU2_COMB0.B
+Info:    routing  1.35  1.88 Net adc_capture_inst.cs_reg[0] (62,3) -> (65,3)
+Info:                          Sink adc_capture_inst.din_LUT4_D.A
 Info:                          Defined in:
-Info:                               adc_capture.sv:87.16-87.29
+Info:                               adc_capture.sv:101.16-101.29
 Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:63.22-63.23
-Info:      logic  0.45  2.09 Source adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2$CCU2_COMB0.FCO
-Info:    routing  0.00  2.09 Net adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2$CCU2_FCI_INT (62,3) -> (62,3)
-Info:                          Sink adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2$CCU2_COMB1.FCI
-Info:      logic  0.00  2.09 Source adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2$CCU2_COMB1.FCO
-Info:    routing  0.00  2.09 Net adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2_COUT[2] (62,3) -> (62,3)
-Info:                          Sink adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1$CCU2_COMB0.FCI
+Info:      logic  0.24  2.11 Source adc_capture_inst.din_LUT4_D.F
+Info:    routing  0.13  2.24 Net adc_capture_inst.din_bit_TRELLIS_FF_Q_DI (65,3) -> (65,3)
+Info:                          Sink adc_capture_inst.din_bit_TRELLIS_FF_Q.DI
 Info:                          Defined in:
-Info:                               adc_capture.sv:87.16-87.29
-Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.22-65.25
-Info:      logic  0.07  2.16 Source adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1$CCU2_COMB0.FCO
-Info:    routing  0.00  2.16 Net adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1$CCU2_FCI_INT (62,3) -> (62,3)
-Info:                          Sink adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1$CCU2_COMB1.FCI
-Info:      logic  0.00  2.16 Source adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_1$CCU2_COMB1.FCO
-Info:    routing  0.00  2.16 Net adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0_2_COUT[4] (62,3) -> (62,3)
-Info:                          Sink adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0$CCU2_COMB0.FCI
-Info:                          Defined in:
-Info:                               adc_capture.sv:87.16-87.29
-Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:65.22-65.25
-Info:      logic  0.44  2.61 Source adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D_CCU2C_S0$CCU2_COMB0.F
-Info:    routing  0.71  3.32 Net adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z_D[4] (62,3) -> (62,2)
-Info:                          Sink adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z.D
-Info:                          Defined in:
-Info:                               adc_capture.sv:87.16-87.29
-Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v:34.26-34.27
-Info:      logic  0.24  3.55 Source adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI_LUT4_Z.F
-Info:    routing  0.13  3.68 Net adc_capture_inst.cs_reg_TRELLIS_FF_Q_DI (62,2) -> (62,2)
-Info:                          Sink adc_capture_inst.cs_reg_TRELLIS_FF_Q.DI
-Info:      setup  0.00  3.68 Source adc_capture_inst.cs_reg_TRELLIS_FF_Q.DI
-Info: 1.72 ns logic, 1.96 ns routing
+Info:                               adc_capture.sv:0.0-0.0
+Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/techmap.v:137.23-137.24
+Info:      setup  0.00  2.24 Source adc_capture_inst.din_bit_TRELLIS_FF_Q.DI
+Info: 0.76 ns logic, 1.48 ns routing
 
 Info: Critical path report for cross-domain path '<async>' -> '<async>':
 Info:       type curr  total name
@@ -223,150 +210,177 @@ Info: 0.00 ns logic, 4.59 ns routing
 
 Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$adc_capture_inst.clk2':
 Info:       type curr  total name
-Info:     source  0.00  0.00 Source adc_spi_miso$tr_io.O
-Info:    routing  2.05  2.05 Net adc_spi_miso$TRELLIS_IO_IN (72,20) -> (64,4)
-Info:                          Sink adc_capture_inst.dout_TRELLIS_FF_Q_11.M
+Info:     source  0.00  0.00 Source key[3]$tr_io.O
+Info:    routing  1.69  1.69 Net key[3]$TRELLIS_IO_IN (62,0) -> (66,3)
+Info:                          Sink adc_capture_inst.dout_TRELLIS_FF_Q_2.LSR
 Info:                          Defined in:
-Info:                               top.sv:13.21-13.25
-Info:      setup  0.00  2.05 Source adc_capture_inst.dout_TRELLIS_FF_Q_11.M
-Info: 0.00 ns logic, 2.05 ns routing
+Info:                               top.sv:16.8-16.11
+Info:      setup  0.42  2.12 Source adc_capture_inst.dout_TRELLIS_FF_Q_2.LSR
+Info: 0.42 ns logic, 1.69 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'negedge $glbnet$adc_capture_inst.clk2':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source key[3]$tr_io.O
+Info:    routing  1.69  1.69 Net key[3]$TRELLIS_IO_IN (62,0) -> (65,3)
+Info:                          Sink adc_capture_inst.din_bit_TRELLIS_FF_Q.LSR
+Info:                          Defined in:
+Info:                               top.sv:16.8-16.11
+Info:      setup  0.42  2.12 Source adc_capture_inst.din_bit_TRELLIS_FF_Q.LSR
+Info: 0.42 ns logic, 1.69 ns routing
 
 Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk25$TRELLIS_IO_IN':
 Info:       type curr  total name
 Info:     source  0.00  0.00 Source key[3]$tr_io.O
-Info:    routing  1.52  1.52 Net key[3]$TRELLIS_IO_IN (62,0) -> (53,2)
-Info:                          Sink adc_capture_inst.sclk_TRELLIS_FF_Q.LSR
+Info:    routing  2.68  2.68 Net key[3]$TRELLIS_IO_IN (62,0) -> (31,3)
+Info:                          Sink adc_capture_inst.frdiv_TRELLIS_FF_Q_4.LSR
 Info:                          Defined in:
 Info:                               top.sv:16.8-16.11
-Info:      setup  0.42  1.94 Source adc_capture_inst.sclk_TRELLIS_FF_Q.LSR
-Info: 0.42 ns logic, 1.52 ns routing
+Info:      setup  0.42  3.11 Source adc_capture_inst.frdiv_TRELLIS_FF_Q_4.LSR
+Info: 0.42 ns logic, 2.68 ns routing
 
 Info: Critical path report for cross-domain path '<async>' -> 'posedge adc_spi_sclk$TRELLIS_IO_OUT':
 Info:       type curr  total name
 Info:     source  0.00  0.00 Source key[3]$tr_io.O
-Info:    routing  0.92  0.92 Net key[3]$TRELLIS_IO_IN (62,0) -> (64,3)
-Info:                          Sink address_TRELLIS_FF_Q.LSR
+Info:    routing  0.94  0.94 Net key[3]$TRELLIS_IO_IN (62,0) -> (65,4)
+Info:                          Sink adc_capture_inst.address_TRELLIS_FF_Q.LSR
 Info:                          Defined in:
 Info:                               top.sv:16.8-16.11
-Info:      setup  0.42  1.34 Source address_TRELLIS_FF_Q.LSR
-Info: 0.42 ns logic, 0.92 ns routing
+Info:      setup  0.42  1.37 Source adc_capture_inst.address_TRELLIS_FF_Q.LSR
+Info: 0.42 ns logic, 0.94 ns routing
 
 Info: Critical path report for cross-domain path 'posedge $glbnet$adc_capture_inst.clk2' -> '<async>':
 Info:       type curr  total name
 Info:   clk-to-q  0.52  0.52 Source adc_capture_inst.cs_TRELLIS_FF_Q.Q
-Info:    routing  5.09  5.61 Net adc_spi_csn$TRELLIS_IO_OUT (61,2) -> (0,26)
+Info:    routing  5.10  5.62 Net adc_spi_csn$TRELLIS_IO_OUT (63,3) -> (0,26)
 Info:                          Sink gpio[1]$tr_io.I
 Info:                          Defined in:
 Info:                               top.sv:13.21-13.25
-Info: 0.52 ns logic, 5.09 ns routing
+Info: 0.52 ns logic, 5.10 ns routing
 
 Info: Critical path report for cross-domain path 'posedge $glbnet$adc_capture_inst.clk2' -> 'posedge $glbnet$clk25$TRELLIS_IO_IN':
 Info:       type curr  total name
 Info:   clk-to-q  0.52  0.52 Source adc_capture_inst.cs_TRELLIS_FF_Q.Q
-Info:    routing  1.16  1.69 Net adc_spi_csn$TRELLIS_IO_OUT (61,2) -> (54,2)
+Info:    routing  2.17  2.70 Net adc_spi_csn$TRELLIS_IO_OUT (63,3) -> (32,2)
 Info:                          Sink adc_capture_inst.sclk_TRELLIS_FF_Q_CE_LUT4_Z.C
 Info:                          Defined in:
 Info:                               top.sv:13.21-13.25
-Info:      logic  0.24  1.93 Source adc_capture_inst.sclk_TRELLIS_FF_Q_CE_LUT4_Z.F
-Info:    routing  0.64  2.57 Net adc_capture_inst.sclk_TRELLIS_FF_Q_CE (54,2) -> (53,2)
+Info:      logic  0.24  2.93 Source adc_capture_inst.sclk_TRELLIS_FF_Q_CE_LUT4_Z.F
+Info:    routing  0.39  3.33 Net adc_capture_inst.sclk_TRELLIS_FF_Q_CE (32,2) -> (33,2)
 Info:                          Sink adc_capture_inst.sclk_TRELLIS_FF_Q.CE
-Info:      setup  0.00  2.57 Source adc_capture_inst.sclk_TRELLIS_FF_Q.CE
-Info: 0.76 ns logic, 1.81 ns routing
+Info:      setup  0.00  3.33 Source adc_capture_inst.sclk_TRELLIS_FF_Q.CE
+Info: 0.76 ns logic, 2.57 ns routing
 
 Info: Critical path report for cross-domain path 'posedge $glbnet$adc_capture_inst.clk2' -> 'posedge adc_spi_sclk$TRELLIS_IO_OUT':
 Info:       type curr  total name
 Info:   clk-to-q  0.52  0.52 Source adc_capture_inst.adc_ready_TRELLIS_FF_Q.Q
-Info:    routing  0.70  1.22 Net adc_ready (63,3) -> (64,3)
-Info:                          Sink adc_ack_TRELLIS_FF_Q.M
+Info:    routing  0.68  1.21 Net adc_ready (64,4) -> (65,4)
+Info:                          Sink adc_capture_inst.address_TRELLIS_FF_Q.CE
 Info:                          Defined in:
 Info:                               top.sv:23.8-23.17
-Info:      setup  0.00  1.22 Source adc_ack_TRELLIS_FF_Q.M
-Info: 0.52 ns logic, 0.70 ns routing
+Info:      setup  0.00  1.21 Source adc_capture_inst.address_TRELLIS_FF_Q.CE
+Info: 0.52 ns logic, 0.68 ns routing
+
+Info: Critical path report for cross-domain path 'negedge $glbnet$adc_capture_inst.clk2' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source adc_capture_inst.din_bit_TRELLIS_FF_Q.Q
+Info:    routing  5.42  5.95 Net adc_spi_mosi$TRELLIS_IO_OUT (65,3) -> (0,26)
+Info:                          Sink gpio[2]$tr_io.I
+Info:                          Defined in:
+Info:                               top.sv:13.21-13.25
+Info: 0.52 ns logic, 5.42 ns routing
 
 Info: Critical path report for cross-domain path 'posedge $glbnet$clk25$TRELLIS_IO_IN' -> '<async>':
 Info:       type curr  total name
 Info:   clk-to-q  0.52  0.52 Source adc_capture_inst.sclk_TRELLIS_FF_Q.Q
-Info:    routing  4.61  5.13 Net adc_spi_sclk$TRELLIS_IO_OUT (53,2) -> (0,26)
+Info:    routing  3.68  4.21 Net adc_spi_sclk$TRELLIS_IO_OUT (33,2) -> (0,26)
 Info:                          Sink gpio[0]$tr_io.I
 Info:                          Defined in:
 Info:                               top.sv:21.8-21.12
-Info: 0.52 ns logic, 4.61 ns routing
+Info: 0.52 ns logic, 3.68 ns routing
 
 Info: Critical path report for cross-domain path 'posedge adc_spi_sclk$TRELLIS_IO_OUT' -> '<async>':
 Info:       type curr  total name
-Info:   clk-to-q  0.52  0.52 Source address_TRELLIS_FF_Q.Q
-Info:    routing  0.68  1.21 Net address (64,3) -> (64,3)
-Info:                          Sink address_LUT4_B.B
+Info:   clk-to-q  0.52  0.52 Source adc_capture_inst.address_TRELLIS_FF_Q.Q
+Info:    routing  0.73  1.25 Net address[0] (65,4) -> (65,3)
+Info:                          Sink adc_capture_inst.address_LUT4_D.D
 Info:                          Defined in:
 Info:                               adc_capture.sv:11.21-11.28
-Info:      logic  0.24  1.44 Source address_LUT4_B.F
-Info:    routing  0.00  1.44 Net address_LUT4_B_Z (64,3) -> (64,3)
-Info:                          Sink adc_capture_inst.adc_ready_LUT4_D_Z_PFUMX_Z_BLUT_LUT4_Z.F1
-Info:                          Defined in:
-Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.22-133.24
-Info:      logic  0.17  1.61 Source adc_capture_inst.adc_ready_LUT4_D_Z_PFUMX_Z_BLUT_LUT4_Z.OFX
-Info:    routing  0.17  1.78 Net adc_capture_inst.adc_ready_LUT4_D_Z[2] (64,3) -> (64,3)
-Info:                          Sink led_LUT4_Z_3.D
+Info:      logic  0.24  1.49 Source adc_capture_inst.address_LUT4_D.F
+Info:    routing  0.75  2.24 Net led_LUT4_Z_2_C[0] (65,3) -> (65,2)
+Info:                          Sink led_PFUMX_Z_BLUT_LUT4_Z.B
 Info:                          Defined in:
 Info:                               /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
-Info:      logic  0.24  2.02 Source led_LUT4_Z_3.F
-Info:    routing  0.88  2.89 Net led[0]$TRELLIS_IO_OUT (64,3) -> (65,0)
+Info:      logic  0.40  2.64 Source led_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.92  3.56 Net led[0]$TRELLIS_IO_OUT (65,2) -> (65,0)
 Info:                          Sink led[0]$tr_io.I
 Info:                          Defined in:
 Info:                               top.sv:8.21-8.24
-Info: 1.16 ns logic, 1.73 ns routing
+Info: 1.16 ns logic, 2.40 ns routing
 
 Info: Critical path report for cross-domain path 'posedge adc_spi_sclk$TRELLIS_IO_OUT' -> 'posedge $glbnet$adc_capture_inst.clk2':
 Info:       type curr  total name
 Info:   clk-to-q  0.52  0.52 Source adc_ack_TRELLIS_FF_Q.Q
-Info:    routing  0.44  0.96 Net adc_ack (64,3) -> (64,3)
+Info:    routing  0.44  0.96 Net adc_ack (65,4) -> (65,4)
 Info:                          Sink adc_ack_LUT4_C.C
 Info:                          Defined in:
 Info:                               adc_capture.sv:10.15-10.22
 Info:      logic  0.24  1.20 Source adc_ack_LUT4_C.F
-Info:    routing  0.64  1.84 Net adc_capture_inst.adc_ready_TRELLIS_FF_Q_CE (64,3) -> (63,3)
+Info:    routing  0.64  1.84 Net adc_capture_inst.adc_ready_TRELLIS_FF_Q_CE (65,4) -> (64,4)
 Info:                          Sink adc_capture_inst.adc_ready_TRELLIS_FF_Q.CE
 Info:      setup  0.00  1.84 Source adc_capture_inst.adc_ready_TRELLIS_FF_Q.CE
 Info: 0.76 ns logic, 1.08 ns routing
 
-Info: Max frequency for clock   '$glbnet$clk25$TRELLIS_IO_IN': 278.47 MHz (PASS at 25.00 MHz)
-Info: Max frequency for clock '$glbnet$adc_capture_inst.clk2': 271.52 MHz (PASS at 12.00 MHz)
+Info: Critical path report for cross-domain path 'posedge adc_spi_sclk$TRELLIS_IO_OUT' -> 'negedge $glbnet$adc_capture_inst.clk2':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source adc_capture_inst.address_TRELLIS_FF_Q.Q
+Info:    routing  0.73  1.25 Net address[0] (65,4) -> (65,3)
+Info:                          Sink adc_capture_inst.din_TRELLIS_FF_Q.M
+Info:                          Defined in:
+Info:                               adc_capture.sv:11.21-11.28
+Info:      setup  0.00  1.25 Source adc_capture_inst.din_TRELLIS_FF_Q.M
+Info: 0.52 ns logic, 0.73 ns routing
+
+Info: Max frequency for clock   '$glbnet$clk25$TRELLIS_IO_IN': 273.07 MHz (PASS at 25.00 MHz)
+Info: Max frequency for clock '$glbnet$adc_capture_inst.clk2': 222.82 MHz (PASS at 12.00 MHz)
 
 Info: Clock 'adc_spi_sclk$TRELLIS_IO_OUT' has no interior paths
 
 Info: Max delay <async>                               -> <async>                              : 4.59 ns
-Info: Max delay <async>                               -> posedge $glbnet$adc_capture_inst.clk2: 2.05 ns
-Info: Max delay <async>                               -> posedge $glbnet$clk25$TRELLIS_IO_IN  : 1.94 ns
-Info: Max delay <async>                               -> posedge adc_spi_sclk$TRELLIS_IO_OUT  : 1.34 ns
-Info: Max delay posedge $glbnet$adc_capture_inst.clk2 -> <async>                              : 5.61 ns
-Info: Max delay posedge $glbnet$adc_capture_inst.clk2 -> posedge $glbnet$clk25$TRELLIS_IO_IN  : 2.57 ns
-Info: Max delay posedge $glbnet$adc_capture_inst.clk2 -> posedge adc_spi_sclk$TRELLIS_IO_OUT  : 1.22 ns
-Info: Max delay posedge $glbnet$clk25$TRELLIS_IO_IN   -> <async>                              : 5.13 ns
-Info: Max delay posedge adc_spi_sclk$TRELLIS_IO_OUT   -> <async>                              : 2.89 ns
+Info: Max delay <async>                               -> posedge $glbnet$adc_capture_inst.clk2: 2.12 ns
+Info: Max delay <async>                               -> negedge $glbnet$adc_capture_inst.clk2: 2.12 ns
+Info: Max delay <async>                               -> posedge $glbnet$clk25$TRELLIS_IO_IN  : 3.11 ns
+Info: Max delay <async>                               -> posedge adc_spi_sclk$TRELLIS_IO_OUT  : 1.37 ns
+Info: Max delay posedge $glbnet$adc_capture_inst.clk2 -> <async>                              : 5.62 ns
+Info: Max delay posedge $glbnet$adc_capture_inst.clk2 -> posedge $glbnet$clk25$TRELLIS_IO_IN  : 3.33 ns
+Info: Max delay posedge $glbnet$adc_capture_inst.clk2 -> posedge adc_spi_sclk$TRELLIS_IO_OUT  : 1.21 ns
+Info: Max delay negedge $glbnet$adc_capture_inst.clk2 -> <async>                              : 5.95 ns
+Info: Max delay posedge $glbnet$clk25$TRELLIS_IO_IN   -> <async>                              : 4.21 ns
+Info: Max delay posedge adc_spi_sclk$TRELLIS_IO_OUT   -> <async>                              : 3.56 ns
 Info: Max delay posedge adc_spi_sclk$TRELLIS_IO_OUT   -> posedge $glbnet$adc_capture_inst.clk2: 1.84 ns
+Info: Max delay posedge adc_spi_sclk$TRELLIS_IO_OUT   -> negedge $glbnet$adc_capture_inst.clk2: 1.25 ns
 
 Info: Slack histogram:
 Info:  legend: * represents 1 endpoint(s)
 Info:          + represents [1,1) endpoint(s)
-Info: [ 36409,  38708) |******* 
-Info: [ 38708,  41007) |** 
-Info: [ 41007,  43306) | 
-Info: [ 43306,  45605) | 
-Info: [ 45605,  47904) | 
-Info: [ 47904,  50203) | 
-Info: [ 50203,  52502) | 
-Info: [ 52502,  54801) | 
-Info: [ 54801,  57100) | 
-Info: [ 57100,  59399) | 
-Info: [ 59399,  61698) | 
-Info: [ 61698,  63997) | 
-Info: [ 63997,  66296) | 
-Info: [ 66296,  68595) | 
-Info: [ 68595,  70894) | 
-Info: [ 70894,  73193) | 
-Info: [ 73193,  75492) | 
-Info: [ 75492,  77791) | 
-Info: [ 77791,  80090) |******** 
-Info: [ 80090,  82389) |**************************************** 
+Info: [ 36338,  38641) |******* 
+Info: [ 38641,  40944) |**** 
+Info: [ 40944,  43247) | 
+Info: [ 43247,  45550) | 
+Info: [ 45550,  47853) | 
+Info: [ 47853,  50156) | 
+Info: [ 50156,  52459) | 
+Info: [ 52459,  54762) | 
+Info: [ 54762,  57065) | 
+Info: [ 57065,  59368) | 
+Info: [ 59368,  61671) | 
+Info: [ 61671,  63974) | 
+Info: [ 63974,  66277) | 
+Info: [ 66277,  68580) | 
+Info: [ 68580,  70883) | 
+Info: [ 70883,  73186) | 
+Info: [ 73186,  75489) | 
+Info: [ 75489,  77792) | 
+Info: [ 77792,  80095) |******* 
+Info: [ 80095,  82398) |**************************************** 
 
 Info: Program finished normally.
