@@ -16,6 +16,9 @@ module top (
 	logic ctl_valid;
 	logic [31:0] command;
 
+	logic [11:0] d_signal;
+	logic can_move_fwd;
+
 	assign led[0] = state;
 	assign led[1] = direction;
 	assign led[2] = motor_dc[7];
@@ -35,7 +38,7 @@ module top (
 		.rst(rst),
 		.ir_ready(ir_ready),
 		.command(command),
-		.can_move_fwd(1'd1),
+		.can_move_fwd(can_move_fwd),
 		.ctl_valid(ctl_valid),
 		.ack(ack),
 		.motor_dc(motor_dc),
@@ -76,6 +79,38 @@ module top (
 		.ir_input(gpio[3]),
 		.ready(ir_ready),
 		.command(command)
-	);	
+	);
+
+	adc_hysteresis
+	# (
+		
+		.x_High(12'd3000),
+		.x_Low(12'd1000)
+	) hysteresis_inst (
+		.rst(rst),
+		.clk(clk25),
+		.d_signal(d_signal),
+		.can_move_fwd(can_move_fwd)
+	);
+	
+	adc_capture 
+	# (
+		.clk_hz(25000000),
+		.sclk_hz(500000),
+		.cycle_pause(30)
+	) adc_capture_inst (
+		.clk(clk25),
+		.rst(rst),
+		.ctl_valid(ctl_valid),
+		.adc_ack(adc_ack),
+		.address(address),
+		.dout_bit(dout_bit),
+		.sclk(sclk),
+		.cs(cs),
+		.adc_ready(adc_ready),
+		.din_bit(din_bit),
+		.d_signal(d_signal)
+	);
+
 
 endmodule
