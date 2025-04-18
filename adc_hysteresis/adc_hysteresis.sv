@@ -5,13 +5,13 @@ module adc_hysteresis
 ) (
 	input rst,
 	input  clk,
-	input  logic [11:0] d_signal,		// Digital signal from ADC
+	input  logic [11:0] d_signal,			// Digital signal from ADC
 	output logic can_move_fwd
 );
 	logic [11:0] not_d_signal;
 
 	always_ff @(posedge clk or posedge rst) begin
-		if (rst) begin 
+		if (rst) begin 				// Global RESET
 			can_move_fwd <= '1;
 			not_d_signal <= '1;
 		end else begin
