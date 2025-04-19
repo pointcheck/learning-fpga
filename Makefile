@@ -1,5 +1,5 @@
 NAME = cart
-VERILOG += top.sv ./motor_drv/motor_drv.sv ./control/control.sv ./servo_pdm/servo_pdm.v ./ir_decoder/ir_decoder.v
+VERILOG += top.sv ./motor_drv/motor_drv.sv ./control/control.sv ./servo_pdm/servo_pdm.v ./ir_decoder/ir_decoder.v ./adc_capture/adc_capture.sv ./adc_hysteresis/adc_hysteresis.sv
 INC = ./
 LPF = ./control/karnix_cabga256.lpf
 DEVICE = 25k

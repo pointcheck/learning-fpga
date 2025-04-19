@@ -2,7 +2,12 @@ module top (
 	input  logic clk25,
 	input  logic [3:0] key,
 	inout  logic [3:0] gpio,
-	output logic [3:0] led
+	output logic [3:0] led,
+	
+	input  logic adc_spi_miso,
+	output logic adc_spi_mosi,
+	output logic adc_spi_sclk,
+	output logic adc_spi_csn
 );
 
 	logic [7:0] motor_dc;
@@ -10,13 +15,15 @@ module top (
 	logic direction;
 	logic ack;
 
+	logic dout_bit;
+	logic din_bit;
+
 	logic state;
 
 	logic ir_ready;
 	logic ctl_valid;
 	logic [31:0] command;
 
-	logic [11:0] d_signal;
 	logic can_move_fwd;
 
 	assign led[0] = state;
@@ -92,25 +99,41 @@ module top (
 		.d_signal(d_signal),
 		.can_move_fwd(can_move_fwd)
 	);
-	
-	adc_capture 
-	# (
-		.clk_hz(25000000),
-		.sclk_hz(500000),
-		.cycle_pause(30)
-	) adc_capture_inst (
-		.clk(clk25),
-		.rst(rst),
-		.ctl_valid(ctl_valid),
-		.adc_ack(adc_ack),
-		.address(address),
-		.dout_bit(dout_bit),
-		.sclk(sclk),
-		.cs(cs),
-		.adc_ready(adc_ready),
-		.din_bit(din_bit),
-		.d_signal(d_signal)
-	);
+
+
+	logic [2:0] address;
+	logic dout_bit;
+	logic sclk;
+	logic cs;
+	logic adc_ready;
+	logic din_bit;
+	logic [11:0] d_signal;
+
+
+        adc_capture # (
+                .clk_hz(25000000),
+                .sclk_hz(500000),
+                .cycle_pause(30)
+        ) adc_capture_inst (
+                .clk(clk25),
+                .rst(rst),
+                .ctl_valid(ctl_valid),
+                .address(address),
+                .dout_bit(dout_bit),
+                .sclk(sclk),
+                .cs(cs),
+                .adc_ready(adc_ready),
+                .din_bit(din_bit),
+                .d_signal(d_signal)
+        );
+
+	assign address = 3'b001;
+
+
+        assign adc_spi_sclk = sclk;
+        assign adc_spi_mosi = din_bit;
+        assign adc_spi_csn = cs;
+        assign dout_bit = adc_spi_miso;
 
 
 endmodule

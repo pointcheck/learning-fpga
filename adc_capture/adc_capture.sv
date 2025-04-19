@@ -74,9 +74,6 @@ module adc_capture
 			cs_pause <= 'd0;
 			cs <= 1'd0;
 
-			//din_bit <= 1'd0;
-			//din <= 8'd0;
-
 			dout <= 16'd0;
 						
 		end else begin
