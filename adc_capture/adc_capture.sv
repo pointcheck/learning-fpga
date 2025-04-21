@@ -53,7 +53,7 @@ module adc_capture
 			din_bit <= 1'd0;
                         din <= 8'd0;
 		end else begin
-			// 00 address[2:0] 000
+									// 00 address[2:0] 000
 			din[7:0] <= {2'b00, address, 3'b00};
 			if (cs == 1'd0) begin                                   // Performing single work cycle (cs = 1)
 
@@ -78,14 +78,7 @@ module adc_capture
 						
 		end else begin
 			
-			// 00 address[2:0] 000
-		//	din[7:0] <= {1'b0, address, 4'b0};
-
 			if (cs == 1'd0) begin					// Performing single work cycle (cs = 1)
-
-//				if (cs_reg < 8) begin
-//					din_bit <= din[5'd7 - cs_reg];	// Sending MSB to ADC DIN (000 + address + 00)
-//				end
 
 				dout[15:0] <= {dout[14:0], dout_bit};		// Recieving MSB from ADC DOUT and shifting it to the left (0000 + d_signal) 
 
@@ -119,9 +112,3 @@ module adc_capture
 	end
 
 endmodule
-
-// При частоте 5 Мгц период одного цикла = 3.2 мкс,
-// что соответствует 312.5 кГц
-
-// Мерим 9.6 мкс через 16 МГц = 
-// 000 address(3-bit) 00

@@ -12,7 +12,7 @@ module top
 
 	output logic [3:0] gpio
 );
-
+	
 	logic rst;
 	logic ctl_valid;
 	logic adc_ack;
@@ -42,24 +42,6 @@ module top
 		.d_signal(d_signal)
 	);
 
-/*	localparam CLOCK_DIV = 25000000 / (2 * sclk2_hz) - 1;
-	logic [$clog2(CLOCK_DIV) - 1:0] clkdiv;
-
-	logic sclk2;
-	always_ff @(posedge clk25 or posedge rst) begin
-
-		if (rst) begin
-			clkdiv <= 'd0;
-			sclk2 <= 1'd0;
-
-		end else if (clkdiv == CLOCK_DIV) begin
-			sclk2 <= ~sclk2;
-		end else begin
-			clkdiv <= clkdiv + 'd1;
-		end
-
-	end
-*/
 	always_ff @(posedge sclk or posedge rst) begin
 
 		if (rst) begin
@@ -71,9 +53,8 @@ module top
 			adc_ack <= 1'd1;
 			address <= 3'b011;
 			
-		end else begin
-			adc_ack <= 1'd0;
-		end
+		end else if(key[2:0]==3'b101)
+			ctl_valid <= 1'b0;
 
 	end
 
@@ -88,9 +69,10 @@ module top
 	assign gpio[3] = dout_bit;
 
 	assign rst = key[3];
-
+	
+	
+	
 	always_comb begin
-
 		case (key[2:0])
 
 			3'b001: led = d_signal[3:0];
