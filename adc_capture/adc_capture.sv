@@ -7,7 +7,6 @@ module adc_capture
 	input  logic clk,
 	input  logic rst,
 	input  logic ctl_valid,							// == 1 if control is ready to process d_signal
-	input  logic adc_ack,							// == 1 if control processed d_signal
 	input  logic [2:0] address,						// Address of ADC's analog input (IN0 - IN7)
 	input  logic dout_bit,							// DOUT port that sends converted digital signal
 	output logic sclk,							// Slowed clocks sended to ADC SCLK port
@@ -52,7 +51,7 @@ module adc_capture
 		if(rst) begin
 			din_bit <= 1'd0;
                         din <= 8'd0;
-		end else begin
+		end else if (ctl_valid) begin
 									// 00 address[2:0] 000
 			din[7:0] <= {2'b00, address, 3'b00};
 			if (cs == 1'd0) begin                                   // Performing single work cycle (cs = 1)
@@ -76,7 +75,7 @@ module adc_capture
 
 			dout <= 16'd0;
 						
-		end else begin
+		end else if (ctl_valid) begin
 			
 			if (cs == 1'd0) begin					// Performing single work cycle (cs = 1)
 
@@ -99,10 +98,6 @@ module adc_capture
 
 				end else begin
 					cs_pause <= cs_pause + 'd1;
-				end
-
-				if (adc_ack) begin
-					adc_ready <= 1'd0;		// Clearing adc_ready after control processed d_signal
 				end
 
 			end

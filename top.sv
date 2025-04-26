@@ -10,55 +10,85 @@ module top (
 	output logic adc_spi_csn
 );
 
-	logic [7:0] motor_dc;
+	logic [2:0] address;		// top
+	logic rst;
+	logic pwm_outA;
+	logic pwm_outB;
+	logic pdm_done;
+	logic ir_input;
+	logic test_flag;
+
+	logic [7:0] motor_dc;		// control
 	logic [7:0] servo_dc;
 	logic direction;
+	logic state;
+	logic ctl_valid;
 	logic ack;
 
-	logic [2:0] address;
-	logic dout_bit;
+	logic dout_bit;			// adc_capture
 	logic sclk;
 	logic cs;
 	logic adc_ready;
 	logic din_bit;
 	logic [11:0] d_signal;
 
-	logic state;
+	logic can_move_fwd;		// adc_hysteresis
 
-	logic ir_ready;
-	logic ctl_valid;
+	logic ir_ready;			// ir_decoder
 	logic [31:0] command;
 
-	logic can_move_fwd;
-
-	logic rst;
-
-        assign address = 3'b001;
+	// Cart inputs and outputs
+	assign gpio[0]  = pwm_outA;
+	assign gpio[1]  = pwm_outB;
+	assign gpio[2]  = pdm_done;
+	assign ir_input = gpio[3];
 
         assign adc_spi_sclk = sclk;
         assign adc_spi_mosi = din_bit;
-        assign adc_spi_csn = cs;
-        assign dout_bit = adc_spi_miso;
+        assign adc_spi_csn  = cs;
+        assign dout_bit     = adc_spi_miso;
 
-	assign led[0] = state;
-	assign led[1] = direction;
-	assign led[2] = motor_dc[7];
-	assign led[3] = ~can_move_fwd;
-
+	// Cart control & debugging tools
 	assign rst = key[3];
 
+	always_ff @(posedge sclk or posedge rst) begin
+
+		if (rst) begin
+			address <= 3'b001;
+			test_flag <= 1'b1;
+		end
+
+		else if (key[2:0] == 3'b101) test_flag <= 1'b0;
+
+	end
+
+	always_comb begin
+		case (key[2:0])
+
+			3'b001: led = d_signal[3:0];
+			3'b010: led = d_signal[7:4];
+			3'b011: led = d_signal[11:8];
+			3'b100: led = {1'b0, address};
+
+			default: led = {state, direction, motor_dc[7], ~can_move_fwd};
+
+		endcase
+	end
+
+	// Modules
         control
         # (
                 .clk_hz(25000000),
 		.sclk_hz(256),
 		.servo_step(16)
         ) control_inst (
-		.state(state),
 		.clk(clk25),
 		.rst(rst),
 		.ir_ready(ir_ready),
-		.command(command),
+		.adc_ready(adc_ready),
 		.can_move_fwd(can_move_fwd),
+		.command(command),
+		.state(state),
 		.ctl_valid(ctl_valid),
 		.ack(ack),
 		.motor_dc(motor_dc),
@@ -76,8 +106,8 @@ module top (
 		.rst(rst),
 		.direction(direction),
 		.duty_cycle(motor_dc),
-		.pwm_outA(gpio[0]),
-		.pwm_outB(gpio[1])
+		.pwm_outA(pwm_outA),
+		.pwm_outB(pwm_outB)
 	);
 
 	servo_pdm
@@ -88,24 +118,23 @@ module top (
 		.clk(clk25),
 		.en(state),
 		.duty(servo_dc),
-		.pdm_done(gpio[2])
+		.pdm_done(pdm_done)
 	);
 
 	ir_decoder decoder_inst (
 		.clk(clk25),
 		.rst(rst),
 		.ack(ack),
-		.enable(ctl_valid),
-		.ir_input(gpio[3]),
+		.enable(1'd1),
+		.ir_input(ir_input),
 		.ready(ir_ready),
 		.command(command)
 	);
 
 	adc_hysteresis
 	# (
-		
 		.x_High(12'd3800),
-		.x_Low(12'd2000)
+		.x_Low(12'd1400)
 	) hysteresis_inst (
 		.rst(rst),
 		.clk(clk25),
@@ -120,7 +149,7 @@ module top (
         ) adc_capture_inst (
                 .clk(clk25),
                 .rst(rst),
-                .ctl_valid(ctl_valid),
+                .ctl_valid(ctl_valid && test_flag),
                 .address(address),
                 .dout_bit(dout_bit),
                 .sclk(sclk),
