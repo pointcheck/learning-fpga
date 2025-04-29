@@ -1,0 +1,462 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.51+46 (git sha1 8bde6ac17, clang++ 18.1.8 -fPIC -O3)
+
+-- Running command `verilog_defaults -add -I./' --
+
+-- Running command `read_verilog -sv top.sv ./motor_drv/motor_drv.sv ./control/control.sv ./servo_pdm/servo_pdm.v ./ir_decoder/ir_decoder.v ./adc_capture/adc_capture.sv ./adc_hysteresis/adc_hysteresis.sv' --
+
+1. Executing Verilog-2005 frontend: top.sv
+Parsing SystemVerilog input from `top.sv' to AST representation.
+Generating RTLIL representation for module `\top'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: ./motor_drv/motor_drv.sv
+Parsing SystemVerilog input from `./motor_drv/motor_drv.sv' to AST representation.
+Generating RTLIL representation for module `\motor_drv'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: ./control/control.sv
+Parsing SystemVerilog input from `./control/control.sv' to AST representation.
+Generating RTLIL representation for module `\control'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: ./servo_pdm/servo_pdm.v
+Parsing SystemVerilog input from `./servo_pdm/servo_pdm.v' to AST representation.
+Generating RTLIL representation for module `\servo_pdm'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: ./ir_decoder/ir_decoder.v
+Parsing SystemVerilog input from `./ir_decoder/ir_decoder.v' to AST representation.
+Generating RTLIL representation for module `\ir_decoder'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: ./adc_capture/adc_capture.sv
+Parsing SystemVerilog input from `./adc_capture/adc_capture.sv' to AST representation.
+Generating RTLIL representation for module `\adc_capture'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: ./adc_hysteresis/adc_hysteresis.sv
+Parsing SystemVerilog input from `./adc_hysteresis/adc_hysteresis.sv' to AST representation.
+Generating RTLIL representation for module `\adc_hysteresis'.
+Successfully finished Verilog frontend.
+
+-- Running command `synth_ecp5 -noabc9 -json cart.json -top top' --
+
+8. Executing SYNTH_ECP5 pass.
+
+8.1. Executing Verilog-2005 frontend: /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v
+Parsing Verilog input from `/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\LUT4'.
+Generating RTLIL representation for module `\$__ABC9_LUT5'.
+Generating RTLIL representation for module `\$__ABC9_LUT6'.
+Generating RTLIL representation for module `\$__ABC9_LUT7'.
+Generating RTLIL representation for module `\L6MUX21'.
+Generating RTLIL representation for module `\CCU2C'.
+Generating RTLIL representation for module `\TRELLIS_RAM16X2'.
+Generating RTLIL representation for module `\PFUMX'.
+Generating RTLIL representation for module `\TRELLIS_DPR16X4'.
+Generating RTLIL representation for module `\DPR16X4C'.
+Generating RTLIL representation for module `\LUT2'.
+Generating RTLIL representation for module `\TRELLIS_FF'.
+Generating RTLIL representation for module `\TRELLIS_IO'.
+Generating RTLIL representation for module `\INV'.
+Generating RTLIL representation for module `\TRELLIS_COMB'.
+Generating RTLIL representation for module `\DP16KD'.
+Generating RTLIL representation for module `\FD1P3AX'.
+Generating RTLIL representation for module `\FD1P3AY'.
+Generating RTLIL representation for module `\FD1P3BX'.
+Generating RTLIL representation for module `\FD1P3DX'.
+Generating RTLIL representation for module `\FD1P3IX'.
+Generating RTLIL representation for module `\FD1P3JX'.
+Generating RTLIL representation for module `\FD1S3AX'.
+Generating RTLIL representation for module `\FD1S3AY'.
+Generating RTLIL representation for module `\FD1S3BX'.
+Generating RTLIL representation for module `\FD1S3DX'.
+Generating RTLIL representation for module `\FD1S3IX'.
+Generating RTLIL representation for module `\FD1S3JX'.
+Generating RTLIL representation for module `\IFS1P3BX'.
+Generating RTLIL representation for module `\IFS1P3DX'.
+Generating RTLIL representation for module `\IFS1P3IX'.
+Generating RTLIL representation for module `\IFS1P3JX'.
+Generating RTLIL representation for module `\OFS1P3BX'.
+Generating RTLIL representation for module `\OFS1P3DX'.
+Generating RTLIL representation for module `\OFS1P3IX'.
+Generating RTLIL representation for module `\OFS1P3JX'.
+Generating RTLIL representation for module `\IB'.
+Generating RTLIL representation for module `\IBPU'.
+Generating RTLIL representation for module `\IBPD'.
+Generating RTLIL representation for module `\OB'.
+Generating RTLIL representation for module `\OBZ'.
+Generating RTLIL representation for module `\OBZPU'.
+Generating RTLIL representation for module `\OBZPD'.
+Generating RTLIL representation for module `\OBCO'.
+Generating RTLIL representation for module `\BB'.
+Generating RTLIL representation for module `\BBPU'.
+Generating RTLIL representation for module `\BBPD'.
+Generating RTLIL representation for module `\ILVDS'.
+Generating RTLIL representation for module `\OLVDS'.
+Successfully finished Verilog frontend.
+
+8.2. Executing Verilog-2005 frontend: /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_bb.v
+Parsing Verilog input from `/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_bb.v' to AST representation.
+Generating RTLIL representation for module `\MULT18X18D'.
+Generating RTLIL representation for module `\ALU54B'.
+Generating RTLIL representation for module `\EHXPLLL'.
+Generating RTLIL representation for module `\DTR'.
+Generating RTLIL representation for module `\OSCG'.
+Generating RTLIL representation for module `\USRMCLK'.
+Generating RTLIL representation for module `\JTAGG'.
+Generating RTLIL representation for module `\DELAYF'.
+Generating RTLIL representation for module `\DELAYG'.
+Generating RTLIL representation for module `\IDDRX1F'.
+Generating RTLIL representation for module `\IDDRX2F'.
+Generating RTLIL representation for module `\IDDR71B'.
+Generating RTLIL representation for module `\IDDRX2DQA'.
+Generating RTLIL representation for module `\ODDRX1F'.
+Generating RTLIL representation for module `\ODDRX2F'.
+Generating RTLIL representation for module `\ODDR71B'.
+Generating RTLIL representation for module `\OSHX2A'.
+Generating RTLIL representation for module `\ODDRX2DQA'.
+Generating RTLIL representation for module `\ODDRX2DQSB'.
+Generating RTLIL representation for module `\TSHX2DQA'.
+Generating RTLIL representation for module `\TSHX2DQSA'.
+Generating RTLIL representation for module `\DQSBUFM'.
+Generating RTLIL representation for module `\DDRDLLA'.
+Generating RTLIL representation for module `\DLLDELD'.
+Generating RTLIL representation for module `\CLKDIVF'.
+Generating RTLIL representation for module `\ECLKSYNCB'.
+Generating RTLIL representation for module `\ECLKBRIDGECS'.
+Generating RTLIL representation for module `\DCCA'.
+Generating RTLIL representation for module `\DCSC'.
+Generating RTLIL representation for module `\DCUA'.
+Generating RTLIL representation for module `\EXTREFB'.
+Generating RTLIL representation for module `\PCSCLKDIV'.
+Generating RTLIL representation for module `\PUR'.
+Generating RTLIL representation for module `\GSR'.
+Generating RTLIL representation for module `\SGSR'.
+Generating RTLIL representation for module `\PDPW16KD'.
+Successfully finished Verilog frontend.
+
+8.3. Executing HIERARCHY pass (managing design hierarchy).
+
+8.3.1. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \adc_capture
+Used module:     \adc_hysteresis
+Used module:     \ir_decoder
+Used module:     \servo_pdm
+Used module:     \motor_drv
+Used module:     \control
+Parameter \clk_hz = 25000000
+Parameter \sclk_hz = 5000000
+Parameter \cycle_pause = 30
+
+8.3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\adc_capture'.
+Parameter \clk_hz = 25000000
+Parameter \sclk_hz = 5000000
+Parameter \cycle_pause = 30
+Generating RTLIL representation for module `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture'.
+Parameter \x_High = 12'111011011000
+Parameter \x_Low = 12'010101111000
+
+8.3.3. Executing AST frontend in derive mode using pre-parsed AST for module `\adc_hysteresis'.
+Parameter \x_High = 12'111011011000
+Parameter \x_Low = 12'010101111000
+Generating RTLIL representation for module `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000'.
+Parameter \clk_hz = 25000000
+
+8.3.4. Executing AST frontend in derive mode using pre-parsed AST for module `\servo_pdm'.
+Parameter \clk_hz = 25000000
+Generating RTLIL representation for module `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000'.
+Parameter \clk_hz = 25000000
+Parameter \pwm_hz = 250
+
+8.3.5. Executing AST frontend in derive mode using pre-parsed AST for module `\motor_drv'.
+Parameter \clk_hz = 25000000
+Parameter \pwm_hz = 250
+Generating RTLIL representation for module `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv'.
+Parameter \clk_hz = 25000000
+Parameter \sclk_hz = 256
+Parameter \servo_step = 16
+
+8.3.6. Executing AST frontend in derive mode using pre-parsed AST for module `\control'.
+Parameter \clk_hz = 25000000
+Parameter \sclk_hz = 256
+Parameter \servo_step = 16
+Generating RTLIL representation for module `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control'.
+
+8.3.7. Analyzing design hierarchy..
+Top module:  \top
+Used module:     $paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture
+Used module:     $paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000
+Used module:     \ir_decoder
+Used module:     $paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000
+Used module:     $paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv
+Used module:     $paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control
+
+8.3.8. Analyzing design hierarchy..
+Top module:  \top
+Used module:     $paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture
+Used module:     $paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000
+Used module:     \ir_decoder
+Used module:     $paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000
+Used module:     $paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv
+Used module:     $paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control
+Removing unused module `\adc_hysteresis'.
+Removing unused module `\adc_capture'.
+Removing unused module `\servo_pdm'.
+Removing unused module `\control'.
+Removing unused module `\motor_drv'.
+Removed 5 unused modules.
+
+8.4. Executing PROC pass (convert processes to netlists).
+
+8.4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:213$203'.
+Found and cleaned up 1 empty switch in `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+Cleaned up 2 empty switches.
+
+8.4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:350$310 in module TRELLIS_FF.
+Marked 1 switch rules as full_case in process $proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$262 in module DPR16X4C.
+Marked 1 switch rules as full_case in process $proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$204 in module TRELLIS_DPR16X4.
+Marked 2 switch rules as full_case in process $proc$./control/control.sv:47$358 in module $paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.
+Marked 2 switch rules as full_case in process $proc$./control/control.sv:31$354 in module $paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.
+Marked 1 switch rules as full_case in process $proc$./motor_drv/motor_drv.sv:19$345 in module $paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.
+Marked 6 switch rules as full_case in process $proc$./ir_decoder/ir_decoder.v:43$44 in module ir_decoder.
+Marked 1 switch rules as full_case in process $proc$./ir_decoder/ir_decoder.v:27$40 in module ir_decoder.
+Marked 3 switch rules as full_case in process $proc$./servo_pdm/servo_pdm.v:25$339 in module $paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.
+Marked 2 switch rules as full_case in process $proc$./adc_hysteresis/adc_hysteresis.sv:13$332 in module $paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.
+Marked 4 switch rules as full_case in process $proc$./adc_capture/adc_capture.sv:68$323 in module $paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.
+Marked 1 switch rules as full_case in process $proc$./adc_capture/adc_capture.sv:52$318 in module $paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.
+Marked 2 switch rules as full_case in process $proc$./adc_capture/adc_capture.sv:23$312 in module $paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.
+Marked 1 switch rules as full_case in process $proc$top.sv:0$3 in module top.
+Marked 1 switch rules as full_case in process $proc$top.sv:54$1 in module top.
+Removed a total of 0 dead cases.
+
+8.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 6 redundant assignments.
+Promoted 45 assignments to connections.
+
+8.4.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$311'.
+  Set init value: \Q = 1'0
+
+8.4.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst in `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+Found async reset \rst in `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$354'.
+Found async reset \rst in `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$345'.
+Found async reset \rst in `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
+Found async reset \rst in `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:27$40'.
+Found async reset \rst in `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$339'.
+Found async reset \rst in `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$332'.
+Found async reset \rst in `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:52$318'.
+Found async reset \rst in `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:23$312'.
+Found async reset \rst in `\top.$proc$top.sv:54$1'.
+
+8.4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~44 debug messages>
+
+8.4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$311'.
+Creating decoders for process `\TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:350$310'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+Creating decoders for process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$262'.
+     1/3: $1$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$261_EN[3:0]$268
+     2/3: $1$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$261_DATA[3:0]$267
+     3/3: $1$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$261_ADDR[3:0]$266
+Creating decoders for process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+Creating decoders for process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$204'.
+     1/3: $1$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$202_EN[3:0]$210
+     2/3: $1$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$202_DATA[3:0]$209
+     3/3: $1$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$202_ADDR[3:0]$208
+Creating decoders for process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:213$203'.
+Creating decoders for process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+     1/6: $0\ack[0:0]
+     2/6: $0\ctl_valid[0:0]
+     3/6: $0\state[0:0]
+     4/6: $0\direction[0:0]
+     5/6: $0\servo_dc[7:0]
+     6/6: $0\motor_dc[7:0]
+Creating decoders for process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$354'.
+     1/2: $0\frdiv[15:0]
+     2/2: $0\sclk[0:0]
+Creating decoders for process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$345'.
+     1/2: $0\pwm_counter[7:0]
+     2/2: $0\clock_counter[8:0]
+Creating decoders for process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
+     1/10: $6\cmd[31:0]
+     2/10: $5\cmd[31:0]
+     3/10: $4\cmd[31:0]
+     4/10: $3\cmd[31:0]
+     5/10: $2\cmd[31:0]
+     6/10: $1\cmd[31:0]
+     7/10: $0\bit_count[7:0]
+     8/10: $0\t1[20:0]
+     9/10: $0\ir_input_last[0:0]
+    10/10: $0\ready[0:0]
+Creating decoders for process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:27$40'.
+     1/1: $0\slow_clk_div[15:0]
+Creating decoders for process `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$339'.
+     1/3: $0\pdm_done_reg[0:0]
+     2/3: $0\div_counter[18:0]
+     3/3: $0\pdmw_counter[15:0]
+Creating decoders for process `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$332'.
+     1/2: $0\not_d_signal[11:0]
+     2/2: $0\can_move_fwd[0:0]
+Creating decoders for process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:68$323'.
+     1/5: $0\cs_pause[4:0]
+     2/5: $0\cs_reg[4:0]
+     3/5: $0\dout[15:0]
+     4/5: $0\adc_ready[0:0]
+     5/5: $0\cs[0:0]
+Creating decoders for process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:52$318'.
+     1/2: $0\din[7:0]
+     2/2: $0\din_bit[0:0]
+Creating decoders for process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:23$312'.
+     1/3: $0\frdiv[1:0]
+     2/3: $0\clk2[0:0]
+     3/3: $0\sclk[0:0]
+Creating decoders for process `\top.$proc$top.sv:0$3'.
+     1/1: $1\led[3:0]
+Creating decoders for process `\top.$proc$top.sv:54$1'.
+     1/2: $0\test_flag[0:0]
+     2/2: $0\address[2:0]
+
+8.4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\top.\led' from process `\top.$proc$top.sv:0$3'.
+
+8.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\TRELLIS_FF.\Q' using process `\TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:350$310'.
+  created $dff cell `$procdff$661' with positive edge clock.
+Creating register for signal `\DPR16X4C.\i' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$246_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$247_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$248_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$249_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$250_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$251_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$252_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$253_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$254_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$255_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$256_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$257_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$258_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$259_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$260_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$261_ADDR' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$262'.
+  created $dff cell `$procdff$662' with positive edge clock.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$261_DATA' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$262'.
+  created $dff cell `$procdff$663' with positive edge clock.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$261_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$262'.
+  created $dff cell `$procdff$664' with positive edge clock.
+Creating register for signal `\TRELLIS_DPR16X4.\i' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$186_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$187_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$188_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$189_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$190_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$191_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$192_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$193_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$194_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$195_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$196_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$197_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$198_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$199_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$200_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$201_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$202_ADDR' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$204'.
+  created $dff cell `$procdff$665' with positive edge clock.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$202_DATA' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$204'.
+  created $dff cell `$procdff$666' with positive edge clock.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$202_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$204'.
+  created $dff cell `$procdff$667' with positive edge clock.
+Creating register for signal `\TRELLIS_DPR16X4.\muxwre' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:213$203'.
+  created direct connection (no actual register cell created).
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\motor_dc' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+  created $adff cell `$procdff$670' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\servo_dc' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+  created $adff cell `$procdff$673' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\direction' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+  created $adff cell `$procdff$676' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\state' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+  created $adff cell `$procdff$679' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\ctl_valid' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+  created $adff cell `$procdff$682' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\ack' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+  created $adff cell `$procdff$685' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\sclk' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$354'.
+  created $adff cell `$procdff$688' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\frdiv' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$354'.
+  created $adff cell `$procdff$691' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.\clock_counter' using process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$345'.
+  created $adff cell `$procdff$694' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.\pwm_counter' using process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$345'.
+  created $adff cell `$procdff$697' with positive edge clock and positive level reset.
+Creating register for signal `\ir_decoder.\ready' using process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
+  created $adff cell `$procdff$700' with positive edge clock and positive level reset.
+Creating register for signal `\ir_decoder.\ir_input_last' using process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
+  created $adff cell `$procdff$703' with positive edge clock and positive level reset.
+Creating register for signal `\ir_decoder.\t1' using process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
+  created $adff cell `$procdff$706' with positive edge clock and positive level reset.
+Creating register for signal `\ir_decoder.\bit_count' using process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
+  created $adff cell `$procdff$709' with positive edge clock and positive level reset.
+Creating register for signal `\ir_decoder.\cmd' using process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
+  created $adff cell `$procdff$712' with positive edge clock and positive level reset.
+Creating register for signal `\ir_decoder.\slow_clk_div' using process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:27$40'.
+  created $adff cell `$procdff$715' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.\pdmw_counter' using process `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$339'.
+  created $adff cell `$procdff$718' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.\div_counter' using process `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$339'.
+  created $adff cell `$procdff$721' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.\pdm_done_reg' using process `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$339'.
+  created $adff cell `$procdff$724' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.\can_move_fwd' using process `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$332'.
+  created $adff cell `$procdff$727' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.\not_d_signal' using process `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$332'.
+  created $adff cell `$procdff$730' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.\cs' using process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:68$323'.
+ERROR: Multiple edge sensitive events found for this signal!

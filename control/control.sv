@@ -13,6 +13,7 @@ module control
 	input  logic clk,
 	input  logic rst,
 	input  logic ir_ready,
+	input  logic adc_ready,
 	input  logic can_move_fwd,
 	input  logic [31:0] command,
 	output logic state,					
@@ -22,9 +23,6 @@ module control
 	output logic [7:0] motor_dc,
 	output logic [7:0] servo_dc
 );
-
-	logic ack_int;
-	assign ack = ack_int;
 
 	localparam MAX_DIV = clk_hz / (2 * sclk_hz);				// Declaring parameter of max number for clock divider to count to
 	logic [$clog2(MAX_DIV)-1:0] frdiv;					// frdiv - clock dividing counter (frequency divider)
@@ -50,20 +48,21 @@ module control
 
 		if (rst) begin							// Resetting cart if rst button is pressed
                         state <= 1'd0;
-                        ack_int <= 1'd0;
+			ctl_valid <= 1'd1;
+                        ack <= 1'd0;
 			motor_dc <= 8'd0;
 			direction <= 1'd1;
 			servo_dc <= 8'(servo_center);
 
 		end else begin		
 
-			ctl_valid <= 1'd1;					// VALID signal is always 1 to work with ADCPolling, IRDecoder modules
+			if (adc_ready) ctl_valid <= 1'd0;					// VALID signal is always 1 to work with ADCPolling, IRDecoder modules
 
-		        if (~can_move_fwd) begin				// Stopping if photodiode detects obstruction ahead
+		        if (~can_move_fwd && adc_ready) begin				// Stopping if photodiode detects obstruction ahead
 		                motor_dc <= 8'd0;
-		        end
+			end
 			
-			if (ir_ready) begin					// Processing signal if IRDecoder is ready
+			if (ir_ready && adc_ready) begin					// Processing signal if IRDecoder is ready
 
 				case (command)					// Turning cart ON/OFF
 					32'h6897FF00:	state <= 1'd1;
@@ -104,10 +103,11 @@ module control
 					endcase
 				end
 
-				ack_int <= 1'd1;				// Setting acknowledge signal after processing every command to clear ir_ready
+				ack <= 1'd1;				// Setting acknowledge signal after processing every command to clear ir_ready
 
-			end else 
-				ack_int <= 1'd0;				// Clearing acknowledge signal if IRDecoder didn't send a command during last clock cycle
+			end else
+				ack <= 1'd0;				// Clearing acknowledge signal if IRDecoder didn't send a command during last clock cycle
+				ctl_valid <= 1'd1;
 		end
 	end
 

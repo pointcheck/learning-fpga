@@ -1,7 +1,7 @@
-NAME = cart
-VERILOG += top.sv ./motor_drv/motor_drv.sv ./control/control.sv ./servo_pdm/servo_pdm.v ./ir_decoder/ir_decoder.v ./adc_capture/adc_capture.sv ./adc_hysteresis/adc_hysteresis.sv
+NAME = adc_capture
+VERILOG += top.sv adc_capture.sv
 INC = ./
-LPF = ./control/karnix_cabga256.lpf
+LPF = karnix_cabga256.lpf
 DEVICE = 25k
 PACKAGE = CABGA256
 FTDI_CHANNEL = 0 ### FT2232 has two channels, select 0 for channel A or 1 for channel B
