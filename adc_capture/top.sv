@@ -66,7 +66,7 @@ module top
 
 	assign rst = key[3];
 	
-	assign led = (key[2:0] == 3'b000) ? d_signal[3:0] : {1'd0, din_bit, dout_bit, test_flag};
+	assign led = {1'd0, din_bit, dout_bit, test_flag};
 
 	always_comb begin
 		case (key[2:0])
