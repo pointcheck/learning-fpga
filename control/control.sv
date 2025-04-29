@@ -60,8 +60,7 @@ module control
 
 		        if (~can_move_fwd && adc_ready) begin				// Stopping if photodiode detects obstruction ahead
 		                motor_dc <= 8'd0;
-				ctl_valid <= 1'd1;
-		        end
+			end
 			
 			if (ir_ready && adc_ready) begin					// Processing signal if IRDecoder is ready
 
@@ -106,10 +105,9 @@ module control
 
 				ack <= 1'd1;				// Setting acknowledge signal after processing every command to clear ir_ready
 
-				ctl_valid <= 1'd1;
-
 			end else
 				ack <= 1'd0;				// Clearing acknowledge signal if IRDecoder didn't send a command during last clock cycle
+				ctl_valid <= 1'd1;
 		end
 	end
 

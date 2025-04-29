@@ -42,10 +42,12 @@ module adc_capture
 
 	logic [7:0] din;						// Declaring what to send to the DIN port: 000 + address(3-bit) + 00
 	logic [15:0] dout;						// Declaring what to get from the DOUT port: 0000 + d_signal(12-bit)
-	assign d_signal = dout[11:0];
+	assign d_signal = dout[12:1];
 
 	logic [4:0] cs_reg;						// cs_reg(4-bit) is used to count length of ADC's work cycle (16 slowed clocks sclk)
 	logic [$clog2(cycle_pause) - 1:0] cs_pause;			// cs_pause is used to count length of ADC's pause between work cycles (cycle_pause slowed clocks)
+
+	logic ctl_valid0;
 
 	always_ff @(negedge clk2 or posedge rst) begin
 		if(rst) begin
@@ -68,6 +70,7 @@ module adc_capture
 		if (rst) begin						// Resetting all regs (not inputs except dout_bit)
 
 			adc_ready <= 1'd0;
+			ctl_valid0 <= 1'd1;
 
 			cs_reg <= 5'd0;
 			cs_pause <= 'd0;
@@ -75,7 +78,7 @@ module adc_capture
 
 			dout <= 16'd0;
 						
-		end else if (ctl_valid) begin
+		end else if (ctl_valid && ~adc_ready) begin	// work cycle
 			
 			if (cs == 1'd0) begin					// Performing single work cycle (cs = 1)
 
@@ -102,7 +105,10 @@ module adc_capture
 
 			end
 
-		end
+		end 
+
+		ctl_valid0 <= ctl_valid;
+		if (~ctl_valid0 && ctl_valid) adc_ready <= 1'd0;
 	
 	end
 

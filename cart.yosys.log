@@ -217,78 +217,78 @@ Removed 5 unused modules.
 8.4. Executing PROC pass (convert processes to netlists).
 
 8.4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:213$200'.
-Cleaned up 1 empty switch.
+Found and cleaned up 1 empty switch in `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:213$203'.
+Found and cleaned up 1 empty switch in `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+Cleaned up 2 empty switches.
 
 8.4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:350$307 in module TRELLIS_FF.
-Marked 1 switch rules as full_case in process $proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$259 in module DPR16X4C.
-Marked 1 switch rules as full_case in process $proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$201 in module TRELLIS_DPR16X4.
-Marked 2 switch rules as full_case in process $proc$./control/control.sv:47$352 in module $paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.
-Marked 2 switch rules as full_case in process $proc$./control/control.sv:31$348 in module $paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.
-Marked 1 switch rules as full_case in process $proc$./motor_drv/motor_drv.sv:19$339 in module $paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.
+Marked 1 switch rules as full_case in process $proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:350$310 in module TRELLIS_FF.
+Marked 1 switch rules as full_case in process $proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$262 in module DPR16X4C.
+Marked 1 switch rules as full_case in process $proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$204 in module TRELLIS_DPR16X4.
+Marked 2 switch rules as full_case in process $proc$./control/control.sv:47$358 in module $paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.
+Marked 2 switch rules as full_case in process $proc$./control/control.sv:31$354 in module $paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.
+Marked 1 switch rules as full_case in process $proc$./motor_drv/motor_drv.sv:19$345 in module $paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.
 Marked 6 switch rules as full_case in process $proc$./ir_decoder/ir_decoder.v:43$44 in module ir_decoder.
 Marked 1 switch rules as full_case in process $proc$./ir_decoder/ir_decoder.v:27$40 in module ir_decoder.
-Marked 3 switch rules as full_case in process $proc$./servo_pdm/servo_pdm.v:25$333 in module $paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.
-Marked 2 switch rules as full_case in process $proc$./adc_hysteresis/adc_hysteresis.sv:13$326 in module $paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.
-Marked 4 switch rules as full_case in process $proc$./adc_capture/adc_capture.sv:66$320 in module $paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.
-Marked 1 switch rules as full_case in process $proc$./adc_capture/adc_capture.sv:50$315 in module $paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.
-Marked 2 switch rules as full_case in process $proc$./adc_capture/adc_capture.sv:23$309 in module $paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.
+Marked 3 switch rules as full_case in process $proc$./servo_pdm/servo_pdm.v:25$339 in module $paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.
+Marked 2 switch rules as full_case in process $proc$./adc_hysteresis/adc_hysteresis.sv:13$332 in module $paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.
+Marked 4 switch rules as full_case in process $proc$./adc_capture/adc_capture.sv:68$323 in module $paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.
+Marked 1 switch rules as full_case in process $proc$./adc_capture/adc_capture.sv:52$318 in module $paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.
+Marked 2 switch rules as full_case in process $proc$./adc_capture/adc_capture.sv:23$312 in module $paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.
 Marked 1 switch rules as full_case in process $proc$top.sv:0$3 in module top.
 Marked 1 switch rules as full_case in process $proc$top.sv:54$1 in module top.
 Removed a total of 0 dead cases.
 
 8.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
-Removed 5 redundant assignments.
-Promoted 44 assignments to connections.
+Removed 6 redundant assignments.
+Promoted 45 assignments to connections.
 
 8.4.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$308'.
+Found init rule in `\TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$311'.
   Set init value: \Q = 1'0
 
 8.4.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \rst in `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$352'.
-Found async reset \rst in `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$348'.
-Found async reset \rst in `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$339'.
+Found async reset \rst in `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+Found async reset \rst in `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$354'.
+Found async reset \rst in `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$345'.
 Found async reset \rst in `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
 Found async reset \rst in `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:27$40'.
-Found async reset \rst in `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$333'.
-Found async reset \rst in `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$326'.
-Found async reset \rst in `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:66$320'.
-Found async reset \rst in `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:50$315'.
-Found async reset \rst in `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:23$309'.
+Found async reset \rst in `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$339'.
+Found async reset \rst in `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$332'.
+Found async reset \rst in `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:52$318'.
+Found async reset \rst in `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:23$312'.
 Found async reset \rst in `\top.$proc$top.sv:54$1'.
 
 8.4.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
-<suppressed ~43 debug messages>
+<suppressed ~44 debug messages>
 
 8.4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$308'.
-Creating decoders for process `\TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:350$307'.
+Creating decoders for process `\TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$311'.
+Creating decoders for process `\TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:350$310'.
      1/1: $0\Q[0:0]
-Creating decoders for process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
-Creating decoders for process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$259'.
-     1/3: $1$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$258_EN[3:0]$265
-     2/3: $1$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$258_DATA[3:0]$264
-     3/3: $1$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$258_ADDR[3:0]$263
-Creating decoders for process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
-Creating decoders for process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$201'.
-     1/3: $1$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$199_EN[3:0]$207
-     2/3: $1$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$199_DATA[3:0]$206
-     3/3: $1$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$199_ADDR[3:0]$205
-Creating decoders for process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:213$200'.
-Creating decoders for process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$352'.
+Creating decoders for process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
+Creating decoders for process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$262'.
+     1/3: $1$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$261_EN[3:0]$268
+     2/3: $1$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$261_DATA[3:0]$267
+     3/3: $1$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$261_ADDR[3:0]$266
+Creating decoders for process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
+Creating decoders for process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$204'.
+     1/3: $1$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$202_EN[3:0]$210
+     2/3: $1$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$202_DATA[3:0]$209
+     3/3: $1$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$202_ADDR[3:0]$208
+Creating decoders for process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:213$203'.
+Creating decoders for process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
      1/6: $0\ack[0:0]
      2/6: $0\ctl_valid[0:0]
      3/6: $0\state[0:0]
      4/6: $0\direction[0:0]
      5/6: $0\servo_dc[7:0]
      6/6: $0\motor_dc[7:0]
-Creating decoders for process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$348'.
+Creating decoders for process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$354'.
      1/2: $0\frdiv[15:0]
      2/2: $0\sclk[0:0]
-Creating decoders for process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$339'.
+Creating decoders for process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$345'.
      1/2: $0\pwm_counter[7:0]
      2/2: $0\clock_counter[8:0]
 Creating decoders for process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
@@ -304,23 +304,23 @@ Creating decoders for process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44
     10/10: $0\ready[0:0]
 Creating decoders for process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:27$40'.
      1/1: $0\slow_clk_div[15:0]
-Creating decoders for process `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$333'.
+Creating decoders for process `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$339'.
      1/3: $0\pdm_done_reg[0:0]
      2/3: $0\div_counter[18:0]
      3/3: $0\pdmw_counter[15:0]
-Creating decoders for process `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$326'.
+Creating decoders for process `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$332'.
      1/2: $0\not_d_signal[11:0]
      2/2: $0\can_move_fwd[0:0]
-Creating decoders for process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:66$320'.
+Creating decoders for process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:68$323'.
      1/5: $0\cs_pause[4:0]
      2/5: $0\cs_reg[4:0]
      3/5: $0\dout[15:0]
      4/5: $0\adc_ready[0:0]
      5/5: $0\cs[0:0]
-Creating decoders for process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:50$315'.
+Creating decoders for process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:52$318'.
      1/2: $0\din[7:0]
      2/2: $0\din_bit[0:0]
-Creating decoders for process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:23$309'.
+Creating decoders for process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:23$312'.
      1/3: $0\frdiv[1:0]
      2/3: $0\clk2[0:0]
      3/3: $0\sclk[0:0]
@@ -334,1539 +334,129 @@ Creating decoders for process `\top.$proc$top.sv:54$1'.
 No latch inferred for signal `\top.\led' from process `\top.$proc$top.sv:0$3'.
 
 8.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\TRELLIS_FF.\Q' using process `\TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:350$307'.
-  created $dff cell `$procdff$645' with positive edge clock.
-Creating register for signal `\DPR16X4C.\i' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\TRELLIS_FF.\Q' using process `\TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:350$310'.
+  created $dff cell `$procdff$661' with positive edge clock.
+Creating register for signal `\DPR16X4C.\i' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$243_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$246_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$244_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$247_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$245_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$248_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$246_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$249_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$247_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$250_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$248_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$251_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$249_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$252_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$250_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$253_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$251_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$254_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$252_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$255_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$253_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$256_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$254_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$257_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$255_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$258_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$256_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$259_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$257_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:281$260_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$285'.
   created direct connection (no actual register cell created).
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$258_ADDR' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$259'.
-  created $dff cell `$procdff$646' with positive edge clock.
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$258_DATA' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$259'.
-  created $dff cell `$procdff$647' with positive edge clock.
-Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$258_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$259'.
-  created $dff cell `$procdff$648' with positive edge clock.
-Creating register for signal `\TRELLIS_DPR16X4.\i' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$261_ADDR' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$262'.
+  created $dff cell `$procdff$662' with positive edge clock.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$261_DATA' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$262'.
+  created $dff cell `$procdff$663' with positive edge clock.
+Creating register for signal `\DPR16X4C.$memwr$\ram$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:287$261_EN' using process `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$262'.
+  created $dff cell `$procdff$664' with positive edge clock.
+Creating register for signal `\TRELLIS_DPR16X4.\i' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$183_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$186_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$184_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$187_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$185_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$188_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$186_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$189_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$187_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$190_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$188_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$191_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$189_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$192_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$190_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$193_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$191_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$194_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$192_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$195_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$193_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$196_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$194_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$197_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$195_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$198_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$196_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$199_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$197_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$200_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$198_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:207$201_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$228'.
   created direct connection (no actual register cell created).
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$199_ADDR' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$201'.
-  created $dff cell `$procdff$649' with positive edge clock.
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$199_DATA' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$201'.
-  created $dff cell `$procdff$650' with positive edge clock.
-Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$199_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$201'.
-  created $dff cell `$procdff$651' with positive edge clock.
-Creating register for signal `\TRELLIS_DPR16X4.\muxwre' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:213$200'.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$202_ADDR' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$204'.
+  created $dff cell `$procdff$665' with positive edge clock.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$202_DATA' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$204'.
+  created $dff cell `$procdff$666' with positive edge clock.
+Creating register for signal `\TRELLIS_DPR16X4.$memwr$\mem$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:223$202_EN' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$204'.
+  created $dff cell `$procdff$667' with positive edge clock.
+Creating register for signal `\TRELLIS_DPR16X4.\muxwre' using process `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:213$203'.
   created direct connection (no actual register cell created).
-Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\motor_dc' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$352'.
-  created $adff cell `$procdff$654' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\servo_dc' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$352'.
-  created $adff cell `$procdff$657' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\direction' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$352'.
-  created $adff cell `$procdff$660' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\state' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$352'.
-  created $adff cell `$procdff$663' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\ctl_valid' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$352'.
-  created $adff cell `$procdff$666' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\ack' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$352'.
-  created $adff cell `$procdff$669' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\sclk' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$348'.
-  created $adff cell `$procdff$672' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\frdiv' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$348'.
-  created $adff cell `$procdff$675' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.\clock_counter' using process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$339'.
-  created $adff cell `$procdff$678' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.\pwm_counter' using process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$339'.
-  created $adff cell `$procdff$681' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\motor_dc' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+  created $adff cell `$procdff$670' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\servo_dc' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+  created $adff cell `$procdff$673' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\direction' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+  created $adff cell `$procdff$676' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\state' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+  created $adff cell `$procdff$679' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\ctl_valid' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+  created $adff cell `$procdff$682' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\ack' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$358'.
+  created $adff cell `$procdff$685' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\sclk' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$354'.
+  created $adff cell `$procdff$688' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.\frdiv' using process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$354'.
+  created $adff cell `$procdff$691' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.\clock_counter' using process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$345'.
+  created $adff cell `$procdff$694' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.\pwm_counter' using process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$345'.
+  created $adff cell `$procdff$697' with positive edge clock and positive level reset.
 Creating register for signal `\ir_decoder.\ready' using process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
-  created $adff cell `$procdff$684' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$700' with positive edge clock and positive level reset.
 Creating register for signal `\ir_decoder.\ir_input_last' using process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
-  created $adff cell `$procdff$687' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$703' with positive edge clock and positive level reset.
 Creating register for signal `\ir_decoder.\t1' using process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
-  created $adff cell `$procdff$690' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$706' with positive edge clock and positive level reset.
 Creating register for signal `\ir_decoder.\bit_count' using process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
-  created $adff cell `$procdff$693' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$709' with positive edge clock and positive level reset.
 Creating register for signal `\ir_decoder.\cmd' using process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
-  created $adff cell `$procdff$696' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$712' with positive edge clock and positive level reset.
 Creating register for signal `\ir_decoder.\slow_clk_div' using process `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:27$40'.
-  created $adff cell `$procdff$699' with positive edge clock and positive level reset.
-Creating register for signal `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.\pdmw_counter' using process `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$333'.
-  created $adff cell `$procdff$702' with positive edge clock and positive level reset.
-Creating register for signal `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.\div_counter' using process `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$333'.
-  created $adff cell `$procdff$705' with positive edge clock and positive level reset.
-Creating register for signal `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.\pdm_done_reg' using process `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$333'.
-  created $adff cell `$procdff$708' with positive edge clock and positive level reset.
-Creating register for signal `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.\can_move_fwd' using process `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$326'.
-  created $adff cell `$procdff$711' with positive edge clock and positive level reset.
-Creating register for signal `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.\not_d_signal' using process `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$326'.
-  created $adff cell `$procdff$714' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.\cs' using process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:66$320'.
-  created $adff cell `$procdff$717' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.\adc_ready' using process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:66$320'.
-  created $adff cell `$procdff$720' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.\dout' using process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:66$320'.
-  created $adff cell `$procdff$723' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.\cs_reg' using process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:66$320'.
-  created $adff cell `$procdff$726' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.\cs_pause' using process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:66$320'.
-  created $adff cell `$procdff$729' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.\din_bit' using process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:50$315'.
-  created $adff cell `$procdff$732' with negative edge clock and positive level reset.
-Creating register for signal `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.\din' using process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:50$315'.
-  created $adff cell `$procdff$735' with negative edge clock and positive level reset.
-Creating register for signal `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.\sclk' using process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:23$309'.
-  created $adff cell `$procdff$738' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.\frdiv' using process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:23$309'.
-  created $adff cell `$procdff$741' with positive edge clock and positive level reset.
-Creating register for signal `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.\clk2' using process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:23$309'.
-  created $adff cell `$procdff$744' with positive edge clock and positive level reset.
-Creating register for signal `\top.\address' using process `\top.$proc$top.sv:54$1'.
-  created $adff cell `$procdff$747' with positive edge clock and positive level reset.
-Creating register for signal `\top.\test_flag' using process `\top.$proc$top.sv:54$1'.
-  created $adff cell `$procdff$750' with positive edge clock and positive level reset.
-
-8.4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
-
-8.4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$308'.
-Found and cleaned up 2 empty switches in `\TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:350$307'.
-Removing empty process `TRELLIS_FF.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:350$307'.
-Removing empty process `DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$282'.
-Found and cleaned up 1 empty switch in `\DPR16X4C.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:285$259'.
-Removing empty process `TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:0$225'.
-Found and cleaned up 1 empty switch in `\TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:221$201'.
-Removing empty process `TRELLIS_DPR16X4.$proc$/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_sim.v:213$200'.
-Found and cleaned up 10 empty switches in `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$352'.
-Removing empty process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:47$352'.
-Found and cleaned up 1 empty switch in `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$348'.
-Removing empty process `$paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.$proc$./control/control.sv:31$348'.
-Found and cleaned up 2 empty switches in `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$339'.
-Removing empty process `$paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.$proc$./motor_drv/motor_drv.sv:19$339'.
-Found and cleaned up 9 empty switches in `\ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
-Removing empty process `ir_decoder.$proc$./ir_decoder/ir_decoder.v:43$44'.
-Removing empty process `ir_decoder.$proc$./ir_decoder/ir_decoder.v:27$40'.
-Found and cleaned up 4 empty switches in `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$333'.
-Removing empty process `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$333'.
-Found and cleaned up 2 empty switches in `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$326'.
-Removing empty process `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$326'.
-Found and cleaned up 4 empty switches in `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:66$320'.
-Removing empty process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:66$320'.
-Found and cleaned up 3 empty switches in `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:50$315'.
-Removing empty process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:50$315'.
-Found and cleaned up 2 empty switches in `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:23$309'.
-Removing empty process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:23$309'.
-Found and cleaned up 1 empty switch in `\top.$proc$top.sv:0$3'.
-Removing empty process `top.$proc$top.sv:0$3'.
-Found and cleaned up 1 empty switch in `\top.$proc$top.sv:54$1'.
-Removing empty process `top.$proc$top.sv:54$1'.
-Cleaned up 43 empty switches.
-
-8.4.12. Executing OPT_EXPR pass (perform const folding).
-Optimizing module $paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.
-<suppressed ~8 debug messages>
-Optimizing module $paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.
-<suppressed ~2 debug messages>
-Optimizing module ir_decoder.
-<suppressed ~19 debug messages>
-Optimizing module $paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.
-<suppressed ~5 debug messages>
-Optimizing module $paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.
-<suppressed ~2 debug messages>
-Optimizing module $paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.
-<suppressed ~19 debug messages>
-Optimizing module top.
-<suppressed ~2 debug messages>
-
-8.5. Executing FLATTEN pass (flatten design).
-Deleting now unused module $paramod$2c0ba7385133d830973c567b60e4ffbf6098cc92\control.
-Deleting now unused module $paramod$09b1f11fef2c7b1a8b7cc9f7386544e7bf55dc2f\motor_drv.
-Deleting now unused module ir_decoder.
-Deleting now unused module $paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.
-Deleting now unused module $paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.
-Deleting now unused module $paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.
-<suppressed ~6 debug messages>
-
-8.6. Executing TRIBUF pass.
-
-8.7. Executing DEMINOUT pass (demote inout ports to input or output).
-
-8.8. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-<suppressed ~9 debug messages>
-
-8.9. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-Removed 5 unused cells and 183 unused wires.
-<suppressed ~8 debug messages>
-
-8.10. Executing CHECK pass (checking for obvious problems).
-Checking module top...
-Found and reported 0 problems.
-
-8.11. Executing OPT pass (performing simple optimizations).
-
-8.11.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-
-8.11.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-<suppressed ~12 debug messages>
-Removed a total of 4 cells.
-
-8.11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \top..
-  Creating internal representation of mux trees.
-  Evaluating internal representation of mux trees.
-      Replacing known input bits on port A of cell $flatten\adc_capture_inst.$procmux$608: \adc_capture_inst.cs -> 1'1
-      Replacing known input bits on port A of cell $flatten\adc_capture_inst.$procmux$612: \adc_capture_inst.cs -> 1'0
-      Replacing known input bits on port B of cell $flatten\servo_inst.$procmux$549: \gpio [2] -> 1'1
-      Replacing known input bits on port A of cell $flatten\servo_inst.$procmux$545: \gpio [2] -> 1'0
-  Analyzing evaluation results.
-    dead port 1/2 on $mux $flatten\decoder_inst.$procmux$470.
-    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$473.
-    dead port 1/2 on $mux $flatten\decoder_inst.$procmux$482.
-    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$485.
-    dead port 2/2 on $mux $flatten\decoder_inst.$procmux$494.
-Removed 5 multiplexer ports.
-<suppressed ~36 debug messages>
-
-8.11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \top.
-Performed a total of 0 changes.
-
-8.11.5. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-Removed a total of 0 cells.
-
-8.11.6. Executing OPT_DFF pass (perform DFF optimizations).
-Handling D = Q on $procdff$747 ($adff) from module top (removing D path).
-Setting constant 1-bit at position 0 on $procdff$747 ($dlatch) from module top.
-Setting constant 0-bit at position 1 on $procdff$747 ($dlatch) from module top.
-Setting constant 0-bit at position 2 on $procdff$747 ($dlatch) from module top.
-
-8.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-Removed 0 unused cells and 9 unused wires.
-<suppressed ~1 debug messages>
-
-8.11.8. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-
-8.11.9. Rerunning OPT passes. (Maybe there is more to do..)
-
-8.11.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \top..
-  Creating internal representation of mux trees.
-  Evaluating internal representation of mux trees.
-  Analyzing evaluation results.
-Removed 0 multiplexer ports.
-<suppressed ~36 debug messages>
-
-8.11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \top.
-Performed a total of 0 changes.
-
-8.11.12. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-Removed a total of 0 cells.
-
-8.11.13. Executing OPT_DFF pass (perform DFF optimizations).
-
-8.11.14. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-
-8.11.15. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-
-8.11.16. Finished OPT passes. (There is nothing left to do.)
-
-8.12. Executing FSM pass (extract and optimize FSM).
-
-8.12.1. Executing FSM_DETECT pass (finding FSMs in design).
-Not marking top.adc_capture_inst.din as FSM state register:
-    Users of register don't seem to benefit from recoding.
-
-8.12.2. Executing FSM_EXTRACT pass (extracting FSM from design).
-
-8.12.3. Executing FSM_OPT pass (simple optimizations of FSMs).
-
-8.12.4. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-
-8.12.5. Executing FSM_OPT pass (simple optimizations of FSMs).
-
-8.12.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
-
-8.12.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
-
-8.12.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
-
-8.13. Executing OPT pass (performing simple optimizations).
-
-8.13.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-
-8.13.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-Removed a total of 0 cells.
-
-8.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \top..
-  Creating internal representation of mux trees.
-  Evaluating internal representation of mux trees.
-  Analyzing evaluation results.
-Removed 0 multiplexer ports.
-<suppressed ~36 debug messages>
-
-8.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \top.
-Performed a total of 0 changes.
-
-8.13.5. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-Removed a total of 0 cells.
-
-8.13.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$750 ($adff) from module top (D = 1'0, Q = \test_flag).
-Adding EN signal on $flatten\servo_inst.$procdff$708 ($adff) from module top (D = $flatten\servo_inst.$procmux$551_Y, Q = \gpio [2]).
-Adding EN signal on $flatten\servo_inst.$procdff$705 ($adff) from module top (D = $flatten\servo_inst.$procmux$559_Y, Q = \servo_inst.div_counter).
-Adding EN signal on $flatten\servo_inst.$procdff$702 ($adff) from module top (D = $flatten\servo_inst.$procmux$569_Y, Q = \servo_inst.pdmw_counter).
-Adding EN signal on $flatten\motor_inst.$procdff$681 ($adff) from module top (D = $flatten\motor_inst.$add$./motor_drv/motor_drv.sv:27$342_Y, Q = \motor_inst.pwm_counter).
-Adding EN signal on $flatten\motor_inst.$procdff$678 ($adff) from module top (D = $flatten\motor_inst.$procmux$461_Y, Q = \motor_inst.clock_counter).
-Adding EN signal on $flatten\hysteresis_inst.$procdff$711 ($adff) from module top (D = $flatten\hysteresis_inst.$0\can_move_fwd[0:0], Q = \hysteresis_inst.can_move_fwd).
-Adding EN signal on $flatten\decoder_inst.$procdff$696 ($adff) from module top (D = $flatten\decoder_inst.$6\cmd[31:0] [31:1], Q = \decoder_inst.cmd [31:1]).
-Adding EN signal on $flatten\decoder_inst.$procdff$696 ($adff) from module top (D = $flatten\decoder_inst.$6\cmd[31:0] [0], Q = \decoder_inst.cmd [0]).
-Adding EN signal on $flatten\decoder_inst.$procdff$693 ($adff) from module top (D = $flatten\decoder_inst.$procmux$519_Y, Q = \decoder_inst.bit_count).
-Adding EN signal on $flatten\decoder_inst.$procdff$684 ($adff) from module top (D = $flatten\decoder_inst.$0\ready[0:0], Q = \decoder_inst.ready).
-Adding EN signal on $flatten\control_inst.$procdff$672 ($adff) from module top (D = $flatten\control_inst.$not$./control/control.sv:40$350_Y, Q = \control_inst.sclk).
-Adding EN signal on $flatten\control_inst.$procdff$666 ($adff) from module top (D = $flatten\control_inst.$0\ctl_valid[0:0], Q = \control_inst.ctl_valid).
-Adding EN signal on $flatten\control_inst.$procdff$663 ($adff) from module top (D = $flatten\control_inst.$procmux$399_Y, Q = \control_inst.state).
-Adding EN signal on $flatten\control_inst.$procdff$660 ($adff) from module top (D = $flatten\control_inst.$procmux$411_Y, Q = \control_inst.direction).
-Adding EN signal on $flatten\control_inst.$procdff$657 ($adff) from module top (D = $flatten\control_inst.$procmux$429_Y, Q = \control_inst.servo_dc).
-Adding EN signal on $flatten\adc_capture_inst.$procdff$744 ($adff) from module top (D = $flatten\adc_capture_inst.$not$./adc_capture/adc_capture.sv:31$311_Y, Q = \adc_capture_inst.clk2).
-Adding EN signal on $flatten\adc_capture_inst.$procdff$738 ($adff) from module top (D = $flatten\adc_capture_inst.$not$./adc_capture/adc_capture.sv:33$313_Y, Q = \adc_capture_inst.sclk).
-Adding EN signal on $flatten\adc_capture_inst.$procdff$735 ($adff) from module top (D = 8'00001000, Q = \adc_capture_inst.din).
-Adding EN signal on $flatten\adc_capture_inst.$procdff$732 ($adff) from module top (D = $flatten\adc_capture_inst.$shiftx$./adc_capture/adc_capture.sv:0$319_Y, Q = \adc_capture_inst.din_bit).
-Adding EN signal on $flatten\adc_capture_inst.$procdff$729 ($adff) from module top (D = $flatten\adc_capture_inst.$procmux$579_Y, Q = \adc_capture_inst.cs_pause).
-Adding EN signal on $flatten\adc_capture_inst.$procdff$726 ($adff) from module top (D = $flatten\adc_capture_inst.$procmux$588_Y, Q = \adc_capture_inst.cs_reg).
-Adding EN signal on $flatten\adc_capture_inst.$procdff$723 ($adff) from module top (D = { \adc_capture_inst.dout [14:0] \adc_spi_miso }, Q = \adc_capture_inst.dout).
-Adding EN signal on $flatten\adc_capture_inst.$procdff$720 ($adff) from module top (D = 1'1, Q = \adc_capture_inst.adc_ready).
-Adding EN signal on $flatten\adc_capture_inst.$procdff$717 ($adff) from module top (D = $flatten\adc_capture_inst.$procmux$614_Y, Q = \adc_capture_inst.cs).
-Setting constant 0-bit at position 0 on $auto$ff.cc:266:slice$819 ($adffe) from module top.
-Setting constant 0-bit at position 1 on $auto$ff.cc:266:slice$819 ($adffe) from module top.
-Setting constant 0-bit at position 2 on $auto$ff.cc:266:slice$819 ($adffe) from module top.
-Setting constant 0-bit at position 4 on $auto$ff.cc:266:slice$819 ($adffe) from module top.
-Setting constant 0-bit at position 5 on $auto$ff.cc:266:slice$819 ($adffe) from module top.
-Setting constant 0-bit at position 6 on $auto$ff.cc:266:slice$819 ($adffe) from module top.
-Setting constant 0-bit at position 7 on $auto$ff.cc:266:slice$819 ($adffe) from module top.
-
-8.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-Removed 32 unused cells and 32 unused wires.
-<suppressed ~33 debug messages>
-
-8.13.8. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-<suppressed ~7 debug messages>
-
-8.13.9. Rerunning OPT passes. (Maybe there is more to do..)
-
-8.13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \top..
-  Creating internal representation of mux trees.
-  Evaluating internal representation of mux trees.
-  Analyzing evaluation results.
-Removed 0 multiplexer ports.
-<suppressed ~27 debug messages>
-
-8.13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \top.
-Performed a total of 0 changes.
-
-8.13.12. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-<suppressed ~18 debug messages>
-Removed a total of 6 cells.
-
-8.13.13. Executing OPT_DFF pass (perform DFF optimizations).
-
-8.13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-Removed 0 unused cells and 6 unused wires.
-<suppressed ~1 debug messages>
-
-8.13.15. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-
-8.13.16. Rerunning OPT passes. (Maybe there is more to do..)
-
-8.13.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \top..
-  Creating internal representation of mux trees.
-  Evaluating internal representation of mux trees.
-  Analyzing evaluation results.
-Removed 0 multiplexer ports.
-<suppressed ~27 debug messages>
-
-8.13.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \top.
-Performed a total of 0 changes.
-
-8.13.19. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-Removed a total of 0 cells.
-
-8.13.20. Executing OPT_DFF pass (perform DFF optimizations).
-
-8.13.21. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-
-8.13.22. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-
-8.13.23. Finished OPT passes. (There is nothing left to do.)
-
-8.14. Executing WREDUCE pass (reducing word size of cells).
-Removed top 1 bits (of 2) from port B of cell top.$auto$opt_dff.cc:195:make_patterns_logic$768 ($ne).
-Removed top 1 bits (of 3) from port B of cell top.$procmux$640_CMP0 ($eq).
-Removed top 1 bits (of 3) from port B of cell top.$procmux$641_CMP0 ($eq).
-Removed top 2 bits (of 3) from port B of cell top.$procmux$642_CMP0 ($eq).
-Removed top 1 bits (of 32) from port B of cell top.$flatten\control_inst.$procmux$446_CMP0 ($eq).
-Removed top 1 bits (of 32) from port B of cell top.$flatten\control_inst.$procmux$443_CMP0 ($eq).
-Removed top 1 bits (of 32) from port B of cell top.$flatten\control_inst.$procmux$440_CMP0 ($eq).
-Removed top 1 bits (of 32) from port B of cell top.$flatten\control_inst.$procmux$428_CMP0 ($eq).
-Removed top 1 bits (of 32) from port B of cell top.$flatten\control_inst.$procmux$425_CMP0 ($eq).
-Removed top 1 bits (of 32) from port B of cell top.$flatten\control_inst.$procmux$422_CMP0 ($eq).
-Removed top 1 bits (of 32) from port B of cell top.$flatten\control_inst.$procmux$413_CMP0 ($eq).
-Removed top 1 bits (of 32) from port B of cell top.$flatten\control_inst.$procmux$412_CMP0 ($eq).
-Removed top 1 bits (of 32) from port B of cell top.$flatten\control_inst.$procmux$401_CMP0 ($eq).
-Removed top 1 bits (of 32) from port B of cell top.$flatten\control_inst.$procmux$400_CMP0 ($eq).
-Removed top 2 bits (of 8) from port B of cell top.$flatten\control_inst.$sub$./control/control.sv:98$364 ($sub).
-Removed top 2 bits (of 8) from port B of cell top.$flatten\control_inst.$ge$./control/control.sv:97$363 ($ge).
-Removed top 2 bits (of 8) from port B of cell top.$flatten\control_inst.$add$./control/control.sv:94$362 ($add).
-Removed top 3 bits (of 8) from port B of cell top.$flatten\control_inst.$sub$./control/control.sv:90$359 ($sub).
-Removed top 3 bits (of 8) from port B of cell top.$flatten\control_inst.$ge$./control/control.sv:89$358 ($ge).
-Removed top 3 bits (of 8) from port B of cell top.$flatten\control_inst.$add$./control/control.sv:86$357 ($add).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\control_inst.$add$./control/control.sv:43$351 ($add).
-Removed top 16 bits (of 32) from port Y of cell top.$flatten\control_inst.$add$./control/control.sv:43$351 ($add).
-Removed top 31 bits (of 32) from mux cell top.$flatten\motor_inst.$ternary$./motor_drv/motor_drv.sv:35$347 ($mux).
-Removed top 31 bits (of 32) from mux cell top.$flatten\motor_inst.$ternary$./motor_drv/motor_drv.sv:34$345 ($mux).
-Removed top 7 bits (of 8) from port B of cell top.$flatten\motor_inst.$add$./motor_drv/motor_drv.sv:27$342 ($add).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\motor_inst.$add$./motor_drv/motor_drv.sv:24$340 ($add).
-Removed top 23 bits (of 32) from port Y of cell top.$flatten\motor_inst.$add$./motor_drv/motor_drv.sv:24$340 ($add).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:39$337 ($add).
-Removed top 13 bits (of 32) from port Y of cell top.$flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:39$337 ($add).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:33$336 ($add).
-Removed top 16 bits (of 32) from port Y of cell top.$flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:33$336 ($add).
-Removed top 18 bits (of 32) from port A of cell top.$flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:23$332 ($add).
-Removed top 17 bits (of 32) from port B of cell top.$flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:23$332 ($add).
-Removed top 16 bits (of 32) from port Y of cell top.$flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:23$332 ($add).
-Removed top 3 bits (of 8) from port B of cell top.$flatten\decoder_inst.$eq$./ir_decoder/ir_decoder.v:91$60 ($eq).
-Removed top 22 bits (of 32) from port B of cell top.$flatten\decoder_inst.$lt$./ir_decoder/ir_decoder.v:84$57 ($lt).
-Removed top 22 bits (of 32) from port B of cell top.$flatten\decoder_inst.$gt$./ir_decoder/ir_decoder.v:84$56 ($gt).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:81$55 ($add).
-Removed top 24 bits (of 32) from port Y of cell top.$flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:81$55 ($add).
-Removed top 23 bits (of 32) from port B of cell top.$flatten\decoder_inst.$gt$./ir_decoder/ir_decoder.v:78$53 ($gt).
-Removed top 23 bits (of 32) from port B of cell top.$flatten\decoder_inst.$lt$./ir_decoder/ir_decoder.v:78$52 ($lt).
-Removed top 20 bits (of 32) from port B of cell top.$flatten\decoder_inst.$lt$./ir_decoder/ir_decoder.v:70$49 ($lt).
-Removed top 21 bits (of 32) from port B of cell top.$flatten\decoder_inst.$gt$./ir_decoder/ir_decoder.v:70$48 ($gt).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:60$46 ($add).
-Removed top 11 bits (of 32) from port Y of cell top.$flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:60$46 ($add).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:32$41 ($add).
-Removed top 16 bits (of 32) from port Y of cell top.$flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:32$41 ($add).
-Removed top 1 bits (of 12) from port B of cell top.$flatten\hysteresis_inst.$lt$./adc_hysteresis/adc_hysteresis.sv:19$329 ($lt).
-Removed top 2 bits (of 12) from port B of cell top.$flatten\hysteresis_inst.$sub$./adc_hysteresis/adc_hysteresis.sv:18$328 ($sub).
-Removed top 1 bits (of 16) from FF cell top.$auto$ff.cc:266:slice$833 ($adffe).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:100$325 ($add).
-Removed top 27 bits (of 32) from port Y of cell top.$flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:100$325 ($add).
-Removed top 27 bits (of 32) from port B of cell top.$flatten\adc_capture_inst.$ge$./adc_capture/adc_capture.sv:95$324 ($ge).
-Removed top 4 bits (of 5) from port B of cell top.$flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:90$323 ($add).
-Removed top 2 bits (of 5) from port A of cell top.$flatten\adc_capture_inst.$sub$./adc_capture/adc_capture.sv:60$318 ($sub).
-Removed top 28 bits (of 32) from port B of cell top.$flatten\adc_capture_inst.$lt$./adc_capture/adc_capture.sv:59$317 ($lt).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:37$314 ($add).
-Removed top 30 bits (of 32) from port Y of cell top.$flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:37$314 ($add).
-Removed top 31 bits (of 32) from port B of cell top.$flatten\adc_capture_inst.$ge$./adc_capture/adc_capture.sv:30$310 ($ge).
-Removed top 1 bits (of 15) from FF cell top.$auto$ff.cc:266:slice$833 ($adffe).
-Removed top 1 bits (of 14) from FF cell top.$auto$ff.cc:266:slice$833 ($adffe).
-Removed top 1 bits (of 13) from FF cell top.$auto$ff.cc:266:slice$833 ($adffe).
-Removed top 27 bits (of 32) from wire top.$flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:100$325_Y.
-Removed top 30 bits (of 32) from wire top.$flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:37$314_Y.
-Removed top 2 bits (of 5) from wire top.$flatten\adc_capture_inst.$procmux$579_Y.
-Removed top 16 bits (of 32) from wire top.$flatten\control_inst.$add$./control/control.sv:43$351_Y.
-Removed top 11 bits (of 32) from wire top.$flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:60$46_Y.
-Removed top 24 bits (of 32) from wire top.$flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:81$55_Y.
-Removed top 23 bits (of 32) from wire top.$flatten\motor_inst.$add$./motor_drv/motor_drv.sv:24$340_Y.
-Removed top 16 bits (of 32) from wire top.$flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:33$336_Y.
-Removed top 13 bits (of 32) from wire top.$flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:39$337_Y.
-
-8.15. Executing PEEPOPT pass (run peephole optimizers).
-
-8.16. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-Removed 0 unused cells and 13 unused wires.
-<suppressed ~1 debug messages>
-
-8.17. Executing SHARE pass (SAT-based resource sharing).
-
-8.18. Executing TECHMAP pass (map to technology primitives).
-
-8.18.1. Executing Verilog-2005 frontend: /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/cmp2lut.v
-Parsing Verilog input from `/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/cmp2lut.v' to AST representation.
-Generating RTLIL representation for module `\_90_lut_cmp_'.
-Successfully finished Verilog frontend.
-
-8.18.2. Continuing TECHMAP pass.
-Using template $paramod$eae7bad97664e7f2f52c363827077e96a763dc1c\_90_lut_cmp_ for cells of type $ge.
-No more expansions possible.
-<suppressed ~426 debug messages>
-
-8.19. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-
-8.20. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-Removed 0 unused cells and 3 unused wires.
-<suppressed ~1 debug messages>
-
-8.21. Executing TECHMAP pass (map to technology primitives).
-
-8.21.1. Executing Verilog-2005 frontend: /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/mul2dsp.v
-Parsing Verilog input from `/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/mul2dsp.v' to AST representation.
-Generating RTLIL representation for module `\_80_mul'.
-Generating RTLIL representation for module `\_90_soft_mul'.
-Successfully finished Verilog frontend.
-
-8.21.2. Executing Verilog-2005 frontend: /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/dsp_map.v
-Parsing Verilog input from `/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/dsp_map.v' to AST representation.
-Generating RTLIL representation for module `\$__MUL18X18'.
-Successfully finished Verilog frontend.
-
-8.21.3. Continuing TECHMAP pass.
-Using template $paramod$fc972a7a46956c1788f3cb5257b53c8f1df2d0cc\_90_soft_mul for cells of type $mul.
-No more expansions possible.
-<suppressed ~43 debug messages>
-
-8.22. Executing ALUMACC pass (create $alu and $macc cells).
-Extracting $alu and $macc cells in module top:
-  creating $macc model for $flatten\decoder_inst.$mul$./ir_decoder/ir_decoder.v:41$43 ($mul).
-  creating $macc model for $flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:100$325 ($add).
-  creating $macc model for $flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:37$314 ($add).
-  creating $macc model for $flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:90$323 ($add).
-  creating $macc model for $flatten\adc_capture_inst.$sub$./adc_capture/adc_capture.sv:60$318 ($sub).
-  creating $macc model for $flatten\control_inst.$add$./control/control.sv:43$351 ($add).
-  creating $macc model for $flatten\control_inst.$add$./control/control.sv:86$357 ($add).
-  creating $macc model for $flatten\control_inst.$add$./control/control.sv:94$362 ($add).
-  creating $macc model for $flatten\control_inst.$sub$./control/control.sv:90$359 ($sub).
-  creating $macc model for $flatten\control_inst.$sub$./control/control.sv:98$364 ($sub).
-  creating $macc model for $flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:32$41 ($add).
-  creating $macc model for $flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:60$46 ($add).
-  creating $macc model for $flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:81$55 ($add).
-  creating $macc model for $flatten\hysteresis_inst.$sub$./adc_hysteresis/adc_hysteresis.sv:18$327 ($sub).
-  creating $macc model for $flatten\hysteresis_inst.$sub$./adc_hysteresis/adc_hysteresis.sv:18$328 ($sub).
-  creating $macc model for $flatten\motor_inst.$add$./motor_drv/motor_drv.sv:24$340 ($add).
-  creating $macc model for $flatten\motor_inst.$add$./motor_drv/motor_drv.sv:27$342 ($add).
-  creating $macc model for $flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:23$332 ($add).
-  creating $macc model for $flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:33$336 ($add).
-  creating $macc model for $flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:39$337 ($add).
-  merging $macc model for $flatten\hysteresis_inst.$sub$./adc_hysteresis/adc_hysteresis.sv:18$327 into $flatten\hysteresis_inst.$sub$./adc_hysteresis/adc_hysteresis.sv:18$328.
-  creating $alu model for $macc $flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:33$336.
-  creating $alu model for $macc $flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:23$332.
-  creating $alu model for $macc $flatten\motor_inst.$add$./motor_drv/motor_drv.sv:27$342.
-  creating $alu model for $macc $flatten\motor_inst.$add$./motor_drv/motor_drv.sv:24$340.
-  creating $alu model for $macc $flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:39$337.
-  creating $alu model for $macc $flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:81$55.
-  creating $alu model for $macc $flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:60$46.
-  creating $alu model for $macc $flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:32$41.
-  creating $alu model for $macc $flatten\control_inst.$sub$./control/control.sv:98$364.
-  creating $alu model for $macc $flatten\control_inst.$sub$./control/control.sv:90$359.
-  creating $alu model for $macc $flatten\control_inst.$add$./control/control.sv:94$362.
-  creating $alu model for $macc $flatten\control_inst.$add$./control/control.sv:86$357.
-  creating $alu model for $macc $flatten\control_inst.$add$./control/control.sv:43$351.
-  creating $alu model for $macc $flatten\adc_capture_inst.$sub$./adc_capture/adc_capture.sv:60$318.
-  creating $alu model for $macc $flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:90$323.
-  creating $alu model for $macc $flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:37$314.
-  creating $alu model for $macc $flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:100$325.
-  creating $macc cell for $flatten\hysteresis_inst.$sub$./adc_hysteresis/adc_hysteresis.sv:18$328: $auto$alumacc.cc:365:replace_macc$858
-  creating $macc cell for $flatten\decoder_inst.$mul$./ir_decoder/ir_decoder.v:41$43: $auto$alumacc.cc:365:replace_macc$859
-  creating $alu model for $flatten\adc_capture_inst.$ge$./adc_capture/adc_capture.sv:95$324 ($ge): new $alu
-  creating $alu model for $flatten\adc_capture_inst.$lt$./adc_capture/adc_capture.sv:59$317 ($lt): new $alu
-  creating $alu model for $flatten\control_inst.$ge$./control/control.sv:89$358 ($ge): merged with $flatten\control_inst.$sub$./control/control.sv:90$359.
-  creating $alu model for $flatten\control_inst.$ge$./control/control.sv:97$363 ($ge): merged with $flatten\control_inst.$sub$./control/control.sv:98$364.
-  creating $alu model for $flatten\control_inst.$le$./control/control.sv:85$356 ($le): new $alu
-  creating $alu model for $flatten\control_inst.$le$./control/control.sv:93$360 ($le): new $alu
-  creating $alu model for $flatten\decoder_inst.$gt$./ir_decoder/ir_decoder.v:70$48 ($gt): new $alu
-  creating $alu model for $flatten\decoder_inst.$gt$./ir_decoder/ir_decoder.v:78$53 ($gt): new $alu
-  creating $alu model for $flatten\decoder_inst.$gt$./ir_decoder/ir_decoder.v:84$56 ($gt): new $alu
-  creating $alu model for $flatten\decoder_inst.$lt$./ir_decoder/ir_decoder.v:70$49 ($lt): new $alu
-  creating $alu model for $flatten\decoder_inst.$lt$./ir_decoder/ir_decoder.v:78$52 ($lt): new $alu
-  creating $alu model for $flatten\decoder_inst.$lt$./ir_decoder/ir_decoder.v:84$57 ($lt): new $alu
-  creating $alu model for $flatten\hysteresis_inst.$gt$./adc_hysteresis/adc_hysteresis.sv:21$330 ($gt): new $alu
-  creating $alu model for $flatten\hysteresis_inst.$lt$./adc_hysteresis/adc_hysteresis.sv:19$329 ($lt): new $alu
-  creating $alu model for $flatten\motor_inst.$lt$./motor_drv/motor_drv.sv:33$343 ($lt): new $alu
-  creating $alu cell for $flatten\motor_inst.$lt$./motor_drv/motor_drv.sv:33$343: $auto$alumacc.cc:495:replace_alu$873
-  creating $alu cell for $flatten\hysteresis_inst.$lt$./adc_hysteresis/adc_hysteresis.sv:19$329: $auto$alumacc.cc:495:replace_alu$878
-  creating $alu cell for $flatten\hysteresis_inst.$gt$./adc_hysteresis/adc_hysteresis.sv:21$330: $auto$alumacc.cc:495:replace_alu$883
-  creating $alu cell for $flatten\decoder_inst.$lt$./ir_decoder/ir_decoder.v:84$57: $auto$alumacc.cc:495:replace_alu$894
-  creating $alu cell for $flatten\decoder_inst.$lt$./ir_decoder/ir_decoder.v:78$52: $auto$alumacc.cc:495:replace_alu$899
-  creating $alu cell for $flatten\decoder_inst.$lt$./ir_decoder/ir_decoder.v:70$49: $auto$alumacc.cc:495:replace_alu$904
-  creating $alu cell for $flatten\decoder_inst.$gt$./ir_decoder/ir_decoder.v:84$56: $auto$alumacc.cc:495:replace_alu$909
-  creating $alu cell for $flatten\decoder_inst.$gt$./ir_decoder/ir_decoder.v:78$53: $auto$alumacc.cc:495:replace_alu$920
-  creating $alu cell for $flatten\decoder_inst.$gt$./ir_decoder/ir_decoder.v:70$48: $auto$alumacc.cc:495:replace_alu$931
-  creating $alu cell for $flatten\control_inst.$le$./control/control.sv:93$360: $auto$alumacc.cc:495:replace_alu$942
-  creating $alu cell for $flatten\control_inst.$le$./control/control.sv:85$356: $auto$alumacc.cc:495:replace_alu$951
-  creating $alu cell for $flatten\adc_capture_inst.$lt$./adc_capture/adc_capture.sv:59$317: $auto$alumacc.cc:495:replace_alu$960
-  creating $alu cell for $flatten\adc_capture_inst.$ge$./adc_capture/adc_capture.sv:95$324: $auto$alumacc.cc:495:replace_alu$965
-  creating $alu cell for $flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:100$325: $auto$alumacc.cc:495:replace_alu$978
-  creating $alu cell for $flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:37$314: $auto$alumacc.cc:495:replace_alu$981
-  creating $alu cell for $flatten\adc_capture_inst.$add$./adc_capture/adc_capture.sv:90$323: $auto$alumacc.cc:495:replace_alu$984
-  creating $alu cell for $flatten\adc_capture_inst.$sub$./adc_capture/adc_capture.sv:60$318: $auto$alumacc.cc:495:replace_alu$987
-  creating $alu cell for $flatten\control_inst.$add$./control/control.sv:43$351: $auto$alumacc.cc:495:replace_alu$990
-  creating $alu cell for $flatten\control_inst.$add$./control/control.sv:86$357: $auto$alumacc.cc:495:replace_alu$993
-  creating $alu cell for $flatten\control_inst.$add$./control/control.sv:94$362: $auto$alumacc.cc:495:replace_alu$996
-  creating $alu cell for $flatten\control_inst.$sub$./control/control.sv:90$359, $flatten\control_inst.$ge$./control/control.sv:89$358: $auto$alumacc.cc:495:replace_alu$999
-  creating $alu cell for $flatten\control_inst.$sub$./control/control.sv:98$364, $flatten\control_inst.$ge$./control/control.sv:97$363: $auto$alumacc.cc:495:replace_alu$1012
-  creating $alu cell for $flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:32$41: $auto$alumacc.cc:495:replace_alu$1025
-  creating $alu cell for $flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:60$46: $auto$alumacc.cc:495:replace_alu$1028
-  creating $alu cell for $flatten\decoder_inst.$add$./ir_decoder/ir_decoder.v:81$55: $auto$alumacc.cc:495:replace_alu$1031
-  creating $alu cell for $flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:39$337: $auto$alumacc.cc:495:replace_alu$1034
-  creating $alu cell for $flatten\motor_inst.$add$./motor_drv/motor_drv.sv:24$340: $auto$alumacc.cc:495:replace_alu$1037
-  creating $alu cell for $flatten\motor_inst.$add$./motor_drv/motor_drv.sv:27$342: $auto$alumacc.cc:495:replace_alu$1040
-  creating $alu cell for $flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:23$332: $auto$alumacc.cc:495:replace_alu$1043
-  creating $alu cell for $flatten\servo_inst.$add$./servo_pdm/servo_pdm.v:33$336: $auto$alumacc.cc:495:replace_alu$1046
-  created 30 $alu and 2 $macc cells.
-
-8.23. Executing OPT pass (performing simple optimizations).
-
-8.23.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-<suppressed ~2 debug messages>
-
-8.23.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-Removed a total of 0 cells.
-
-8.23.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \top..
-  Creating internal representation of mux trees.
-  Evaluating internal representation of mux trees.
-  Analyzing evaluation results.
-Removed 0 multiplexer ports.
-<suppressed ~27 debug messages>
-
-8.23.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \top.
-Performed a total of 0 changes.
-
-8.23.5. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-Removed a total of 0 cells.
-
-8.23.6. Executing OPT_DFF pass (perform DFF optimizations).
-
-8.23.7. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-Removed 1 unused cells and 19 unused wires.
-<suppressed ~2 debug messages>
-
-8.23.8. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-
-8.23.9. Rerunning OPT passes. (Maybe there is more to do..)
-
-8.23.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \top..
-  Creating internal representation of mux trees.
-  Evaluating internal representation of mux trees.
-  Analyzing evaluation results.
-Removed 0 multiplexer ports.
-<suppressed ~27 debug messages>
-
-8.23.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \top.
-Performed a total of 0 changes.
-
-8.23.12. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-Removed a total of 0 cells.
-
-8.23.13. Executing OPT_DFF pass (perform DFF optimizations).
-
-8.23.14. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-
-8.23.15. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-
-8.23.16. Finished OPT passes. (There is nothing left to do.)
-
-8.24. Executing MEMORY pass.
-
-8.24.1. Executing OPT_MEM pass (optimize memories).
-Performed a total of 0 transformations.
-
-8.24.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
-Performed a total of 0 transformations.
-
-8.24.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
-
-8.24.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
-
-8.24.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
-
-8.24.6. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-
-8.24.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
-
-8.24.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
-Performed a total of 0 transformations.
-
-8.24.9. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-
-8.24.10. Executing MEMORY_COLLECT pass (generating $mem cells).
-
-8.25. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-
-8.26. Executing MEMORY_LIBMAP pass (mapping memories to cells).
-
-8.27. Executing TECHMAP pass (map to technology primitives).
-
-8.27.1. Executing Verilog-2005 frontend: /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/lutrams_map.v
-Parsing Verilog input from `/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/lutrams_map.v' to AST representation.
-Generating RTLIL representation for module `\$__TRELLIS_DPR16X4_'.
-Successfully finished Verilog frontend.
-
-8.27.2. Executing Verilog-2005 frontend: /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/brams_map.v
-Parsing Verilog input from `/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/brams_map.v' to AST representation.
-Generating RTLIL representation for module `\$__ECP5_DP16KD_'.
-Generating RTLIL representation for module `\$__ECP5_PDPW16KD_'.
-Successfully finished Verilog frontend.
-
-8.27.3. Continuing TECHMAP pass.
-No more expansions possible.
-<suppressed ~5 debug messages>
-
-8.28. Executing OPT pass (performing simple optimizations).
-
-8.28.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-<suppressed ~29 debug messages>
-
-8.28.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-<suppressed ~24 debug messages>
-Removed a total of 8 cells.
-
-8.28.3. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $flatten\control_inst.$procdff$654 ($adff) from module top (D = $flatten\control_inst.$0\motor_dc[7:0] [4:0], Q = \control_inst.motor_dc [4:0]).
-Adding EN signal on $auto$ff.cc:266:slice$812 ($adffe) from module top (D = $flatten\control_inst.$procmux$429_Y [3:0], Q = \control_inst.servo_dc [3:0]).
-
-8.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-Removed 0 unused cells and 36 unused wires.
-<suppressed ~1 debug messages>
-
-8.28.5. Rerunning OPT passes. (Removed registers in this run.)
-
-8.28.6. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-<suppressed ~1 debug messages>
-
-8.28.7. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-Removed a total of 0 cells.
-
-8.28.8. Executing OPT_DFF pass (perform DFF optimizations).
-
-8.28.9. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-Removed 0 unused cells and 1 unused wires.
-<suppressed ~1 debug messages>
-
-8.28.10. Finished fast OPT passes.
-
-8.29. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
-
-8.30. Executing OPT pass (performing simple optimizations).
-
-8.30.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-
-8.30.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-Removed a total of 0 cells.
-
-8.30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \top..
-  Creating internal representation of mux trees.
-  Evaluating internal representation of mux trees.
-  Analyzing evaluation results.
-Removed 0 multiplexer ports.
-<suppressed ~26 debug messages>
-
-8.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \top.
-Performed a total of 0 changes.
-
-8.30.5. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-Removed a total of 0 cells.
-
-8.30.6. Executing OPT_DFF pass (perform DFF optimizations).
-
-8.30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-
-8.30.8. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-
-8.30.9. Finished OPT passes. (There is nothing left to do.)
-
-8.31. Executing TECHMAP pass (map to technology primitives).
-
-8.31.1. Executing Verilog-2005 frontend: /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/techmap.v
-Parsing Verilog input from `/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
-Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
-Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
-Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
-Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
-Generating RTLIL representation for module `\_90_simplemap_various'.
-Generating RTLIL representation for module `\_90_simplemap_registers'.
-Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
-Generating RTLIL representation for module `\_90_shift_shiftx'.
-Generating RTLIL representation for module `\_90_fa'.
-Generating RTLIL representation for module `\_90_lcu_brent_kung'.
-Generating RTLIL representation for module `\_90_alu'.
-Generating RTLIL representation for module `\_90_macc'.
-Generating RTLIL representation for module `\_90_alumacc'.
-Generating RTLIL representation for module `\$__div_mod_u'.
-Generating RTLIL representation for module `\$__div_mod_trunc'.
-Generating RTLIL representation for module `\_90_div'.
-Generating RTLIL representation for module `\_90_mod'.
-Generating RTLIL representation for module `\$__div_mod_floor'.
-Generating RTLIL representation for module `\_90_divfloor'.
-Generating RTLIL representation for module `\_90_modfloor'.
-Generating RTLIL representation for module `\_90_pow'.
-Generating RTLIL representation for module `\_90_pmux'.
-Generating RTLIL representation for module `\_90_demux'.
-Generating RTLIL representation for module `\_90_lut'.
-Successfully finished Verilog frontend.
-
-8.31.2. Executing Verilog-2005 frontend: /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v
-Parsing Verilog input from `/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/arith_map.v' to AST representation.
-Generating RTLIL representation for module `\_80_ecp5_alu'.
-Successfully finished Verilog frontend.
-
-8.31.3. Continuing TECHMAP pass.
-Using extmapper simplemap for cells of type $eq.
-Using extmapper simplemap for cells of type $not.
-Using extmapper simplemap for cells of type $ne.
-Using extmapper simplemap for cells of type $logic_and.
-Using extmapper simplemap for cells of type $reduce_and.
-Using extmapper simplemap for cells of type $adffe.
-Using template $paramod$20d3ee62d72123142eb855d7ddafd835e31ba009\_90_pmux for cells of type $pmux.
-Using extmapper simplemap for cells of type $adff.
-Using extmapper simplemap for cells of type $mux.
-Using template $paramod$645fe0cc96ae5edb83bff90cc2c78f4a20ca3e3c\_90_pmux for cells of type $pmux.
-Using extmapper simplemap for cells of type $or.
-Using template $paramod$2af30114e9bd4ccb04dad757b3f0a8f6bf0615b0\_80_ecp5_alu for cells of type $alu.
-Using template $paramod$8742280fdebca84e1c87f2a86ed84f62d558f4cc\_90_alu for cells of type $alu.
-Using template $paramod$a1bc51c02ce12ac21eb18988e83292af48ed7d72\_80_ecp5_alu for cells of type $alu.
-Using template $paramod$b8c0a997bce700f23568a5ada79cc6781d1f5ca0\_90_alu for cells of type $alu.
-Using template $paramod$3ef7d3dd227da7627a99c5e5a6a4deb817573e39\_90_alu for cells of type $alu.
-Using template $paramod$ba698a254f9a5947e85cbe7beae6b161eefc5386\_90_alu for cells of type $alu.
-Using template $paramod$32a7b7b86c07519b7537abc18e96f0331f97914d\_90_alu for cells of type $alu.
-Using extmapper maccmap for cells of type $macc_v2.
-  sub \adc_capture_inst.dout [11:0] (12 bits, unsigned)
-  add 12'110110111010 (12 bits, unsigned)
-Using template $paramod$cd54e322aa4265ca236096fe4bb634aaec4e39b4\_80_ecp5_alu for cells of type $alu.
-Using template $paramod$9befa12646ab1d64090f7cfa4f3c72972b2004e7\_80_ecp5_alu for cells of type $alu.
-Using template $paramod$c3cd1564c35d873179656addd6052d7ea8b6d991\_80_ecp5_alu for cells of type $alu.
-Using extmapper simplemap for cells of type $reduce_or.
-Using template $paramod$53700bbee849b2010ad0b60a61ccd204a10e24ca\_80_ecp5_alu for cells of type $alu.
-Using extmapper simplemap for cells of type $reduce_bool.
-Using template $paramod$26ba068b81d90b7844f694a2aa225ce0e4502019\_80_ecp5_alu for cells of type $alu.
-Using template $paramod$20b1d0597707d55efcb9664e40f63985956d7680\_80_ecp5_alu for cells of type $alu.
-Using template $paramod$77511fd6a548f8ed566017c02ef4db095ab5a577\_80_ecp5_alu for cells of type $alu.
-Using template $paramod$dc16c7b80a00b99d4eab6bb6fa146bcf87e88e1e\_80_ecp5_alu for cells of type $alu.
-Using template $paramod$afbaf11f53f19fdab912562bb6e6ec02264957d9\_80_ecp5_alu for cells of type $alu.
-Using template $paramod$93b49458bab1c00eb32aff458c583f46ff61e60f\_80_ecp5_alu for cells of type $alu.
-Using template $paramod$c2dbecda89be762ad1a456672395b5e77c030907\_80_ecp5_alu for cells of type $alu.
-Using template $paramod$d2fa05d38998afabc6d4f34471305d0af4b8b2df\_80_ecp5_alu for cells of type $alu.
-  add $techmap857$flatten\decoder_inst.$mul$./ir_decoder/ir_decoder.v:41$43.A * \gpio [3] (1x1 bits, unsigned)
-Using extmapper simplemap for cells of type $lut.
-Using template $paramod$175e67c02b86e96b1288b9dc100122520d7240d8\_90_alu for cells of type $alu.
-Using template $paramod$672a140277c71df8314410f22acc08d55222c3c7\_80_ecp5_alu for cells of type $alu.
-Using template $paramod$d1615bf4e5e328245ffd1550e5fe105901cda77b\_90_alu for cells of type $alu.
-Using template $paramod$constmap:f02663ff5c053cdd928be0fdb4d193acd3a3863b$paramod$724ca30713ca8aea2c8cc37cca71097000942a01\_90_shift_shiftx for cells of type $shiftx.
-Using template $paramod$740b056ede97228d3eae64ea2fdc81f0a33e0fe7\_90_alu for cells of type $alu.
-Using extmapper simplemap for cells of type $and.
-Using extmapper simplemap for cells of type $logic_or.
-Using extmapper simplemap for cells of type $xor.
-Using extmapper simplemap for cells of type $pos.
-Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000100 for cells of type $lcu.
-Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000011 for cells of type $lcu.
-Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000010 for cells of type $lcu.
-Using template $paramod$ee3d784672cdb1cb32d9a801a3af776716f16b74\_80_ecp5_alu for cells of type $alu.
-No more expansions possible.
-<suppressed ~2325 debug messages>
-
-8.32. Executing OPT pass (performing simple optimizations).
-
-8.32.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-<suppressed ~2024 debug messages>
-
-8.32.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\top'.
-<suppressed ~1704 debug messages>
-Removed a total of 568 cells.
-
-8.32.3. Executing OPT_DFF pass (perform DFF optimizations).
-
-8.32.4. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-Removed 272 unused cells and 1851 unused wires.
-<suppressed ~273 debug messages>
-
-8.32.5. Finished fast OPT passes.
-
-8.33. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-
-8.34. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
-
-8.35. Executing TECHMAP pass (map to technology primitives).
-
-8.35.1. Executing Verilog-2005 frontend: /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v
-Parsing Verilog input from `/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v' to AST representation.
-Generating RTLIL representation for module `\$_DFF_N_'.
-Generating RTLIL representation for module `\$_DFF_P_'.
-Generating RTLIL representation for module `\$_DFFE_NN_'.
-Generating RTLIL representation for module `\$_DFFE_PN_'.
-Generating RTLIL representation for module `\$_DFFE_NP_'.
-Generating RTLIL representation for module `\$_DFFE_PP_'.
-Generating RTLIL representation for module `\$_DFF_NP0_'.
-Generating RTLIL representation for module `\$_DFF_NP1_'.
-Generating RTLIL representation for module `\$_DFF_PP0_'.
-Generating RTLIL representation for module `\$_DFF_PP1_'.
-Generating RTLIL representation for module `\$_SDFF_NP0_'.
-Generating RTLIL representation for module `\$_SDFF_NP1_'.
-Generating RTLIL representation for module `\$_SDFF_PP0_'.
-Generating RTLIL representation for module `\$_SDFF_PP1_'.
-Generating RTLIL representation for module `\$_DFFE_NP0P_'.
-Generating RTLIL representation for module `\$_DFFE_NP1P_'.
-Generating RTLIL representation for module `\$_DFFE_PP0P_'.
-Generating RTLIL representation for module `\$_DFFE_PP1P_'.
-Generating RTLIL representation for module `\$_DFFE_NP0N_'.
-Generating RTLIL representation for module `\$_DFFE_NP1N_'.
-Generating RTLIL representation for module `\$_DFFE_PP0N_'.
-Generating RTLIL representation for module `\$_DFFE_PP1N_'.
-Generating RTLIL representation for module `\$_SDFFE_NP0P_'.
-Generating RTLIL representation for module `\$_SDFFE_NP1P_'.
-Generating RTLIL representation for module `\$_SDFFE_PP0P_'.
-Generating RTLIL representation for module `\$_SDFFE_PP1P_'.
-Generating RTLIL representation for module `\$_SDFFE_NP0N_'.
-Generating RTLIL representation for module `\$_SDFFE_NP1N_'.
-Generating RTLIL representation for module `\$_SDFFE_PP0N_'.
-Generating RTLIL representation for module `\$_SDFFE_PP1N_'.
-Generating RTLIL representation for module `\$_ALDFF_NP_'.
-Generating RTLIL representation for module `\$_ALDFF_PP_'.
-Generating RTLIL representation for module `\$_ALDFFE_NPN_'.
-Generating RTLIL representation for module `\$_ALDFFE_NPP_'.
-Generating RTLIL representation for module `\$_ALDFFE_PPN_'.
-Generating RTLIL representation for module `\$_ALDFFE_PPP_'.
-Generating RTLIL representation for module `\FD1P3AX'.
-Generating RTLIL representation for module `\FD1P3AY'.
-Generating RTLIL representation for module `\FD1P3BX'.
-Generating RTLIL representation for module `\FD1P3DX'.
-Generating RTLIL representation for module `\FD1P3IX'.
-Generating RTLIL representation for module `\FD1P3JX'.
-Generating RTLIL representation for module `\FD1S3AX'.
-Generating RTLIL representation for module `\FD1S3AY'.
-Generating RTLIL representation for module `\FD1S3BX'.
-Generating RTLIL representation for module `\FD1S3DX'.
-Generating RTLIL representation for module `\FD1S3IX'.
-Generating RTLIL representation for module `\FD1S3JX'.
-Generating RTLIL representation for module `\IFS1P3BX'.
-Generating RTLIL representation for module `\IFS1P3DX'.
-Generating RTLIL representation for module `\IFS1P3IX'.
-Generating RTLIL representation for module `\IFS1P3JX'.
-Generating RTLIL representation for module `\OFS1P3BX'.
-Generating RTLIL representation for module `\OFS1P3DX'.
-Generating RTLIL representation for module `\OFS1P3IX'.
-Generating RTLIL representation for module `\OFS1P3JX'.
-Generating RTLIL representation for module `\IB'.
-Generating RTLIL representation for module `\IBPU'.
-Generating RTLIL representation for module `\IBPD'.
-Generating RTLIL representation for module `\OB'.
-Generating RTLIL representation for module `\OBZ'.
-Generating RTLIL representation for module `\OBZPU'.
-Generating RTLIL representation for module `\OBZPD'.
-Generating RTLIL representation for module `\OBCO'.
-Generating RTLIL representation for module `\BB'.
-Generating RTLIL representation for module `\BBPU'.
-Generating RTLIL representation for module `\BBPD'.
-Generating RTLIL representation for module `\ILVDS'.
-Generating RTLIL representation for module `\OLVDS'.
-Successfully finished Verilog frontend.
-
-8.35.2. Continuing TECHMAP pass.
-Using template \$_DFFE_PP0N_ for cells of type $_DFFE_PP0N_.
-Using template \$_DFFE_PP1P_ for cells of type $_DFFE_PP1P_.
-Using template \$_DFFE_PP0P_ for cells of type $_DFFE_PP0P_.
-Using template \$_DFFE_PP1N_ for cells of type $_DFFE_PP1N_.
-Using template \$_DFF_PP0_ for cells of type $_DFF_PP0_.
-Using template \$_DFF_PP1_ for cells of type $_DFF_PP1_.
-Using template \$_DFFE_NP0P_ for cells of type $_DFFE_NP0P_.
-No more expansions possible.
-<suppressed ~274 debug messages>
-
-8.36. Executing OPT_EXPR pass (perform const folding).
-Optimizing module top.
-<suppressed ~29 debug messages>
-
-8.37. Executing SIMPLEMAP pass (map simple cells to gate primitives).
-
-8.38. Executing LATTICE_GSR pass (implement FF init values).
-Handling GSR in top.
-
-8.39. Executing ATTRMVCP pass (move or copy attributes).
-
-8.40. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \top..
-Removed 0 unused cells and 1156 unused wires.
-<suppressed ~1 debug messages>
-
-8.41. Executing TECHMAP pass (map to technology primitives).
-
-8.41.1. Executing Verilog-2005 frontend: /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/latches_map.v
-Parsing Verilog input from `/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/latches_map.v' to AST representation.
-Generating RTLIL representation for module `\$_DLATCH_N_'.
-Generating RTLIL representation for module `\$_DLATCH_P_'.
-Successfully finished Verilog frontend.
-
-8.41.2. Continuing TECHMAP pass.
-No more expansions possible.
-<suppressed ~4 debug messages>
-
-8.42. Executing ABC pass (technology mapping using ABC).
-
-8.42.1. Extracting gate netlist of module `\top' to `<abc-temp-dir>/input.blif'..
-Extracted 926 gates and 1240 wires to a netlist network with 312 inputs and 201 outputs.
-
-8.42.1.1. Executing ABC.
-Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
-ABC: ABC command line: "source <abc-temp-dir>/abc.script".
-ABC: 
-ABC: + read_blif <abc-temp-dir>/input.blif 
-ABC: + read_lut <abc-temp-dir>/lutdefs.txt 
-ABC: + strash 
-ABC: + &get -n 
-ABC: + &fraig -x 
-ABC: + &put 
-ABC: + scorr 
-ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
-ABC: + dc2 
-ABC: + dretime 
-ABC: + strash 
-ABC: + dch -f 
-ABC: + if 
-ABC: + mfs2 
-ABC: + dress <abc-temp-dir>/input.blif 
-ABC: Total number of equiv classes                =     254.
-ABC: Participating nodes from both networks       =     540.
-ABC: Participating nodes from the first network   =     257. (  75.15 % of nodes)
-ABC: Participating nodes from the second network  =     283. (  82.75 % of nodes)
-ABC: Node pairs (any polarity)                    =     256. (  74.85 % of names can be moved)
-ABC: Node pairs (same polarity)                   =     230. (  67.25 % of names can be moved)
-ABC: Total runtime =     0.07 sec
-ABC: + write_blif <abc-temp-dir>/output.blif 
-
-8.42.1.2. Re-integrating ABC results.
-ABC RESULTS:              $lut cells:      340
-ABC RESULTS:        internal signals:      727
-ABC RESULTS:           input signals:      312
-ABC RESULTS:          output signals:      201
-Removing temp directory.
-Removed 0 unused cells and 704 unused wires.
-
-8.43. Executing TECHMAP pass (map to technology primitives).
-
-8.43.1. Executing Verilog-2005 frontend: /home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v
-Parsing Verilog input from `/home/aquatic72/Applications/oss-cad-suite-linux-x64-20250322/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v' to AST representation.
-Generating RTLIL representation for module `\$_DFF_N_'.
-Generating RTLIL representation for module `\$_DFF_P_'.
-Generating RTLIL representation for module `\$_DFFE_NN_'.
-Generating RTLIL representation for module `\$_DFFE_PN_'.
-Generating RTLIL representation for module `\$_DFFE_NP_'.
-Generating RTLIL representation for module `\$_DFFE_PP_'.
-Generating RTLIL representation for module `\$_DFF_NP0_'.
-Generating RTLIL representation for module `\$_DFF_NP1_'.
-Generating RTLIL representation for module `\$_DFF_PP0_'.
-Generating RTLIL representation for module `\$_DFF_PP1_'.
-Generating RTLIL representation for module `\$_SDFF_NP0_'.
-Generating RTLIL representation for module `\$_SDFF_NP1_'.
-Generating RTLIL representation for module `\$_SDFF_PP0_'.
-Generating RTLIL representation for module `\$_SDFF_PP1_'.
-Generating RTLIL representation for module `\$_DFFE_NP0P_'.
-Generating RTLIL representation for module `\$_DFFE_NP1P_'.
-Generating RTLIL representation for module `\$_DFFE_PP0P_'.
-Generating RTLIL representation for module `\$_DFFE_PP1P_'.
-Generating RTLIL representation for module `\$_DFFE_NP0N_'.
-Generating RTLIL representation for module `\$_DFFE_NP1N_'.
-Generating RTLIL representation for module `\$_DFFE_PP0N_'.
-Generating RTLIL representation for module `\$_DFFE_PP1N_'.
-Generating RTLIL representation for module `\$_SDFFE_NP0P_'.
-Generating RTLIL representation for module `\$_SDFFE_NP1P_'.
-Generating RTLIL representation for module `\$_SDFFE_PP0P_'.
-Generating RTLIL representation for module `\$_SDFFE_PP1P_'.
-Generating RTLIL representation for module `\$_SDFFE_NP0N_'.
-Generating RTLIL representation for module `\$_SDFFE_NP1N_'.
-Generating RTLIL representation for module `\$_SDFFE_PP0N_'.
-Generating RTLIL representation for module `\$_SDFFE_PP1N_'.
-Generating RTLIL representation for module `\$_ALDFF_NP_'.
-Generating RTLIL representation for module `\$_ALDFF_PP_'.
-Generating RTLIL representation for module `\$_ALDFFE_NPN_'.
-Generating RTLIL representation for module `\$_ALDFFE_NPP_'.
-Generating RTLIL representation for module `\$_ALDFFE_PPN_'.
-Generating RTLIL representation for module `\$_ALDFFE_PPP_'.
-Generating RTLIL representation for module `\FD1P3AX'.
-Generating RTLIL representation for module `\FD1P3AY'.
-Generating RTLIL representation for module `\FD1P3BX'.
-Generating RTLIL representation for module `\FD1P3DX'.
-Generating RTLIL representation for module `\FD1P3IX'.
-Generating RTLIL representation for module `\FD1P3JX'.
-Generating RTLIL representation for module `\FD1S3AX'.
-Generating RTLIL representation for module `\FD1S3AY'.
-Generating RTLIL representation for module `\FD1S3BX'.
-Generating RTLIL representation for module `\FD1S3DX'.
-Generating RTLIL representation for module `\FD1S3IX'.
-Generating RTLIL representation for module `\FD1S3JX'.
-Generating RTLIL representation for module `\IFS1P3BX'.
-Generating RTLIL representation for module `\IFS1P3DX'.
-Generating RTLIL representation for module `\IFS1P3IX'.
-Generating RTLIL representation for module `\IFS1P3JX'.
-Generating RTLIL representation for module `\OFS1P3BX'.
-Generating RTLIL representation for module `\OFS1P3DX'.
-Generating RTLIL representation for module `\OFS1P3IX'.
-Generating RTLIL representation for module `\OFS1P3JX'.
-Generating RTLIL representation for module `\IB'.
-Generating RTLIL representation for module `\IBPU'.
-Generating RTLIL representation for module `\IBPD'.
-Generating RTLIL representation for module `\OB'.
-Generating RTLIL representation for module `\OBZ'.
-Generating RTLIL representation for module `\OBZPU'.
-Generating RTLIL representation for module `\OBZPD'.
-Generating RTLIL representation for module `\OBCO'.
-Generating RTLIL representation for module `\BB'.
-Generating RTLIL representation for module `\BBPU'.
-Generating RTLIL representation for module `\BBPD'.
-Generating RTLIL representation for module `\ILVDS'.
-Generating RTLIL representation for module `\OLVDS'.
-Generating RTLIL representation for module `\$lut'.
-Successfully finished Verilog frontend.
-
-8.43.2. Continuing TECHMAP pass.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0100 for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000000 for cells of type $lut.
-Using template $paramod$6e238df02989b317f10820a22773676e71120644\$lut for cells of type $lut.
-Using template $paramod$272652f6c6fbe9a75eff76e45cc7e2788835518b\$lut for cells of type $lut.
-Using template $paramod$571404c0889eaf57f492cb5e37f8acb5df5852f9\$lut for cells of type $lut.
-Using template $paramod$658b9ed803f0d3d335616d3858b53e0a2522f1e8\$lut for cells of type $lut.
-Using template $paramod$525425bfbe66d72ee88210d059d9a74f55ab8de8\$lut for cells of type $lut.
-Using template $paramod$cf652acbfbf67d2248e3045cd0f09c58ca55886c\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01000000 for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0111 for cells of type $lut.
-Using template $paramod$eba5a803e3ce7eaf84e052d4657eb84e41c56bb1\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0110 for cells of type $lut.
-Using template $paramod$6d6beead1425af15cf78b27fd9b11b41b5d4bce8\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01110000 for cells of type $lut.
-Using template $paramod$ce1c9e5dc69130ad725a1305c625edfc80c5b8a9\$lut for cells of type $lut.
-Using template $paramod$d4fae2c0d9ad2966369cd4e39b81c71bcd1327c9\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0001 for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11101111 for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01111000 for cells of type $lut.
-Using template $paramod$9bdc414229f06e785dc8fd97a243faa9336e164a\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010000 for cells of type $lut.
-Using template $paramod$ee19d45db61acb4c70d938b97483a4ed4b792645\$lut for cells of type $lut.
-Using template $paramod$33e58adf67c6b686a154c9ce8ebbc4b04b8cabc5\$lut for cells of type $lut.
-Using template $paramod$251994398653c4cf8de320f1e306e535d5d2d624\$lut for cells of type $lut.
-Using template $paramod$df006c696d7a02f77e4821795eecd702362a3be1\$lut for cells of type $lut.
-Using template $paramod$4b2297966ddb718657b80566604f97685ffc0120\$lut for cells of type $lut.
-Using template $paramod$8732245de94e528fabbed6b4a1b8a0b8eeee5a03\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1110 for cells of type $lut.
-Using template $paramod$fb76c8f4f09d58015d496e47a946604b25235fc2\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00011110 for cells of type $lut.
-Using template $paramod$b75e8306635d621cb7e96e5d2ad1327ab1afa025\$lut for cells of type $lut.
-Using template $paramod$06b5f7e5a17024622a77ecd9b5b6f113e0b34c96\$lut for cells of type $lut.
-Using template $paramod$38e6aa9546c40949f8135bb018f0d5ef863085b9\$lut for cells of type $lut.
-Using template $paramod$43779580bfffd5d5a9f321249a174febf1dac288\$lut for cells of type $lut.
-Using template $paramod$b4410865e8124402796f9dfbf73ef8d279fdbd08\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10010000 for cells of type $lut.
-Using template $paramod$a15fd389a2f54cb7b94707b25934d226e68d9e2e\$lut for cells of type $lut.
-Using template $paramod$6be1b13dd7231945e5c14f1e5f4c7825c705c6c7\$lut for cells of type $lut.
-Using template $paramod$c93083768903e88c37e0c9b82fead370b0886961\$lut for cells of type $lut.
-Using template $paramod$7bb6a37e65823eeb4b38c370fec30ab082759a14\$lut for cells of type $lut.
-Using template $paramod$6b0849254d6c87461fb93e37cc18f089f61eb912\$lut for cells of type $lut.
-Using template $paramod$5afdc7428159757eedf89ce514f7efa32b31c8e7\$lut for cells of type $lut.
-Using template $paramod$80e9136916c3a8f003e6fad38fbc668e82ba37e4\$lut for cells of type $lut.
-Using template $paramod$040791c04ea86e31acd675021d95f3dbcc5a17ea\$lut for cells of type $lut.
-Using template $paramod$bb4fff1cc3b827238aa40993cafede1c5beecbe3\$lut for cells of type $lut.
-Using template $paramod$608f40069c27841a5b3bdf03643a34bdc8974072\$lut for cells of type $lut.
-Using template $paramod$6dc50931841f07d24c3500caef03e3799e4c9a84\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10110000 for cells of type $lut.
-Using template $paramod$6e3b22478ca21c5590744f2e30b92938c4d90996\$lut for cells of type $lut.
-Using template $paramod$42f9a5a1953325ab223509efc4716d5524c60efe\$lut for cells of type $lut.
-Using template $paramod$9b365eba236f6c79413911c47f43eb15cd5db580\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10111111 for cells of type $lut.
-Using template $paramod$048100a63fb7129e0d97d090e847b3c919e0a483\$lut for cells of type $lut.
-Using template $paramod$ba05b8a1a425003df083aea0e69541f5cbdc68f2\$lut for cells of type $lut.
-Using template $paramod$b4f85a6321a00b090afc4e21d68e7b99eb94d149\$lut for cells of type $lut.
-Using template $paramod$b93d1ea7a612a32c185108f67a153d44ffb9aac2\$lut for cells of type $lut.
-Using template $paramod$df196ed0a1da5c4a58c5e08a1dac304fd3fccaab\$lut for cells of type $lut.
-Using template $paramod$48b8375e1f865199586fc00e797a4bddc4b1df87\$lut for cells of type $lut.
-Using template $paramod$789fd63aa7bb63632ed17bfe6614a57aa061b2a8\$lut for cells of type $lut.
-Using template $paramod$eba7de026ff587370e320127e266317dae097a89\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00111010 for cells of type $lut.
-Using template $paramod$da396db60304c79ae2aea1496dfb7c21aeba5247\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11100001 for cells of type $lut.
-Using template $paramod$d119410bab96963da0139669592048db2c09198b\$lut for cells of type $lut.
-Using template $paramod$53ce561f80f32d4298a3beadc88b6c5c78293221\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000001\LUT=2'01 for cells of type $lut.
-Using template $paramod$c28567469ea66f93bb992c5b70c6e74beb4a0a83\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11110100 for cells of type $lut.
-Using template $paramod$ccc7f17bd8e592be2e57faed5e75fa4bda76f73e\$lut for cells of type $lut.
-Using template $paramod$aff3a645bb9f572421a4f0f49cf8987ceb4bcdc5\$lut for cells of type $lut.
-Using template $paramod$cbfd30b70b4f0ac8dd1d3ed758215fbf49783a3b\$lut for cells of type $lut.
-Using template $paramod$82b4a585d1edcb5c6e755dc9bd3392228a1c1304\$lut for cells of type $lut.
-Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11100000 for cells of type $lut.
-Using template $paramod$5d4bbc547f1862bddcd7181b7e7075c0f4f2cc0b\$lut for cells of type $lut.
-No more expansions possible.
-<suppressed ~1385 debug messages>
-
-8.44. Executing OPT_LUT_INS pass (discard unused LUT inputs).
-Optimizing LUTs in top.
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7209.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7209.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7209.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7209.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 1)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7209.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut7 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7199.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7199.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7199.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7199.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 1)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7199.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut7 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7210.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7210.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7210.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7210.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7210.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 1)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7210.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut7 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7221.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7237.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7211.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7211.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7211.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7211.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 1)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7211.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut7 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7226.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7212.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7212.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7212.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7212.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7212.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 1)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7212.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut7 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7220.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7216.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7227.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7217.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7232.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7218.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7222.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7233.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7223.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7224.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7228.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7242.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7229.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7238.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7230.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7234.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7243.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7244.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7214.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7214.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7214.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7214.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 1)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7214.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut7 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7241.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7106.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7106.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7106.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7106.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7106.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 1)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7106.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7235.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7002.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7002.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7231.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7122.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 2)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7127.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7127.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6961.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7219.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7213.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7213.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7213.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7213.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7213.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 1)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7213.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut7 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7208.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7208.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7208.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7208.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7208.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 1)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7208.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut7 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7098.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 1)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7101.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7101.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7103.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7103.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7092.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7092.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7092.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7092.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7092.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7092.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7091.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7091.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7091.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7091.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7091.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7091.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7088.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7088.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7088.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7088.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7088.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7083.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7083.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7085.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7085.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7120.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7120.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7120.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7120.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7120.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 2)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7120.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut7 (4 -> 2)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7118.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7118.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7118.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 2)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7118.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7118.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 2)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7118.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut7 (4 -> 1)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6975.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6975.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6975.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6975.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6975.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6975.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7022.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut2 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7022.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut3 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7022.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut4 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7022.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut5 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7022.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut6 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7236.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6957.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6961.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6961.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6975.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7022.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6981.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6988.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$6990.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7002.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7003.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7015.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7022.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7032.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7052.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7225.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7081.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7083.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7085.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7086.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7088.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7090.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7091.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7092.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7098.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 1)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7103.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7102.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7103.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7102.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 2)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7105.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7106.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7098.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7120.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7118.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7120.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7118.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7122.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 2)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7101.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7127.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 2)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7088.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7214.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7177.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7209.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7199.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7199.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7200.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7207.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7208.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7209.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7210.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7211.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7212.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7213.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7214.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7211.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7216.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7217.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7218.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7219.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7220.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7221.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7222.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7223.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7224.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7225.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7226.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7227.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7228.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7229.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7230.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7231.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7232.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7233.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7234.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7235.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7236.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7237.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7238.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7239.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7240.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7241.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7242.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7243.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7244.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7239.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6952$auto$blifparse.cc:535:parse_blif$7240.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-Removed 0 unused cells and 752 unused wires.
-
-8.45. Executing AUTONAME pass.
-Renamed 20405 objects in module top (88 iterations).
-<suppressed ~1730 debug messages>
-
-8.46. Executing HIERARCHY pass (managing design hierarchy).
-Attribute `top' found on module `top'. Setting top module to top.
-
-8.46.1. Analyzing design hierarchy..
-Top module:  \top
-
-8.46.2. Analyzing design hierarchy..
-Top module:  \top
-Removed 0 unused modules.
-
-8.47. Printing statistics.
-
-=== top ===
-
-   Number of wires:                772
-   Number of wire bits:           2222
-   Number of public wires:         772
-   Number of public wire bits:    2222
-   Number of ports:                  8
-   Number of port bits:             17
-   Number of memories:               0
-   Number of memory bits:            0
-   Number of processes:              0
-   Number of cells:               1061
-     $scopeinfo                      6
-     CCU2C                         150
-     L6MUX21                        56
-     LUT4                          520
-     PFUMX                         126
-     TRELLIS_FF                    203
-
-8.48. Executing CHECK pass (checking for obvious problems).
-Checking module top...
-Found and reported 0 problems.
-
-8.49. Executing JSON backend.
-
-End of script. Logfile hash: be8123000e, CPU: user 1.31s system 0.05s, MEM: 55.23 MB peak
-Yosys 0.51+46 (git sha1 8bde6ac17, clang++ 18.1.8 -fPIC -O3)
-Time spent: 25% 1x abc (0 sec), 22% 21x read_verilog (0 sec), ...
+  created $adff cell `$procdff$715' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.\pdmw_counter' using process `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$339'.
+  created $adff cell `$procdff$718' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.\div_counter' using process `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$339'.
+  created $adff cell `$procdff$721' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.\pdm_done_reg' using process `$paramod\servo_pdm\clk_hz=s32'00000001011111010111100001000000.$proc$./servo_pdm/servo_pdm.v:25$339'.
+  created $adff cell `$procdff$724' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.\can_move_fwd' using process `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$332'.
+  created $adff cell `$procdff$727' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.\not_d_signal' using process `$paramod\adc_hysteresis\x_High=12'111011011000\x_Low=12'010101111000.$proc$./adc_hysteresis/adc_hysteresis.sv:13$332'.
+  created $adff cell `$procdff$730' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.\cs' using process `$paramod$acdfa2d042b2e71b4b24548a5e049d3ce10b931a\adc_capture.$proc$./adc_capture/adc_capture.sv:68$323'.
+ERROR: Multiple edge sensitive events found for this signal!
