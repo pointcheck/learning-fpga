@@ -76,7 +76,7 @@ initial begin
     rx = 1'b1; // Idle state
     valid = 1'b1;
     stop_bits = 2'b00; // 1 stop bit
-    parity_en = 1'b0;  // Enable parity
+    parity_en = 1'b1;  // Enable parity
     parity_type = 1'b0; // Even parity
     
     // Reset the system
