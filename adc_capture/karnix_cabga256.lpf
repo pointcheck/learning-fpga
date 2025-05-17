@@ -244,6 +244,16 @@ LOCATE COMP "adc_spi_mosi" SITE "E16";      # ADC SPI MOSI
 IOBUF PORT "adc_spi_mosi" IO_TYPE=LVCMOS33;
 LOCATE COMP "adc_spi_csn" SITE "F16";     # ADC SPI CSn
 IOBUF PORT "adc_spi_csn" IO_TYPE=LVCMOS33;
+#LOCATE COMP "in1_u_adc" SITE "";      # ADC IN0
+#IOBUF PORT "in1_u_adc" IO_TYPE=LVCMOS33;
+#LOCATE COMP "in2_u_adc" SITE "";      # ADC IN1
+#IOBUF PORT "in2_u_adc" IO_TYPE=LVCMOS33;
+#LOCATE COMP "in3_u_adc" SITE "";      # ADC IN2
+#IOBUF PORT "in3_u_adc" IO_TYPE=LVCMOS33;
+#LOCATE COMP "in4_u_adc" SITE "";     # ADC IN3
+#IOBUF PORT "in4_u_adc" IO_TYPE=LVCMOS33;
+#LOCATE COMP "mic_u_adc" SITE "";     # ADC IN4 (MIC)
+#IOBUF PORT "mic_u_adc" IO_TYPE=LVCMOS33;*/
 
 LOCATE COMP "spiAudioDAC_sclk" SITE "C16";	# DAC SPI SCLK 
 IOBUF PORT "spiAudioDAC_sclk" IO_TYPE=LVCMOS33;

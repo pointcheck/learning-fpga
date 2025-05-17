@@ -13,7 +13,6 @@ module control
 	input  logic clk,
 	input  logic rst,
 	input  logic ir_ready,
-	input  logic adc_ready,
 	input  logic can_move_fwd,
 	input  logic [31:0] command,
 	output logic state,					
@@ -26,7 +25,9 @@ module control
 
 	localparam MAX_DIV = clk_hz / (2 * sclk_hz);				// Declaring parameter of max number for clock divider to count to
 	logic [$clog2(MAX_DIV)-1:0] frdiv;					// frdiv - clock dividing counter (frequency divider)
-
+	logic [7:0] timer;
+	logic stall;
+	logic stk;
 	logic sclk;
 	always_ff @(posedge clk or posedge rst) begin				// Dividing frequency from clk_hz to sclk_hz
 
@@ -46,27 +47,48 @@ module control
 
 	always_ff @(posedge sclk or posedge rst) begin
 
-		if (rst) begin							// Resetting cart if rst button is pressed
+		if (rst) begin					// Resetting cart if rst button is pressed
                         state <= 1'd0;
 			ctl_valid <= 1'd1;
                         ack <= 1'd0;
+
 			motor_dc <= 8'd0;
 			direction <= 1'd1;
 			servo_dc <= 8'(servo_center);
-
+			
+			timer[7:0]<=8'd0;
+			stall <= 'd0;
+			stk <= 'd0;
 		end else begin		
 
-			if (adc_ready) ctl_valid <= 1'd0;					// VALID signal is always 1 to work with ADCPolling, IRDecoder modules
+			ctl_valid <= 1'd1;			// Valid signal is always 1 to work with adc_capture, ir_decoder modules
 
-		        if (~can_move_fwd && adc_ready) begin				// Stopping if photodiode detects obstruction ahead
-		                motor_dc <= 8'd0;
+		        if (~can_move_fwd) begin		// Stopping if photodiode detects obstruction ahead
+				direction <= 1'd0;
+				stall <= 1'd1;
+				motor_dc <= 8'(motor_max);
+				stk <= 'd1;
 			end
 			
-			if (ir_ready && adc_ready) begin					// Processing signal if IRDecoder is ready
+			if(stall) begin				// Stall state makes cart move back and turn right
+				servo_dc <= 8'd50;
+				if (timer <= 8'd250)
+					timer <=timer + 1'd1;
+                                else begin
+                                        direction <=1'd1;
+                                        timer <= 8'd0;
+                                        motor_dc <= 8'd0;
+					servo_dc <= 8'(servo_center);	
+					stk <= 'd0;
+					stall <= 'd0;	
+                                end
+			end 
+
+			if (ir_ready) begin					// Processing signal if ir_decoder is ready
 
 				case (command)					// Turning cart ON/OFF
-					32'h6897FF00:	state <= 1'd1;
-					32'h7788FF00:	begin
+					32'hFE010707:	state <= 1'd1;		// "Signal Source"
+					32'hFD020707:	begin			// "Power OFF/ON (2)"
 								state <= 1'd0;
 								motor_dc <= 8'd0;
 								servo_dc <= 8'(servo_center);
@@ -77,37 +99,37 @@ module control
 		
 					case (command)				// Check README.md file for command list
 
-					32'h6A95FF00:	direction <= 1'd1;
-					32'h659AFF00:	direction <= 1'd0;
+					32'hED120707:	direction <= 1'd1;	// "ch+"
+					32'hEF100707:	direction <= 1'd0;	// "ch-"
 
 					
-					32'h649BFF00:	if (servo_dc <= 8'(servo_max - servo_step)) begin
+					32'h9A650707:	if (servo_dc <= 8'(servo_max - servo_step)) begin	// "Arrow left"
 								servo_dc <= servo_dc + 8'(servo_step);
 							end
 
-					32'h6699FF00:	if (servo_dc >= 8'(servo_min + servo_step)) begin
+					32'h9D620707:	if (servo_dc >= 8'(servo_min + servo_step)) begin	// "Arrow right"
 								servo_dc <= servo_dc - 8'(servo_step);
 							end				
 
-					32'h7C83FF00:	if (can_move_fwd && motor_dc <= 8'(motor_max - motor_step)) begin
+					32'h9F600707:	if (can_move_fwd && motor_dc <= 8'(motor_max - motor_step)) begin	// "Arrow up"
 								motor_dc <= motor_dc + 8'(motor_step);
 							end
 
-					32'h6F90FF00:	if (motor_dc >= 8'(motor_min + motor_step)) begin
+					32'h9E610707:	if (motor_dc >= 8'(motor_min + motor_step)) begin	// "Arrow down"
 								motor_dc <= motor_dc - 8'(motor_step);
 							end
 
-					32'h619EFF00:	motor_dc <= 8'd0;
-					32'h6D92FF00:	servo_dc <= 8'(servo_center);			
+					32'h86790707:	motor_dc <= 8'd0;					// "Home"
+					32'h97680707:	servo_dc <= 8'(servo_center);				// "Enter"
 					
 					endcase
 				end
 
 				ack <= 1'd1;				// Setting acknowledge signal after processing every command to clear ir_ready
 
-			end else
-				ack <= 1'd0;				// Clearing acknowledge signal if IRDecoder didn't send a command during last clock cycle
-				ctl_valid <= 1'd1;
+			end else begin
+				ack <= 1'd0;				// Clearing acknowledge signal if ir_decoder didn't send a command during last clock cycle
+			end
 		end
 	end
 
